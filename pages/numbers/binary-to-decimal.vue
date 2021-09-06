@@ -12,7 +12,8 @@
 
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Binary to Decimal<hr>
-      <h1 class="w3-text-teal"><b>Binary to Decimal Converter</b></h1>
+      <h1 class="w3-text-teal"><b>Binary to Decimal Converter</b></h1><br>
+      <p>Binary to decimal converter tool.</p>
       <form id="calcform1" name="calcform1" autocomplete="off" class="rounded">
 <div class="form-row">
 <div class="col">
@@ -27,7 +28,7 @@
 </div>
 <div class="form-group mt-4">
 <button @click="calculate()" type="button" class="btn btn-secondary"><span>=></span> Answer</button>
-<button onclick="onReset()" type="reset" class="btn btn-secondary"><span>↺</span> Reset</button>
+<button @click="reset()" type="reset" class="btn btn-secondary"><span>↺</span> Reset</button>
 </div>
 <div class="form-group">
   <h1>Binary to Decimal Conversion</h1>
@@ -41,6 +42,27 @@
 
 </form>
 
+    </div>
+    <div class="w3-padding">
+      <h1 class="w3-center">How to Convert Binary to Decimal?</h1>
+      <p>The calculation of binary to decimal is equal to the sum of the total binary digits times their power of 2:</p>
+      <p>For example, 00110100<sub>2</sub> = 0*2<sup>7</sup> + 0*2<sup>6</sup> + 1*2<sup>5</sup> + 1*2<sup>4</sup> + 0*2<sup>3</sup> + 1*2<sup>2</sup> + 0*2<sup>1</sup> + 0*2<sup>0</sup></p>
+      <p> => 0 + 0 + 32 + 16 + 0 + 4 + 0 + 0</p>
+      <p> => 52</p>
+      <h2>Decimal Numbers</h2>
+      <p>Decimal numbers are the most common type of numbering system. Decimal numbers are used in our daily life for trading and calculation. Decimal numbers are the easiest for humans to understand. For that reason, it is popular.</p>
+    </div>
+    <div class="w3-padding">
+      <h2>Code to Convert Decimal to Binary:</h2>
+        <pre>
+  <code>
+    function binarytodecimal() {
+          var input = document.getElementById("input_value").value;
+          var answer = new BigNumber(input, 2);
+          document.getElementById("answer").innerHTML = answer;
+          }
+  </code>
+</pre>
     </div>
   </div>
   <hr>
@@ -129,6 +151,14 @@ export default {
     }
   },
   methods: {
+    reset(){
+      this.number1 = '';
+      this.answer = '';
+      this.base8 = '';
+      this.base10 = '';
+      this.base16 = '';
+      this.fa = '';
+    },
     calculate() {
       this.fa = parseInt(this.number1)
       var cc = new BigNumber(parseInt(this.number1, 2))
@@ -147,6 +177,13 @@ h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }
 h4 { font-size:1.2rem; }
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+}
 #calcform1,#calcform2,#calcform3 { background:#a7c9b8; padding:20px; }
 #bdiv, #bdiv2, #bdiv3 { max-width:100px; }
 #b, #b2, #b3 { max-width:70px; }

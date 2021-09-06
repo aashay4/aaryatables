@@ -13,6 +13,7 @@
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Text to Binary<hr>
       <h1 class="w3-text-teal"><b>Ascii Text to Binary</b></h1>
+      <p>Text to binary conversion tool. Enter the text in the box and click on the button to get the text to binary answer. For example, enter the letter English letter 'D' in the box and you will get the "01000100" binary number in the answer box.</p>
       <form id="calcform1" name="calcform1" autocomplete="off" class="rounded">
 <div class="form-row">
 <div class="col">
@@ -27,7 +28,7 @@
 </div>
 <div class="form-group mt-4">
 <button @click="calculate()" type="button" class="btn btn-secondary"><span>=></span> Answer</button>
-<button onclick="onReset()" type="reset" class="btn btn-secondary"><span>↺</span> Reset</button>
+<button @click="reset()" type="reset" class="btn btn-secondary"><span>↺</span> Reset</button>
 </div>
 <div class="form-group">
   <h1>Text to Binary Conversion</h1>
@@ -40,8 +41,25 @@
 </div>
 
 </form>
-
     </div>
+    <div class="w3-padding">
+    <h1 class="w3-center">How to convert text to binary?</h1>
+    <p>To convert text to binary, convert each letter in the text string separately. Consider the following steps for conversion:</p>
+    <ul>
+      <li>
+        Get the character
+      </li>
+      <li>Get the binary number of that character from the Ascii table</li>
+      <li>Continue the same process for every number in a string.</li>
+    </ul>
+    <p>For example, consider this English string "ACJ" for the text to binary conversion.</p>
+    <p><b>Steps:</b></p>
+    <ul>
+      <li>Get the first character from the String. In this case, it is an A</li>
+      <li>Get the binary code for A. For A, it is 01000001.</li>
+      <li>Perform the same operation for another two characters. So, the final answer after conversion would be " 01000001 01000011 01001010"</li>
+    </ul>
+  </div>
   </div>
   <hr>
 
@@ -129,7 +147,16 @@ export default {
     }
   },
   methods: {
+    reset(){
+      this.number1 = '';
+      this.answer = '';
+      this.base8 = '';
+      this.base10 = '';
+      this.base16 = '';
+      this.fa = '';
+    },
     calculate() {
+      this.answer = '';
             for (var i=0; i < this.number1.length; i++)
             {
               var e = this.number1[i].charCodeAt(0);
@@ -141,7 +168,7 @@ export default {
       }while(e!=0);
         while(s.length<8) {
           if(s.length === 7) {
-            s = "0" + s;
+            s = " 0" + s;
             this.answer += s;
           }
           if(s.length === 6) {

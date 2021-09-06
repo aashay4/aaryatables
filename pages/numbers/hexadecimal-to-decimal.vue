@@ -12,7 +12,8 @@
 
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Hexadecimal to Decimal<hr>
-      <h1 class="w3-text-teal"><b>Hexadecimal to Decimal Converter</b></h1>
+      <h1 class="w3-text-teal"><b>Hexadecimal to Decimal</b></h1>
+      <p>Hexadecimal to decimal conversion tool.</p>
       <form id="calcform1" name="calcform1" autocomplete="off" class="rounded">
 <div class="form-row">
 <div class="col">
@@ -43,10 +44,20 @@
 <label>log(x) graph</label>
 <div id="chart_div"></div>
 </div>
-</form>
-
+</form><br>
     </div>
+    <div class="w3-padding">
+    <h1 class="w3-center">How to convert hexadecimal to decimal?</h1>
+    <p>A decimal number is a base-10 number that includes 0 to 9. A hexadecimal number is a base-16 number that includes 0 to 9 along with A to F. Since hexadecimal is a base-16 number, to convert from hexadecimal to decimal multiply each number with the power of 16. Consider the following example for the hex to decimal:</p>
+    <p>16<sub><span style="font-size: 0.8em">(16)</span></sub> = 1&times;16<sup>1</sup>+6&times;16<sup>0</sup></p>
+    <p>=> 16+6</p>
+    <p>=> 22</p>
+    <p>Consider this example to understand hex to decimal conversion for a number with the alphabet letters A to F.</p>
+    <p>6A<sub><span style="font-size: 0.8em">(16)</span></sub> = 6&times;16<sup>1</sup>+10&times;16<sup>0</sup></p>
+    <p> => 96+10</p>
+    <p> => 106</p>
   </div>
+</div>
   <hr>
 
 </div>
@@ -108,11 +119,11 @@ import { BigNumber } from 'bignumber.js'
 export default {
   head() {
   return {
-    title: 'Hex to Binary',
+    title: 'Hexadecimal to decimal',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-    { hid: 'description', name: 'description', content: 'A hexadecimal to binary converter and read how to convert' }
+    { hid: 'description', name: 'description', content: 'A hexadecimal to decimal converter and read how to convert' }
   ],
   link: [
   {rel: 'canonical', href: 'https://www.aaryatables.com/numbers/hexadecimal-to-binary'}

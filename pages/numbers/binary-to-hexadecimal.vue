@@ -12,7 +12,8 @@
 
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Binary to Hexadecimal<hr>
-      <h1 class="w3-text-teal"><b>Binary to Hexadecimal Converter</b></h1>
+      <h1 class="w3-text-teal"><b>Binary to Hexadecimal</b></h1>
+      <p>Binary to hexadecimal convert and learn how to convert.</p>
       <form id="calcform1" name="calcform1" autocomplete="off" class="rounded">
 <div class="form-row">
 <div class="col">
@@ -38,11 +39,22 @@
 </div>
 </div>
 </div>
-
 </form>
-
-    </div>
+</div><br>
+<div class="w3-padding">
+<h1 class="w3-center">How to convert binary to hexadecimal?</h1>
+<p>To convert binary to hexadecimal, consider the first four numbers of a binary. Once determined first four digits, convert the four digits into equivalent hex numbers with the help of binary to hexadecimal table.</p>
+<p>Consider 00011111 binary number as an example.</p>
+<ul>
+  <li>
+    The first four numbers are 0001
+  </li>
+  <li>Convert 0001 into hex number. 0001 into hex is 1.</li>
+  <li>Determine another four numbers - 1111, and convert them into the hex</li>
+  <li>So, the final answer for 00011111 is 1F.</li>
+</ul>
   </div>
+</div>
   <hr>
 
 </div>
@@ -107,7 +119,7 @@ export default {
   head() {
     // sets document title
     return {
-      title: 'Binary to Hexadecimal(Hex)',
+      title: 'Binary to Hexadecimal',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
@@ -130,14 +142,10 @@ export default {
   },
   methods: {
     calculate() {
-      var binnn = this.number1
-        var mol = new BigNumber(binnn, 2)
-        var binnx = mol.toString(16)
-        if (isNaN(binnx)) {
-          this.answer = 'This number cannot be converted into Hex'
-        } else {
-          this.answer = binnx
-        }
+      var bin = this.number1;
+            var m = new  BigNumber(bin, 2)
+            var binn = m.toString(16).toUpperCase();
+            this.answer = binn;
 }
 }
 }

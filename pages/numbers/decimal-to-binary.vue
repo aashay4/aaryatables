@@ -12,11 +12,12 @@
 
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Decimal to Binary<hr>
-      <h1 class="w3-text-teal"><b>Decimal to Binary Converter</b></h1>
+      <h1 class="w3-text-teal"><b>Decimal to Binary</b></h1>
+      <p>Decimal to binary converter.</p>
       <form id="calcform1" name="calcform1" autocomplete="off" class="rounded">
 <div class="form-row">
 <div class="col">
-<input type="text" id="x" name="x" v-model="number1" class="form-control" placeholder="Enter the Decimal Number here .... ">
+<input type="text" v-model="number1" class="form-control" placeholder="Enter the Decimal Number here .... ">
 </div>
 </div>
 <div id="logdiv2" class="form-row">
@@ -127,7 +128,7 @@ export default {
   head() {
     // sets document title
     return {
-      title: 'Convert Decimal to Binary',
+      title: 'Decimal to Binary',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [

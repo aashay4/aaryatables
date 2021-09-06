@@ -12,7 +12,8 @@
 
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Decimal to Hexadecimal<hr>
-      <h1 class="w3-text-teal"><b>Decimal to Hexadecimal Converter</b></h1>
+      <h1 class="w3-text-teal"><b>Decimal to Hexadecimal</b></h1>
+      <p>Decimal to hexadecimal converter.</p>
       <form id="calcform1" name="calcform1" autocomplete="off" class="rounded">
 <div class="form-row">
 <div class="col">
@@ -38,9 +39,16 @@
 </div>
 </div>
 </div>
-
 </form>
-
+    </div>
+    <div class="w3-padding">
+      <h1 class="w3-center">How to convert decimal to hexadecimal?</h1>
+      <p>Follow these steps to convert from decimal to hexadecimal:</p>
+      <ul>
+        <li>Divide the given number by 16</li>
+        <li>Note the integer quotient and also note reminder for the hex number</li>
+        <li>Repeat both steps until you get the quotient to zero</li>
+      </ul>
     </div>
   </div>
   <hr>
@@ -104,7 +112,7 @@ import { BigNumber } from 'bignumber.js'
 export default {
   head() {
   return {
-    title: 'Decimal to Hexadecimal Converter',
+    title: 'Decimal to Hexadecimal',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [

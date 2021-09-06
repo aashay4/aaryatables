@@ -10,9 +10,9 @@
   <div class="w3-margin">
       <div class="w3-container w3-padding">
         <a href="/">Home</a> &rsaquo; <a href="/electronics">Electronics</a> &rsaquo; AMPs to Watts(W) <hr>
-    <h1 class="w3-text-teal"><b>Amps to watts Calculator</b></h1>
-
-    <form id="calcform" name="calcform" autocomplete="off">
+    <h1 class="w3-text-teal"><b>Amps to watts Calculator</b></h1><br>
+    <p>AMPs to Watts converter and how to convert? Use the below tool to convert amts to watts.</p>
+    <form id="calcform1" name="calcform" autocomplete="off">
 <div class="form-group">
 <label for="phase">Select current type</label>
 <select id="phase" name="phase" v-model="currenttype" @change="currentchange()" class="form-control" autofocus>

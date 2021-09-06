@@ -225,7 +225,7 @@
   </tr>
 </table><br>
   <h2>Multiplication Test</h2>
-  <p>Use the multiplication table to solve this test. Do not forget to check result once you are done:</p>
+  <p>Use the multiplication table to solve this test. Do not forget to check the result once you complete the test:</p>
   <form id="quizform">
   <table id="quiz">
   <tbody>
@@ -312,7 +312,7 @@
   </tbody>
 </table><br>
   <button type="button" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" @click="checkanswers()">Check results</button>
-  <button type="button" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" @click="newquiz()"> New quiz</button>
+  <button type="button" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" @click="newquiz()"> New quiz</button><br>
   <p v-if="validate === 1">Your score is {{score}}/10
   </p>
   </form>
@@ -455,6 +455,22 @@ export default {
       quizanswer10: ''
     }
   },
+  computed: {
+    parsedInput(){
+      return this.firsttext;
+    },
+    parsedInput1(){
+          return this.secondtext;
+    }
+  },
+  watch: {
+    parsedInput(){
+      this.OnButton()
+    },
+    parsedInput1(){
+     this.OnButton();
+    }
+  },
   methods: {
     OnButton(value){
       if(value){
@@ -511,6 +527,7 @@ export default {
       this.quizanswer8 = null;
       this.quizanswer9 = null;
       this.quizanswer10 = null;
+      this.score = 0;
     this.quiznumber()
         },
     quiznumber(){

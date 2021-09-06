@@ -12,7 +12,8 @@
 
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/electronics">Electronics</a> &rsaquo; AMPs VA calculator<hr>
-      <h1 class="w3-text-teal"><b>Amps to VA</b></h1>
+      <h1 class="w3-text-teal"><b>Amps to VA</b></h1><br>
+      <p>Amps to Volt-Amps(VA) converter.</p>
       <form id="calcform" name="calcform" autocomplete="off">
         <div class="form-group">
 <table class="calc2">
@@ -45,7 +46,11 @@
 </tr><br>
 <tr>
 <td>&nbsp;</td>
-<td><input @click="changedthings()" type="button" value="Calculate" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray"> <input onclick="setfocus()" type="reset" value="Reset" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray"></td>
+<div>
+<button type="button" title="Calculate" class="btn btn-secondary" @click="changedthings()"><span>=></span> Answer</button>
+<button type="reset" title="Reset" class="btn btn-secondary" onclick="setfocus()"><span>↺</span> Reset</button>
+</div>
+</td>
 </tr><br>
 <tr>
 <td>Result in Volt-amps:</td>
@@ -55,11 +60,19 @@
 </tbody>
 </table>
 </div>
-</form>
-
-
+</form><br>
     </div>
+    <div class="w3-padding">
+  <h2>How to convert Amps to VA?</h2>
+  <p>To convert from Amps to VA, select the phase from either single-phase or Three phases. Once selected, enter Amps and VA in the text box and click on the answer button. Convert Amperes and VA with the help of this equation:</p>
+    <h3>Single phase calculation formula:</h3>
+    <p>For single phase conversion, multiply Amps with the line to line volts.</p>
+    <p><i>S</i><sub>(VA)</sub> = <i> I</i><sub>(A)</sub><i> </i>&times;<i> V</i><sub>(V)</sub></p>
+      <h3>3 Phase phase calculation formula:</h3>
+      <p class="math"><i>S</i><sub>(VA)</sub> = <i>&#8730;</i><span style="text-decoration: overline">3</span></p>
+
   </div>
+</div>
   <hr>
 
 </div>

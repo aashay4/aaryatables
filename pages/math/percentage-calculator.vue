@@ -18,17 +18,17 @@
 Enter Value: <input type="text" name="a" class="form-control" v-model="number1" placeholder="Enter value: a number."> Enter Percentage: <input type="text" v-model="percentage1" name="b" class="form-control" placeholder="Percentage(%)"> ?
 </div>
 <div>
-<button type="button" title="Calculate" class="btn btn-secondary" @click="per1()"><span></span> Calculate</button>
+<button type="button" title="Calculate" class="btn btn-secondary" @click="per1()"><span>=></span> Answer</button>
 <input type="text" v-model="answer1" class="form-control" readonly>
 </div>
 <div>
 <textarea rows="1" class="form-control" readonly></textarea>
 </div>
 </form>
-<h1>Percentage Finder</h1>
+<h4>Percentage Finder</h4>
 <form class="calcform">
 <div>
-<input type="text" v-model="number2" class="form-control"> is what percent of
+<input type="text" v-model="number2" class="form-control"> the percent of the value
 <input type="text" v-model="number3" class="form-control"> ?
 </div>
 <div>
@@ -42,10 +42,10 @@ Enter Value: <input type="text" name="a" class="form-control" v-model="number1" 
 <h4>Percentage change</h4>
 <form id="formcalculator" class="calcform">
 <div>
-What is the percentage change<br>from
+Find the percentage:<br>from
 <input type="text" v-model="number4" class="form-control">
 to
-<input type="text" v-model="number5" class="form-control">?
+<input type="text" v-model="number5" class="form-control"> ?
 </div>
 <div>
 <button type="button" title="Calculate" class="btn btn-secondary" @click="per3()"><span>=></span> Answer</button>
@@ -73,7 +73,7 @@ to
 <td rowspan="2"><button type="button" title="Convert" @click="per4()" class="btn btn-secondary"><span>=></span></button></td>
 <td><input type="text" v-model="upperfraction" class="form-control"></td>
 <td rowspan="2"><input type="text" v-model="decimalvalue" class="form-control"></td>
-<td rowspan="2"><button type="reset" id="resetbutton" title="Reset" class="btn btn-secondary"><span></span></button></td>
+<td rowspan="2"><button type="reset" @click="reset()" title="Reset" class="btn btn-secondary"><span>↺</span>Reset</button></td>
 </tr>
 <tr>
 <td><input type="text" v-model="downfraction" class="form-control"></td>
@@ -83,6 +83,25 @@ to
 </tr>
 </table>
 </form>
+      </div>
+      <div class="w3-padding">
+        <h1>The percentage calculation</h1>
+        <p>Consider an example to find the 40% of $70.</p>
+        <p>The percentage calculation for this number is: 40% &times; 70.</p>
+        <p>=> 40/100 &times; 70</p>
+        <p>=> 28</p>
+        <h2>Percentage Finder</h2><br>
+        <p>20 is what percentage of 100?</p>
+        <p> => 20/100 &times; 100</p>
+        <p> => 20</p>
+        <h2>Percentage to Fraction & Decimal.</h2>
+        <p>What is the 40% to Fraction and Decimal?</p>
+        <b>Fraction of 40%</b>
+        <p> => 40 / 100</p>
+        <p> => 2/5 </p>
+        <b>Decimal of 40%</b>
+        <p> => 40 / 100</p>
+        <p> => 0.4 </p>
       </div>
   </div>
   <hr>
@@ -151,7 +170,7 @@ export default {
   head() {
     // sets document title
     return {
-      title: 'Percentage(%) Calculator',
+      title: 'Percentage Calculator',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
@@ -181,6 +200,21 @@ export default {
     }
   },
   methods: {
+    reset(){
+      this.number1 = null;
+      this.percentage1 = null;
+      this.answer1 = '';
+      this.number2 = '';
+      this.number3 = '';
+      this.number4 = '';
+      this.number5 = '';
+      this.answer4 = '';
+      this.number10 = '';
+      this.upperfraction = '';
+      this.downfraction = '';
+      this.number22 = '';
+      this.decimalvalue = '';
+    },
     per1(){
         var ans = parseFloat(this.percentage1) * 100;
         this.answer1 = parseFloat(ans)/this.number1;
@@ -193,7 +227,6 @@ export default {
       var ans = parseFloat(this.number5) - parseFloat(this.number4);
       var ans1 = ans/this.number4;
       this.answer4 = ans1 * 100;
-      alert(this.answer4);
     },
         per4(){
           var percent = this.number22;

@@ -13,6 +13,7 @@
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Hexadecimal to Binary<hr>
       <h1 class="w3-text-teal"><b>Hexadecimal to Binary Converter</b></h1>
+      <p>A hexadecimal to binary converter.</p>
       <form id="calcform1" name="calcform1" autocomplete="off" class="rounded">
 <div class="form-row">
 <div class="col">
@@ -38,9 +39,7 @@
 </div>
 </div>
 </div>
-
 </form>
-
     </div>
   </div>
   <hr>
@@ -106,7 +105,7 @@ import { BigNumber } from 'bignumber.js'
 export default {
   head() {
   return {
-    title: 'Hex to Binary',
+    title: 'Hexadecimal to Binary',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [

@@ -13,6 +13,7 @@
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/electronics">Electronics</a> &rsaquo; AMPs to volts<hr>
       <h1 class="w3-text-teal"><b>Amps to volts Converter</b></h1>
+      <p>Amps to Volts converter. Select one between Ohm and Watts and enter the numbers that you want to convert and click on the answer box.</p>
       <form id="calcform" name="calcform" autocomplete="off">
         <div class="form-group">
 <table class="calc2">
@@ -41,7 +42,7 @@
 <td class="mathsymbol" style="text-align:left">&#937;</td>
 </tr>
 <tr>
-<td><input @click="changedthings()" type="button" value="Calculate" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray"> <input onclick="setfocus()" type="reset" value="Reset" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray"></td>
+<td><input @click="changedthings()" type="button" value="Answer" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray"> <input onclick="setfocus()" type="reset" value="Reset" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray"></td>
 <td>&nbsp;</td>
 </tr><br>
 <tr>

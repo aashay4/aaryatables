@@ -13,6 +13,7 @@
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; Logarithm Calculator<hr>
       <h1 class="w3-text-teal"><b>Logarithm Calculator</b></h1>
+        <p>Enter a base of a number and use this Logarithm Calculator.</p>
       <form id="formnumber1" name="formnumber1" autocomplete="off">
 <div class="form-row">
 <div id="characterfidi" class="col-2">
@@ -55,8 +56,8 @@
 </div>
 </div>
 <div class="form-group mt-4">
-<button @click="calculate()" type="button" class="btn btn-secondary"><span></span> Calculate</button>
-<button @click="reset()" type="reset" class="btn btn-secondary"><span></span> Reset</button>
+<button @click="calculate()" type="button" class="btn btn-secondary"><span>=></span> Answer</button>
+<button @click="reset()" type="reset" class="btn btn-secondary"><span>↺</span> Reset</button>
 </div>
 <div class="form-group">
 <div class="input-group mb-3">
@@ -66,11 +67,19 @@
 </div>
 </div>
 </div>
-<div class="form-group">
-<textarea id="asdf" readonly class="form-control form-control-lg"></textarea>
-</div>
 </form>
 
+</div><br>
+    <div class="w3-padding">
+      <h1>How log works?</h1>
+      <p>
+        Logarithm calculator is one of the most important calculations in the maths. It works on the following formula:
+      </p>
+      <p>Assume you need to solve this mathemetical equation:</p>
+        <p><i>a<sup> b</sup> = c</i></p></p>
+<p>This calculation can be simplified by the base b logarithm of a number x:</p>
+<p>log<i><sub>a </sub>c</i> = <i>b</i></p>
+<p>Base of a log play the biggest role in the logarithm calculation. You can take any number as a base. By default it is a base e and it's value is equal to 2.718281828459045.</p>
     </div>
   </div>
   <hr>

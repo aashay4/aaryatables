@@ -11,7 +11,7 @@
       <div class="w3-container w3-padding">
         <a href="/">Home</a> &rsaquo; <a href="/electronics">Electronics</a> &rsaquo; AMPs to Kw <hr>
     <h1 class="w3-text-teal"><b>Amps to Kilowatts Calculator</b></h1>
-
+<p>A tool to convert Amps to Kilowatts:</p>
     <form id="calcform" name="calcform" autocomplete="off">
 <div class="form-group">
 <label for="phase">Select current type</label>
@@ -89,8 +89,9 @@
 </div>
 </div>
 </div>
-</form>
-
+</form><br>
+<h2>About AMPS to KW tool:</h2>
+<p>To use this AMPs to KW tool, select the current type phase from DC, AC-single phase and AC-three phase. Once selected, enter the current unit in Ampere and voltage in volts. Once inserted, click on the "Answer" button. After clicking on the button, check the answers in Kilowatts, Watts and Milliwatts.</p>
       </div>
         </div>
   <hr>
@@ -345,7 +346,7 @@ h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }
 h4 { font-size:1.2rem; }
 
-#calcform1,#calcform2,#calcform3 { background:#a7c9b8; padding:20px; }
+#calcform,#calcform2,#calcform3 { background:#a7c9b8; padding:20px; }
 #bdiv, #bdiv2, #bdiv3 { max-width:100px; }
 #b, #b2, #b3 { max-width:70px; }
 #bsel,#b2sel,#b3sel { max-width:20px; padding:0; }

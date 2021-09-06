@@ -455,6 +455,22 @@ export default {
       quizanswer10: ''
     }
   },
+  computed: {
+    parsedInput(){
+      return this.firsttext;
+    },
+    parsedInput1(){
+          return this.secondtext;
+    }
+  },
+  watch: {
+    parsedInput(){
+      this.OnButton()
+    },
+    parsedInput1(){
+     this.OnButton();
+    }
+  },
   methods: {
     OnButton(value){
       if(value){
@@ -498,6 +514,7 @@ export default {
       this.quiznumber4 = '',
       this.quiznumber5 = '',
       this.quiznumber6 = '',
+      this.score = 0;
       this.quiznumber7 = '',
       this.quiznumber8 = '',
       this.quiznumber9 = '',
