@@ -36,7 +36,11 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/pwa',
+    '@nuxtjs/google-adsense',
   ],
+  'google-adsense': {
+      id: 'ca-pub-6829148792481216'
+    },
   /*
   ** Build configuration
   */

@@ -11,6 +11,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/google-adsense": "^1.4.0",
     "@nuxtjs/pwa": "^2.6.0",
     "bignumber.js": "^9.0.1",
     "cross-env": "^5.2.0",
