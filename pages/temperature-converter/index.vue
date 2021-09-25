@@ -32,7 +32,7 @@
 <table class="calc2">
 <tr>
 <td><label for="ton">Fahrenheit:</label></td>
-<td class="math"><input type="number" v-model="Fahrenheit" min="0" step="any" id="ton" name="ton" autofocus> :</td>
+<td class="math"><input type="number" v-model="Fahrenheit" min="0" step="any" id="ton" name="ton" autofocus></td>
 <td class="mathsymbol"> °F</td>
 </tr>
 <tr>
