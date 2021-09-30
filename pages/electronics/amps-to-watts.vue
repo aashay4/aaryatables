@@ -106,7 +106,7 @@
     <div class="w3-container w3-white">
       <div class="w3-margin w3-white">
           <div class="w3-container w3-padding">
-        <h1 class=""><b>Other Number tools</b></h1>
+        <h1 class=""><b>Other Electronics tools</b></h1>
       </div><hr>
           <ul class="w3-ul w3-hoverable w3-white">
             <li class="w3-padding-16">

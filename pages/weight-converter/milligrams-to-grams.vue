@@ -12,7 +12,7 @@
 
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/weight-converter">Weight</a> &rsaquo; Milligrams to Grams<hr>
-      <h1 class="w3-text-teal"><b>Milligram to Kilograms(mg to g)</b></h1>
+      <h1 class="w3-text-teal"><b>Milligram to Grams(mg to g)</b></h1>
       <form id="calcform1" name="calcform1" autocomplete="off" class="rounded">
 <div class="form-row">
 <div id="log" class="col-auto">Enter Milligrams:</div>
