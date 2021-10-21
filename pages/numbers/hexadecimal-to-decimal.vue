@@ -126,7 +126,7 @@ export default {
     { hid: 'description', name: 'description', content: 'A hexadecimal to decimal converter and read how to convert' }
   ],
   link: [
-  {rel: 'canonical', href: 'https://www.aaryatables.com/numbers/hexadecimal-to-binary'}
+  {rel: 'canonical', href: 'https://www.aaryatables.com/numbers/hexadecimal-to-decimal'}
   ]
   }
   },
