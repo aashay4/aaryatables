@@ -31,6 +31,9 @@
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/electronics/amps-to-volts"> Amps to volts</a></span><br>
         </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/joules-to-watts-calculator"> Joules to watts</a></span><br>
+        </li>
       </ul>
   </div>
   <hr>

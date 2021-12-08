@@ -62,7 +62,7 @@
   <div class="w3-card w3-margin w3-margin-top">
     <div class="w3-container w3-white w3-padding">
       <h4><b>About AaryaTables</b></h4>
-      <p>AaryaTables is a website with 100+ online tools. These tools are about electronics, energy, maths, numbers, temperature, weight, and many other.</p>
+      <p>AaryaTables is a website with 1000+ online tools. These tools are about electronics, energy, maths, numbers, temperature, weight, and many other.</p>
     </div>
   </div><hr>
 
