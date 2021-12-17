@@ -8,8 +8,6 @@
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
   <div class="w3-margin w3-white">
-
-
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/math">Math</a> &rsaquo; Addition Table <hr>
       <h1 class="w3-text-teal"><b>Addition Table</b></h1>

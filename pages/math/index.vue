@@ -14,13 +14,19 @@
       </div>
       <ul class="w3-ul w3-hoverable w3-white">
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/logarithm-calculator"> Logarithm Calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/percentage-calculator"> Percentage Calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/fractions-calculator"> Fractions Calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/multiplication-table"> Multiplication Table</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/addition-table"> Addition Table</a></span><br>
-        </li>
-        <li class="w3-padding-16">
-          <span class="w3-large"><a class="removelink" href="/math/logarithm-calculator"> Logarithm Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/sum-calculator"> Sum Calculator</a></span><br>
@@ -29,13 +35,7 @@
           <span class="w3-large"><a class="removelink" href="/math/subtraction-calculator"> Subtraction Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
-          <span class="w3-large"><a class="removelink" href="/math/percentage-calculator"> Percentage Calculator</a></span><br>
-        </li>
-        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/division-calculator"> Division Calculator</a></span><br>
-        </li>
-        <li class="w3-padding-16">
-          <span class="w3-large"><a class="removelink" href="/math/fractions-calculator"> Fractions Calculator</a></span><br>
         </li>
       </ul>
   </div>
