@@ -62,6 +62,18 @@
           <span class="w3-large"><a class="removelink" href="/electronics/va-to-kva"> va to kva calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/kva-to-amps"> kVA to amps converter</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/kva-to-watts"> kVA to watts</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/kva-to-kw"> kVA to kW</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/kva-to-va"> kVA to VA</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/electronics/joules-to-watts-calculator"> Joules to watts</a></span><br>
         </li>
       </ul>
