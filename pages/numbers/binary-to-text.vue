@@ -11,13 +11,13 @@
 
 
     <div class="w3-container w3-padding">
-          <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Binary Translator<hr>
-      <h1 class="w3-text-teal"><b>Binary Translator</b></h1>
-      <p>Binary translator to convert binary to text and other numbering systems. Enter a binary number and click on the answer button for binary translation. For example, enter a binary number <b>01000001</b> in the box and click on the answer button. You will get an A as the binary to text conversion.</p>
+          <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Binary to text<hr>
+      <h1 class="w3-text-teal"><b>Binary to text</b></h1>
+      <p>Binary to text conversion tool to translate binary code to text with one click. Enter the binary number you wish to convert to text and you will get the conversion answer in the text box below.</p>
       <form id="calcform1" name="calcform1" autocomplete="off" class="rounded">
 <div class="form-row">
 <div class="col">
-<input type="text" id="x" name="x" v-model="number1" class="form-control" placeholder="Enter the number here .... ">
+<input type="text" id="x" name="x" v-model="number1" class="form-control" placeholder="Enter the binary number .... ">
 </div>
 </div>
 <div id="logdiv2" class="form-row">
@@ -40,47 +40,13 @@
 </div>
 </div>
 
-<div class="form-group">
-  <h2>({{ number1 }}) to dec-base-10</h2>
-<div class="input-group mb-3">
-<input type="text" v-model="base10" readonly class="form-control form-control-lg">
-<div class="input-group-append">
-<button type="button" class="btn btn-lg btn-outline-secondary">ANS</button>
-</div>
-</div>
-</div>
-
-<div class="form-group">
-  <h2>({{ number1 }}) to hex-base-16</h2>
-<div class="input-group mb-3">
-<input type="text" v-model="base16" readonly class="form-control form-control-lg">
-<div class="input-group-append">
-<button type="button" class="btn btn-lg btn-outline-secondary">ANS</button>
-</div>
-</div>
-</div>
-
-
-<div class="form-group">
-  <h2>({{ number1 }}) to oct-base-8</h2>
-<div class="input-group mb-3">
-<input type="text" v-model="base8" readonly class="form-control form-control-lg">
-<div class="input-group-append">
-<button type="button" class="btn btn-lg btn-outline-secondary">ANS</button>
-</div>
-</div>
-</div>
 </form>
 </div><br>
 <div class="w3-padding w3-raw w3-align">
-<h2 class="w3-center"><b>Binary Translator</b></h2>
-<p><b>Binary translator</b> is a tool that helps users to convert binary to all other major numbering systems. Along with all other numbering systems, users can convert binary to English (text) as well.</p>
-<h2>About Binary Numbering System</h2>
-<p>Binary numbering system contains just zeros and ones. Many electronics systems use binary in the processors to perform computer organization operations. For that reason, it is a base-2 number. It has become an integral part of modern electronics. Earlier, many developers used to complain about the size of a binary number. To store data in just zeros and ones was difficult. Binary occupies more space on a machine. But today, with the help of supercomputers and decent storage facilities, it has become easy to store binary.</p>
-<p>Earlier, many developers used to complain about the size of a binary number. To store data in just zeros and ones was difficult and it used to occupy more space on a machine. But today with the help of supercomputers and decent storage facilities, it has become very easy to store binary.</p>
-<h1><b>Binary to Text</b></h1>
-<p>The binary to text conversion is one of the most common conversions for computer programmers. It is necessary for the machines that take input from the humans and instruct the machine's processor in the language it understands - Binary. To develop such apps, developers often need to use a binary translator to convert binary to text. With the help of a binary translator, a developer converts the user input to binary then the server sends binary to the microprocessor. The microprocessor processes the binary and converts response binary to text, sends it back to the users.</p>
-<p>It is the most basic working of a binary translator. Many NoSQL databases implement the concepts of binary numbers to store images and then process and representing data faster.</p>
+<h2 class="w3-center"><b>Binary to text</b></h2>
+<p>This is an easy-to-use <b>binary to text</b> tool to convert binary code to text in just an easy step. All you need to do is enter a binary number in the form of zeros and ones and you will get an answer in the form ASCII text value.</p>
+<h2>Importance of binary to text translation</h2>
+<p>A binary to text converter becomes important because all the electronic systems understand just the binary numbers while it becomes next to impossible for humans to send an instruction in the binary number. As binary numbers include just zeros and ones, the instruction becomes big and complicated. For that reason, it becomes really important for the software engineers to convert binary to text and then send the instruction to the machine. If you are also working on such a product then you can consider using our tool for such conversion.</p>
   </div>
 </div>
   <hr>
@@ -102,6 +68,9 @@
               <span class="w3-large"><a class="removelink" href="/numbers/binary-to-hexadecimal"> Binary to Hexadecimal</a></span><br>
             </li>
             <li class="w3-padding-16">
+              <span class="w3-large"><a class="removelink" href="/numbers/binary-translator"> Binary translator</a></span><br>
+            </li>
+            <li class="w3-padding-16">
               <span class="w3-large"><a class="removelink" href="/numbers/binary-to-decimal"> Binary to Decimal</a></span><br>
             </li>
             <li class="w3-padding-16">
@@ -115,9 +84,6 @@
             </li>
             <li class="w3-padding-16">
               <span class="w3-large"><a class="removelink" href="/numbers/hexadecimal-to-decimal"> Hexadecimal to Decimal</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/numbers/binary-to-text"> Binary to Text</a></span><br>
             </li>
             <li class="w3-padding-16">
               <span class="w3-large"><a class="removelink" href="/numbers/text-to-binary"> Text to Binary</a></span><br>
@@ -151,14 +117,14 @@ export default {
   head() {
     // sets document title
     return {
-      title: 'Binary Translator',
+      title: 'Binary to text translator',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-      { hid: 'description', name: 'description', content: 'Easy to use binary translator.' }
+      { hid: 'description', name: 'description', content: 'A really simple binary to text converter' }
   ],
     link: [
-    {rel: 'canonical', href: 'https://www.aaryatables.com/numbers/binary-translator'}
+    {rel: 'canonical', href: 'https://www.aaryatables.com/numbers/binary-to-text'}
     ]
     }
     },
