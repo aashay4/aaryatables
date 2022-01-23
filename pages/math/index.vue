@@ -32,6 +32,15 @@
           <span class="w3-large"><a class="removelink" href="/math/average-calculator"> Average Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/gcf-calculator"> GCF calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/lcm-calculator"> LCM calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/exponent-calculator"> Exponent Calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/decimal-to-fraction"> Decimal to fraction</a></span><br>
         </li>
         <li class="w3-padding-16">
