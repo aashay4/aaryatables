@@ -30,17 +30,14 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-  ],
+  { src: '~/plugins/vue-google-adsense', ssr: false }
+],
   /*
   ** Nuxt.js modules
   */
   modules: [
     '@nuxtjs/pwa',
-    '@nuxtjs/google-adsense',
   ],
-  'google-adsense': {
-      id: 'ca-pub-6829148792481216'
-    },
   /*
   ** Build configuration
   */

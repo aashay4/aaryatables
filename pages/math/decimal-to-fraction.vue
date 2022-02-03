@@ -10,6 +10,14 @@
         <div class="w3-container w3-padding">
               <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; Decimal to Fraction<hr>
           <h1 class="w3-text-teal"><b>Decimal to fraction</b></h1>
+          <Adsense
+          class="adsbygoogle infeed"
+          style="display:block"
+          data-ad-client="ca-pub-6829148792481216"
+          data-ad-slot="4330912814"
+          data-ad-format="auto"
+          data-full-width-responsive="true">
+        </Adsense>
           <p>Simple decimal to fraction calculator.</p>
 <div class="">
   <form id="calcform" name="calcform" autocomplete="off">
@@ -32,7 +40,7 @@
   <p>Fractions answer: </p><hr>
 <table>
 <tr>
-<td rowspan="2"><input  type="text" v-model="y" class="form-control" readonly></td>
+<td rowspan="2"><input type="text" v-model="y" class="form-control" readonly></td>
 <td  id="tabetd14"><input type="text" v-model="n" class="form-control" readonly></td>
 </tr>
 <tr>
@@ -314,6 +322,24 @@ export default {
 </script>
 
 <style lang="css" scoped>
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+@media (min-width: 350px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 500px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 800px) {
+    .infeed {
+      height: 290px;
+    }
+  }
 .adslot_1 { display:none; }
  h1 { font-size:1.6rem; }
  h2 { font-size:1.4rem; }
