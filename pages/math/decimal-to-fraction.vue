@@ -26,7 +26,7 @@
 </div>
 <div class="form-group">
 <button type="button" title="Calculate" class="btn btn-secondary" @click="fract()"><span>=></span> Answer</button>
-<button type="reset" title="Reset" class="btn btn-secondary" onclick="reset()"><span>↺</span> Reset</button>
+<button type="reset" title="Reset" class="btn btn-secondary" @click="reset()"><span>↺</span> Reset</button>
 </div>
 <div class="form-group">
   <p>Fractions answer: </p><hr>
@@ -227,6 +227,7 @@ export default {
   var sign2 = '+';
   var x = this.str2num(xelem);
   var x2 = this.roundresult(x);
+  alert(x2)
   var absx=Math.abs(x2);
   var y=Math.floor(absx);
   var frac=this.roundresult(absx-y);
