@@ -14,7 +14,7 @@
           class="adsbygoogle infeed"
           style="display:block"
           data-ad-client="ca-pub-6829148792481216"
-          data-ad-slot="4330912814"
+          data-ad-slot="4199493091"
           data-ad-format="auto"
           data-full-width-responsive="true">
         </Adsense>

@@ -13,6 +13,14 @@
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Binary Translator<hr>
       <h1 class="w3-text-teal"><b>Binary Translator</b></h1>
+      <Adsense
+      class="adsbygoogle infeed"
+      style="display:block"
+      data-ad-client="ca-pub-6829148792481216"
+      data-ad-slot="4199493091"
+      data-ad-format="auto"
+      data-full-width-responsive="true">
+    </Adsense>
       <p>Binary translator to convert binary to text and other numbering systems. Enter a binary number and click on the answer button for binary translation. For example, enter a binary number <b>01000001</b> in the box and click on the answer button. You will get an A as the binary to text conversion.</p>
       <form id="calcform1" name="calcform1" autocomplete="off" class="rounded">
 <div class="form-row">
@@ -213,6 +221,24 @@ for (var z = 0; z < binlength; z = z + 8) {
 </script>
 
 <style lang="css">
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+@media (min-width: 350px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 500px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 800px) {
+    .infeed {
+      height: 290px;
+    }
+  }
 h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }
