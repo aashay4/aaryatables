@@ -61,7 +61,6 @@
 <div class="form-group">
 <button type="button" title="Calculate" class="btn btn-secondary" @click="currentchange()"><span>=></span> Answer</button>
 <button type="reset" title="Reset" class="btn btn-secondary" onclick="setfocus()"><span>↺</span> Reset</button>
-<button type="button" title="Swap conversion" class="btn btn-secondary" onclick="location.href='kW_to_Amp_Calculator.html';"><span></span> Swap</button>
 </div>
 <div class="form-group">
 <label for="y">Power result in kilowatts</label>
@@ -93,6 +92,13 @@
 </form>
 
       </div>
+      <div class="w3-padding w3-raw w3-align">
+      <h2 class="w3-center"><b>Amps to watts</b></h2>
+      <p>Amps to watts conversion is one of the most important electronic conversions in recent times. There are two types of current, AC & DC and you can perform the Amps to watts conversion on both of these currents.</p>
+      <h2>How to convert Amps to Watts?</h2>
+      <p>To convert Amps to Watts, you need a power factor that should be less than 1. Once you have that, you need to decide the type of current you want to convert. Select from AC and DC currents. Once selected, you need to enter the current in A, mA, or kA and then select voltage in V, mV, or kV.</p>
+      <p>Once you enter all the values, just enter the values you want to convert and click on the conversion button.</p>
+        </div>
         </div>
   <hr>
 
@@ -164,7 +170,7 @@ export default {
   data(){
     return {
       currenttype: 'AC - Single phase',
-      powerfactor: false,
+      powerfactor: true,
       threephase: false,
       amperselect: 'A',
       voltagechange: 'V',
