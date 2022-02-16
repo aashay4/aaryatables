@@ -8,12 +8,18 @@
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
   <div class="w3-margin w3-white">
-
-
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/electronics">Electronics</a> &rsaquo; AMPs VA calculator<hr>
       <h1 class="w3-text-teal"><b>Amps to VA</b></h1><br>
       <p>Amps to Volt-Amps(VA) converter.</p>
+      <Adsense
+      class="adsbygoogle infeed"
+      style="display:block"
+      data-ad-client="ca-pub-6829148792481216"
+      data-ad-slot="4199493091"
+      data-ad-format="auto"
+      data-full-width-responsive="true">
+      </Adsense>
       <form id="calcform" name="calcform" autocomplete="off">
         <div class="form-group">
 <table class="calc2">
@@ -181,6 +187,24 @@ export default {
 </script>
 
 <style lang="css">
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+@media (min-width: 350px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 500px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 800px) {
+    .infeed {
+      height: 290px;
+    }
+  }
 h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }

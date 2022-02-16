@@ -12,6 +12,14 @@
         <a href="/">Home</a> &rsaquo; Energy<hr>
     <h1 class="w3-text-teal"><b>Energy Conversion Tools</b></h1>
       </div>
+      <Adsense
+      class="adsbygoogle infeed"
+      style="display:block"
+      data-ad-client="ca-pub-6829148792481216"
+      data-ad-slot="4199493091"
+      data-ad-format="auto"
+      data-full-width-responsive="true">
+      </Adsense>
       <ul class="w3-ul w3-hoverable w3-white">
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/energy/kj-to-joules"> kj to joules</a></span><br>
@@ -100,6 +108,24 @@ export default {
 </script>
 
 <style>
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+@media (min-width: 350px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 500px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 800px) {
+    .infeed {
+      height: 290px;
+    }
+  }
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .removelink{
     text-decoration: none;

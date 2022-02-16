@@ -11,6 +11,14 @@
               <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; Fraction to decimal<hr>
           <h1 class="w3-text-teal"><b>Fraction to decimal</b></h1>
           <p>Simple fraction to decimal calculator. For the simple fraction to decimal conversion, leave the left box blank, our tool will still work. For the mixed conversion, enter all three numbers.</p>
+          <Adsense
+          class="adsbygoogle infeed"
+          style="display:block"
+          data-ad-client="ca-pub-6829148792481216"
+          data-ad-slot="4199493091"
+          data-ad-format="auto"
+          data-full-width-responsive="true">
+        </Adsense>
 <div class="">
   <form id="calcform" name="calcform" autocomplete="off">
     <div class="form-group">
@@ -271,6 +279,24 @@ export default {
 </script>
 
 <style lang="css" scoped>
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+@media (min-width: 350px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 500px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 800px) {
+    .infeed {
+      height: 290px;
+    }
+  }
 .adslot_1 { display:none; }
  h1 { font-size:1.6rem; }
  h2 { font-size:1.4rem; }

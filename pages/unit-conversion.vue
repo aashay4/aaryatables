@@ -13,6 +13,15 @@
     <h1 class="w3-text-teal"><b>Unit Conversion</b></h1>
       </div>
       <div class="w3-padding w3-raw w3-align">
+        <Adsense
+        class="adsbygoogle infeed"
+        style="display:block"
+        data-ad-client="ca-pub-6829148792481216"
+        data-ad-slot="4199493091"
+        data-ad-format="auto"
+        data-full-width-responsive="true">
+        </Adsense>
+
         <p>Use this unit converter to easily convert one unit from another unit. Various countries use different units to measures height, weight, distance, and energy. To work properly with other places around the world, different people prefer to use unit converters. Here is the list of popular unit converters that you can use to make your life easier.</p>
         <ul class="w3-ul w3-hoverable w3-white">
           <li class="w3-padding-16">
@@ -185,6 +194,24 @@ export default {
 </script>
 
 <style>
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+@media (min-width: 350px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 500px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 800px) {
+    .infeed {
+      height: 290px;
+    }
+  }
 h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }

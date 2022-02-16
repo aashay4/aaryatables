@@ -8,12 +8,18 @@
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
   <div class="w3-margin w3-white">
-
-
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/electronics">Electronics</a> &rsaquo; kva to amps<hr>
       <h1 class="w3-text-teal"><b>kVa to amps</b></h1><br>
       <p>kilovolt-amp(kVA) to amps converter.</p>
+      <Adsense
+      class="adsbygoogle infeed"
+      style="display:block"
+      data-ad-client="ca-pub-6829148792481216"
+      data-ad-slot="4199493091"
+      data-ad-format="auto"
+      data-full-width-responsive="true">
+    </Adsense>
       <form id="calcform1" name="calcform" autocomplete="off">
         <div class="form-group">
 <table class="calc2">
@@ -172,6 +178,24 @@ this.answer = x1*577.35/x2;
 </script>
 
 <style lang="css">
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+@media (min-width: 350px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 500px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 800px) {
+    .infeed {
+      height: 290px;
+    }
+  }
 #calcform1,#calcform2,#calcform3 { background:#a7c9b8; padding:20px; }
 h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }

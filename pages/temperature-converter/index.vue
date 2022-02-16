@@ -11,6 +11,14 @@
       <div class="w3-container w3-padding">
         <a href="/">Home</a> &rsaquo; Temperature Converter<hr>
     <h1 class="w3-text-teal"><b>Temperature Converter</b></h1>
+    <Adsense
+    class="adsbygoogle infeed"
+    style="display:block"
+    data-ad-client="ca-pub-6829148792481216"
+    data-ad-slot="4199493091"
+    data-ad-format="auto"
+    data-full-width-responsive="true">
+    </Adsense>
       </div>
       <div class="w3-padding">
         <div class="input-group">
@@ -218,6 +226,24 @@ export default {
 </script>
 
 <style>
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+@media (min-width: 350px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 500px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 800px) {
+    .infeed {
+      height: 290px;
+    }
+  }
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 h1 { font-size:1.6rem; }
 .removelink{

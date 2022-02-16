@@ -8,11 +8,17 @@
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
   <div class="w3-margin w3-white">
-
-
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; Percentage Calculator<hr>
       <h1 class="w3-text-teal"><b>Percentage Calculator</b></h1>
+      <Adsense
+      class="adsbygoogle infeed"
+      style="display:block"
+      data-ad-client="ca-pub-6829148792481216"
+      data-ad-slot="4199493091"
+      data-ad-format="auto"
+      data-full-width-responsive="true">
+    </Adsense>
       <form class="calcform">
 <div>
 Enter Value: <input type="text" name="a" class="form-control" v-model="number1" placeholder="Enter value: a number."> Enter Percentage: <input type="text" v-model="percentage1" name="b" class="form-control" placeholder="Percentage(%)"> ?
@@ -318,6 +324,24 @@ export default {
 </script>
 
 <style lang="css" scoped>
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+@media (min-width: 350px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 500px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 800px) {
+    .infeed {
+      height: 290px;
+    }
+  }
 h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.2rem; }

@@ -15,6 +15,14 @@
       <h1 class="w3-text-teal"><b>Multiplication Table</b></h1>
   <p>This dynamic multiplication table helps you to multiply two numbers quickly.</p>
   <p>Press on a <i>column button</i> and a <em>row button</em> below to get multiplication result or add custom number that you want to multiply.</p><br>
+  <Adsense
+  class="adsbygoogle infeed"
+  style="display:block"
+  data-ad-client="ca-pub-6829148792481216"
+  data-ad-slot="4199493091"
+  data-ad-format="auto"
+  data-full-width-responsive="true">
+  </Adsense>
   <form name="calcform" autocomplete="off">
   <table id="table3" style="margin:0 auto; border-style:none">
   <tr>
@@ -664,6 +672,24 @@ export default {
 </script>
 
 <style lang="css">
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+@media (min-width: 350px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 500px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 800px) {
+    .infeed {
+      height: 290px;
+    }
+  }
 h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.2rem; }

@@ -8,11 +8,17 @@
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
   <div class="w3-margin w3-white">
-
-
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Binary to text<hr>
       <h1 class="w3-text-teal"><b>Binary to text</b></h1>
+      <Adsense
+      class="adsbygoogle infeed"
+      style="display:block"
+      data-ad-client="ca-pub-6829148792481216"
+      data-ad-slot="4199493091"
+      data-ad-format="auto"
+      data-full-width-responsive="true">
+      </Adsense>
       <p>Binary to text conversion tool to translate binary code to text with one click. Enter the binary number you wish to convert to text and you will get the conversion answer in the text box below.</p>
       <form id="calcform1" name="calcform1" autocomplete="off" class="rounded">
 <div class="form-row">
@@ -179,6 +185,24 @@ for (var z = 0; z < binlength; z = z + 8) {
 </script>
 
 <style lang="css">
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+@media (min-width: 350px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 500px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 800px) {
+    .infeed {
+      height: 290px;
+    }
+  }
 h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }

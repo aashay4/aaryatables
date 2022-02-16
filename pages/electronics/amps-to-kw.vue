@@ -12,6 +12,14 @@
         <a href="/">Home</a> &rsaquo; <a href="/electronics">Electronics</a> &rsaquo; AMPs to Kw <hr>
     <h1 class="w3-text-teal"><b>Amps to Kilowatts Calculator</b></h1>
 <p>A tool to convert Amps to Kilowatts:</p>
+<Adsense
+class="adsbygoogle infeed"
+style="display:block"
+data-ad-client="ca-pub-6829148792481216"
+data-ad-slot="4199493091"
+data-ad-format="auto"
+data-full-width-responsive="true">
+</Adsense>
     <form id="calcform" name="calcform" autocomplete="off">
 <div class="form-group">
 <label for="phase">Select current type</label>
@@ -341,6 +349,24 @@ else
 </script>
 
 <style lang="css">
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+@media (min-width: 350px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 500px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 800px) {
+    .infeed {
+      height: 290px;
+    }
+  }
 h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }

@@ -40,11 +40,11 @@
   <p>Fractions answer: </p><hr>
 <table>
 <tr>
-<td rowspan="2"><input type="text" v-model="y" class="form-control" readonly></td>
-<td  id="tabetd14"><input type="text" v-model="n" class="form-control" readonly></td>
+<td rowspan="2" v-if="showy === false"><input type="text" v-model="y" class="form-control" readonly></td>
+<td id="tabetd14"><input type="text" v-model="n" class="form-control" readonly></td>
 </tr>
 <tr>
-<td  id="tabetd1455"><input type="text" v-model="d" class="form-control" readonly></td>
+<td id="tabetd1455"><input type="text" v-model="d" class="form-control" readonly></td>
 </tr>
 </table>
 </div>
@@ -139,6 +139,7 @@ export default {
     },
   data(){
     return {
+      showy: false,
       x1: '',
       thrrepiece: '',
       minusvalue: false,
@@ -235,7 +236,6 @@ export default {
   var sign2 = '+';
   var x = this.str2num(xelem);
   var x2 = this.roundresult(x);
-  alert(x2)
   var absx=Math.abs(x2);
   var y=Math.floor(absx);
   var frac=this.roundresult(absx-y);
@@ -280,6 +280,12 @@ export default {
   if( y>0 )
      txt+="= "+sign+(num2+den2*y)+"/"+den2;
   this.y=sign+y;
+  if(this.y === '0'){
+    this.showy === true;
+  }
+  if(this.y != '0'){
+    this.showy === false;
+  }
   if( absx>=1 )
      this.n=num2;
   else
@@ -295,7 +301,6 @@ export default {
   //   document.getElementById('td21').style.display="table-cell";
   }
   //document.getElementById('area').value=txt;
-
 
   },
   str2num(s)
