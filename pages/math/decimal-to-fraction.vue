@@ -27,7 +27,7 @@
   <td><label for="x">Enter decimal number:</label></td>
   </tr>
   <tr>
-  <td class="math"><input type="text" style="width: 100%" v-model="x1" id="x" name="x" class="intext" autofocus></td>
+  <td class="math"><input type="text" style="width: 100%" v-model="x1" class="form-control" autofocus></td>
   </tr>
 
 </table>
@@ -45,6 +45,15 @@
 </tr>
 <tr>
 <td id="tabetd1455"><input type="text" v-model="d" class="form-control" readonly></td>
+</tr>
+</table>
+<table>
+<tr>
+<td>Calculation:</td>
+</tr>
+<tr>
+<td><textarea rows="7" v-model="area" class="outtext" readonly></textarea>
+<input type="submit" style="display: none" /></td>
 </tr>
 </table>
 </div>
@@ -126,11 +135,11 @@ export default {
   head() {
     // sets document title
     return {
-      title: 'Decimal to fraction Calculator',
+      title: 'Decimal to fraction calculator',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-      { hid: 'description', name: 'description', content: 'Free decimal to fraction' }
+      { hid: 'description', name: 'description', content: 'Free decimal to fraction converter.' }
   ],
     link: [
     {rel: 'canonical', href: 'https://www.aaryatables.com/math/decimal-to-fraction'}
@@ -139,6 +148,7 @@ export default {
     },
   data(){
     return {
+      area: '',
       showy: false,
       x1: '',
       thrrepiece: '',
@@ -300,7 +310,7 @@ export default {
   //   document.getElementById('td12').style.display="table-cell";
   //   document.getElementById('td21').style.display="table-cell";
   }
-  //document.getElementById('area').value=txt;
+  this.area=txt;
 
   },
   str2num(s)
