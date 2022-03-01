@@ -12,7 +12,7 @@
 
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Hexadecimal to Decimal<hr>
-      <h1 class="w3-text-teal"><b>Hexadecimal to Decimal</b></h1>
+      <h1 class="w3-text-teal"><b>Convert Hexadecimal to Decimal</b></h1>
       <Adsense
       class="adsbygoogle infeed"
       style="display:block"
@@ -127,7 +127,7 @@ import { BigNumber } from 'bignumber.js'
 export default {
   head() {
   return {
-    title: 'Hexadecimal to decimal',
+    title: 'Hex to decimal converter',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [

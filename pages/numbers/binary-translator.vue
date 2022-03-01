@@ -12,7 +12,7 @@
 
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Binary Translator<hr>
-      <h1 class="w3-text-teal"><b>Binary Translator</b></h1>
+      <h1 class="w3-text-teal"><b>Binary Translator (Binary to text)</b></h1>
       <Adsense
       class="adsbygoogle infeed"
       style="display:block"
@@ -159,7 +159,7 @@ export default {
   head() {
     // sets document title
     return {
-      title: 'Binary Translator',
+      title: 'Binary Translator (Binary to text converter)',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [

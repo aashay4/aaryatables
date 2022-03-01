@@ -20,14 +20,20 @@
           data-full-width-responsive="true">
         </Adsense>
 <div class="">
-  <form id="calcform" name="calcform" autocomplete="off">
+  <form id="inputdesign" name="inputdesign" autocomplete="off">
+    <label class="btn btn-secondary">
+    <input type="radio" name="fractype" @click="simpleclicked()" checked> Simple Fractions
+    </label>
+    <label class="btn btn-secondary">
+    <input type="radio" name="fractype" @click="simple()"> Mixed Fractions
+    </label>
     <div class="form-group">
       <p>Enter fractions: </p>
     </div>
     <table>
     <tr>
-    <td rowspan="2"><input  type="text" v-model="y" class="form-control"></td>
-    <td  id="tabetd14"><input type="text" v-model="n" class="form-control"></td>
+    <td rowspan="2"><input v-if="showleft === true" type="text" v-model="y" class="form-control"></td>
+    <td id="tabetd14"><input type="text" v-model="n" class="form-control"></td>
     </tr>
     <tr>
     <td  id="tabetd1455"><input type="text" v-model="d" class="form-control"></td>
@@ -35,7 +41,7 @@
   </table><br>
     <div class="form-group">
     <button type="button" title="Calculate" class="btn btn-secondary" @click="fract()"><span>=></span> Answer</button>
-    <button type="reset" title="Reset" class="btn btn-secondary" onclick="reset()"><span>↺</span> Reset</button>
+    <button type="reset" title="Reset" class="btn btn-secondary" @click="reset()"><span>↺</span> Reset</button>
     </div><hr>
 <div class="form-group mt-3">
 <table>
@@ -44,6 +50,12 @@
   </tr>
   <tr>
   <td class="math"><input type="text" style="width: 100%" v-model="x1" id="x" name="x" class="intext" readonly></td>
+</tr><hr>
+  <tr>
+  <td>Calculation:</td>
+  </tr>
+  <tr>
+  <td><textarea rows="3" v-model="area" class="outtext" readonly></textarea></td>
   </tr>
 
 </table>
@@ -132,6 +144,9 @@ export default {
     },
   data(){
     return {
+      area: '',
+      showleft: false,
+      showright: false,
       x1: '',
       thrrepiece: '',
       minusvalue: false,
@@ -153,6 +168,14 @@ export default {
     }
   },
   methods: {
+    simple(){
+this.showleft = true;
+this.showright = true;
+    },
+    simpleclicked(){
+      this.showleft = false;
+      this.showright = false;
+    },
     reset(){
       this.n1 = '',
       this.thrrepiece = '';
@@ -169,6 +192,11 @@ export default {
       this.x2 = '';
       this.x3 = '';
       this.selected = '';
+      this.area = '';
+      this.x1 = '';
+      this.y = '';
+      this.n = '';
+      this.d = '';
     },
     roundresult(x) {
      	var y = parseFloat(x);
@@ -250,7 +278,7 @@ export default {
           out+=n+'/'+d;
           out+='\n= '+y;
           out+='\n= '+this.roundresult(y*100)+'%';
-
+          this.area=out;
           //var nl=(d>15?true:false);
           //var obj = document.getElementById("frac");
 
@@ -302,22 +330,19 @@ export default {
  h2 { font-size:1.4rem; }
  h3 { font-size:1.4rem; }
  h4 { font-size:1.2rem; }
- #calcform { padding:20px; max-width:500px; background:#a7c9b8; }
- #calcform td input[type=number] { width:80px; text-align: center; margin:4px auto; }
- #calcform td input[type=text] { width:80px; text-align: center; margin:4px auto; }
- #calcform .btn span { font-weight: bold; font-size:large; }
- #calcform .btn img { filter:invert(1); }
- #op { font-weight:bold; }
- #td11, #td14 { display:none; }
-#td12, #tabetd, #tabetd14 { padding-bottom:0px; }
-#td21, #td22, #tabetd1455, #td42 { border-top:#666 3px solid; padding-top:1px; }
+ #inputdesign { padding:20px; max-width:500px; background:#a7c9b8; }
+ #inputdesign td input[type=number] { width:80px; text-align: center; margin:4px auto; }
+ #inputdesign td input[type=text] { width:80px; text-align: center; margin:4px auto; }
+ #inputdesign .btn span { font-weight: bold; font-size:large; }
+ #inputdesign .btn img { filter:invert(1); }
+ #tabetd, #tabetd14 { padding-bottom:0px; }
+ #tabetd1455 { border-top:#666 3px solid; padding-top:1px; }
  #oooppp { margin-right:0; padding:10px; border:1px #ccc solid; background:#e9ecef; }
- #craf { height:42px; }
  #wrapper td { padding-left:unset; padding-right:unset; }
 @media all and (max-width: 800px) {
     .adslot_1, .adslot_2, .adslot_3 { display:none; }
-    #calcform { padding:10px; }
-    #calcform td input[type=number] { width:60px; }
-    #calcform td input[type=text] { width:60px; }
+    #inputdesign { padding:10px; }
+    #inputdesign td input[type=number] { width:60px; }
+    #inputdesign td input[type=text] { width:60px; }
  }
 </style>

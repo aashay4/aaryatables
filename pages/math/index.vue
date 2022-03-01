@@ -22,13 +22,22 @@
       </Adsense>
       <ul class="w3-ul w3-hoverable w3-white">
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/quadratic-equation-solver"> Quadratic equation solver</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/logarithm-calculator"> Logarithm Calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/ln-calculator"> Ln Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/fractions-calculator"> Fractions Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/arccos-calculator"> Arccos Calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/ratio-calculator"> Ratio Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/arctan-calculator"> Arctan Calculator</a></span><br>
@@ -43,7 +52,25 @@
           <span class="w3-large"><a class="removelink" href="/math/gcf-calculator"> GCF calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/remainder-calculator"> Remainder calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/root-calculator"> Root calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/scientific-notation-calculator"> Scientific Notation Calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/lcm-calculator"> LCM calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/random-number-generator">Random number generator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/exponential-growth-calculator">Exponential Growth Calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/complex-numbers-calculator">Complex Numbers Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/exponent-calculator"> Exponent Calculator</a></span><br>
@@ -64,7 +91,19 @@
           <span class="w3-large"><a class="removelink" href="/math/percentage-calculator"> Percentage Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/percentage-change-calculator"> Percentage change calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/percent-error-calculator"> Percent error calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/percentage-increase-calculator"> Percentage Increase Calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/multiplication-table"> Multiplication Table</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/pythagorean-theorem-calculator"> Pythagorean theorem calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/addition-table"> Addition Table</a></span><br>

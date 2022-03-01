@@ -9,64 +9,44 @@
   <!-- Blog entry -->
   <div class="w3-margin w3-white">
     <div class="w3-container w3-padding">
-          <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; Subtraction Calculator<hr>
-      <h1 class="w3-text-teal"><b>Subtraction Calculator</b></h1>
-      <Adsense
-      class="adsbygoogle infeed"
-      style="display:block"
-      data-ad-client="ca-pub-6829148792481216"
-      data-ad-slot="4199493091"
-      data-ad-format="auto"
-      data-full-width-responsive="true">
-    </Adsense>
-      <form id="mainform" name="mainform" autocomplete="off" class="rounded">
-<div class="form-row">
-<div id="log" class="col-auto">First Number:</div>
-<div class="col">
-<input type="number" id="x" name="x" v-model="number1" class="form-control">
-</div>
-</div>
-<div class="">
-  <h1 class="text-align:right">-</h1>
-</div>
-<div class="form-row">
-<div id="log" class="col-auto">Second Number:</div>
-<div class="col">
-<input type="number" id="x" name="x" v-model="number2" class="form-control">
-</div>
-</div>
-<div id="logdiv2" class="form-row">
-<div id="coefdiv2a" class="col-2">
-<input type="text" id="c2" name="c2" placeholder="1" class="form-control">
-</div>
-<div id="coefdiv2b" class="col-auto mt-2">&times;</div>
-<div id="log2" class="col-auto">log</div>
-<div id="bdiv2" class="col-3 mt-4 input-group">
-<input type="text" class="form-control">
-<select id="btnhh" class="form-control">
-<option>&nbsp;</option>
-<option>2</option>
-<option>e</option>
-<option>10</option>
-</select>
-</div>
-<div class="col">
-<input type="text" class="form-control">
-</div>
-</div>
-<div class="form-group mt-4">
-<button @click="calculate()" type="button" class="btn btn-secondary"><span></span> Calculate</button>
-<button @click="reset()" type="reset" class="btn btn-secondary"><span></span> Reset</button>
-</div>
-<div class="form-group">
-<div class="input-group mb-3">
-<input type="text" v-model="answer" readonly class="form-control form-control-lg">
-</div>
-</div>
-</form>
-
-    </div>
+          <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; Ln Calculator<hr>
+      <h1 class="w3-text-teal"><b>Ln calculator converter</b></h1>
+      <p>Enter the number that you want to convert and click on the calculate button.</p>
+        <Adsense
+        class="adsbygoogle infeed"
+        style="display:block"
+        data-ad-client="ca-pub-6829148792481216"
+        data-ad-slot="4199493091"
+        data-ad-format="auto"
+        data-full-width-responsive="true">
+      </Adsense><br>
+        <form id="inputdesign" name="inputdesign">
+  <div class="form-group">
+  <div class="form-row">
+  <div id="ln" class="col-1">ln</div>
+  <div class="col">
+  <input type="number" min="0" step="any" v-model="x" name="x" class="form-control form-control-lg" autocomplete="off">
   </div>
+  </div>
+  </div>
+  <div class="form-group">
+  <button type="button" @click="calculate()" class="btn btn-secondary"><span>= ></span> Calculate</button>
+  <button type="reset" @click="reset()" class="btn btn-secondary"><span>&times;</span> Reset</button>
+  </div>
+  <div class="form-group">
+  <label for="y">Result</label>
+  <div class="input-group mb-3">
+  <input type="text" v-model="y" class="form-control form-control-lg" readonly>
+  <div class="input-group-append">
+  <button type="button" title="Copy" onclick="OnCopy()" class="btn btn-lg btn-outline-secondary">Ans</button>
+  </div>
+  </div>
+  </div>
+  </form>
+
+
+</div><br>
+      </div>
   <hr>
 
 </div>
@@ -86,13 +66,13 @@
               <span class="w3-large"><a class="removelink" href="/math/addition-table"> Addition Table</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/math/logarithm-calculator"> Logarithm Calculator</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/math/multiplication-table"> Multiplication Table</a></span><br>
             </li>
             <li class="w3-padding-16">
               <span class="w3-large"><a class="removelink" href="/math/sum-calculator"> Sum Calculator</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/math/multiplication-table"> Multiplication Table</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/math/subtraction-calculator"> Subtraction Calculator</a></span><br>
             </li>
             <li class="w3-padding-16">
               <span class="w3-large"><a class="removelink" href="/math/percentage-calculator"> Percentage Calculator</a></span><br>
@@ -109,6 +89,7 @@
   </div>
 
   <!-- Labels / tags -->
+
 
 <!-- END Introduction Menu -->
 </div>
@@ -133,32 +114,37 @@ export default {
   head() {
     // sets document title
     return {
-      title: 'Subtraction Calculator(-)',
+      title: 'Ln converter',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-      { hid: 'description', name: 'description', content: 'subtraction-calculator - suntract big numbers' }
+      { hid: 'description', name: 'description', content: 'Ln calculator' }
   ],
     link: [
-    {rel: 'canonical', href: 'https://www.aaryatables.com/math/subtraction-calculator'}
+    {rel: 'canonical', href: 'https://www.aaryatables.com/math/ln-calculator'}
     ]
     }
     },
   data(){
     return {
-      number1: null,
-      number2: null,
-      answer: ''
+      x: '',
+      y: ''
     }
   },
   methods: {
-    calculate(){
-        this.answer = parseFloat(this.number1) - parseFloat(this.number2);
-    },
     reset(){
-      this.number1 = null;
-      this.number2 = null;
-      this.answer = ''
+      this.answer = '';
+      this.baseinput = '';
+      this.input = '';
+    },
+    calculate(){
+      var x=this.x;
+      if( x=="" ) return;
+      if( x=="e" ) x=Math.E;
+      var y=Math.log(x);
+      var px=parseFloat(x);
+      var py=parseFloat(y);
+      this.y = y;
     }
   }
 
@@ -188,24 +174,26 @@ h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }
 h4 { font-size:1.2rem; }
-#mainform,#calcform2,#calcform3 { background:#a7c9b8; padding:20px; }
+#formnumber1,#inputdesign2,#inputdesign3,#inputdesign { background:#a7c9b8; padding:20px; }
 #bdiv, #bdiv2, #bdiv3 { max-width:100px; }
+#ln { font-size:xx-large; font-family:"Times New Roman", Times, serif; }
+#inputdesign button i { vertical-align: bottom; }
 #b, #b2, #b3 { max-width:70px; }
-#bsel,#btnhh,#b3sel { max-width:20px; padding:0; }
+#bsel,#b2sel,#b3sel { max-width:20px; padding:0; }
 .calc, table.calc td { background:#a7c9b8; }
 .btn span { font-weight: bold; font-size:large; }
 #log, #log2, #log3 { font-size:xx-large; font-family:"Times New Roman", Times, serif; }
-#txt, #txt3 { font-family:math; }
+#asdf, #asdf3 { font-family:math; }
 #drop, #drop2, #drop3 { background:#fff; color:#212529; }
-#mainform button i { vertical-align: bottom; }
-#coefdiv1a, #coefdiv1b span { vertical-align: bottom; }
-#graph { display:none; }
+#formnumber1 button i { vertical-align: bottom; }
+#characterfidi, #charryberry span { vertical-align: bottom; }
+#lkjh { display:none; }
 /*.btn b, .btn b2 { font-size:large; }*/
 #opsel { font-weight:bold; margin-top:10px; }
-#coefdiv1a, #coefdiv1b, #opdiv, #logdiv2 { display:none; }
+#characterfidi, #charryberry, #opdiv, #logdiv2 { display:none; }
 @media all and (max-width: 800px) {
    #ln { padding-right:35px; }
-   #mainform, #calcform3 { padding:10px; }
+   #formnumber1, #inputdesign3 { padding:10px; }
 }
 
 </style>
