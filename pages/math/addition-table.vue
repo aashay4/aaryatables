@@ -21,7 +21,7 @@
       data-full-width-responsive="true">
     </Adsense>
   <form name="additiontable" autocomplete="off">
-  <table id="table3" style="margin:0 auto; border-style:none">
+  <table style="margin:0 auto; border-style:none">
   <tr>
   <td><input type="text" name="num1" size="2" class="math" @change="OnButton()" v-model="firsttext"></td>
   <td><b>+</b></td>

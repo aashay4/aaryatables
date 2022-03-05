@@ -9,7 +9,7 @@
 
         <div class="w3-container w3-padding">
               <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; Decimal to Fraction<hr>
-          <h1 class="w3-text-teal"><b>Decimal to fraction</b></h1>
+          <h1 class="w3-text-teal"><b>Decimal to fraction converter</b></h1>
           <Adsense
           class="adsbygoogle infeed"
           style="display:block"
@@ -135,7 +135,7 @@ export default {
   head() {
     // sets document title
     return {
-      title: 'Decimal to fraction calculator',
+      title: 'Decimal to fraction converter',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
@@ -172,21 +172,26 @@ export default {
   },
   methods: {
     reset(){
-      this.n1 = '',
-      this.thrrepiece = '';
+      this.area = "";
+      this.showy = false;
+      this.x1 = "";
+      this.thrrepiece = "";
       this.minusvalue = false;
-      this.d1 = '';
-      this.n2 = '';
-      this.d2 = '';
-      this.n3 = '';
-      this.d3 = '';
-      this.d4 = '';
-      this.n4 = '';
-      this.sign = '-';
-      this.n31 = '';
-      this.x2 = '';
-      this.x3 = '';
-      this.selected = '';
+      this.d1 = "";
+      this.n2 = "";
+      this.d2 = "";
+      this.n3 = "";
+      this.d3 = "";
+      this.d4 = "";
+      this.n4 = "";
+      this.sign = "";
+      this.x2 = "";
+      this.x3 = "";
+      this.n31 = "";
+      this.selected = "";
+      this.n = "";
+      this.y = "";
+      this.d = "";
     },
     roundresult(x) {
      	var y = parseFloat(x);

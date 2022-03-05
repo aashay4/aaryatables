@@ -127,11 +127,11 @@ import { BigNumber } from 'bignumber.js'
 export default {
   head() {
   return {
-    title: 'Hex to decimal converter',
+    title: 'Hexadecimal to decimal conversion tool',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-    { hid: 'description', name: 'description', content: 'A hexadecimal to decimal converter and read how to convert' }
+    { hid: 'description', name: 'description', content: 'An easy to use hexadecimal to decimal translator.' }
   ],
   link: [
   {rel: 'canonical', href: 'https://www.aaryatables.com/numbers/hexadecimal-to-decimal'}
