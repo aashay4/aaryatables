@@ -12,7 +12,7 @@
 
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Binary Translator<hr>
-      <h1 class="w3-text-teal"><b>Binary Translator (Binary to text)</b></h1>
+      <h1 class="w3-text-teal"><b>Binary Translator - Binary to Text(English)</b></h1>
       <Adsense
       class="adsbygoogle infeed"
       style="display:block"
@@ -159,11 +159,11 @@ export default {
   head() {
     // sets document title
     return {
-      title: 'Binary Translator (Binary to text converter)',
+      title: 'Binary Translator - Convert Binary to text(English)',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-      { hid: 'description', name: 'description', content: 'Easy to use binary translator.' }
+      { hid: 'description', name: 'description', content: 'Translate binary to text easily with binary translator.' }
   ],
     link: [
     {rel: 'canonical', href: 'https://www.aaryatables.com/numbers/binary-translator'}
