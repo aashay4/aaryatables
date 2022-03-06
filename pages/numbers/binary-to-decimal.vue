@@ -39,7 +39,7 @@
 <button @click="reset()" type="reset" class="btn btn-secondary"><span>↺</span> Reset</button>
 </div>
 <div class="form-group">
-  <h1>Binary to Decimal Conversion</h1>
+  <h1>Conversion</h1>
 <div class="input-group mb-3">
 <input type="text" id="y" v-model="answer" readonly class="form-control form-control-lg">
 <div class="input-group-append">
@@ -53,7 +53,7 @@
     </div>
     <div class="w3-padding">
       <h1 class="w3-center">How to Convert Binary to Decimal?</h1>
-      <p>The calculation of binary to decimal is equal to the sum of the total binary digits times their power of 2:</p>
+      <p>The calculation is equal to the sum of the total binary digits times their power of 2:</p>
       <p>For example, 00110100<sub>2</sub> = 0*2<sup>7</sup> + 0*2<sup>6</sup> + 1*2<sup>5</sup> + 1*2<sup>4</sup> + 0*2<sup>3</sup> + 1*2<sup>2</sup> + 0*2<sup>1</sup> + 0*2<sup>0</sup></p>
       <p> => 0 + 0 + 32 + 16 + 0 + 4 + 0 + 0</p>
       <p> => 52</p>
