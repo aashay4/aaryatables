@@ -91,7 +91,7 @@
               <span class="w3-large"><a class="removelink" href="/numbers/binary-to-hexadecimal"> Binary to Hexadecimal</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/numbers/binary-translator"> Binary Translator</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/numbers/binary-translator"> Binary to English</a></span><br>
             </li>
             <li class="w3-padding-16">
               <span class="w3-large"><a class="removelink" href="/numbers/binary-to-decimal"> Binary to Decimal</a></span><br>
@@ -103,7 +103,7 @@
               <span class="w3-large"><a class="removelink" href="/numbers/hexadecimal-to-binary"> Hexadecimal to Binary</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/numbers/hexadecimal-to-decimal"> Hexadecimal to Decimal</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/numbers/hexadecimal-to-decimal"> Hexadecimal to Decimal Online</a></span><br>
             </li>
             <li class="w3-padding-16">
               <span class="w3-large"><a class="removelink" href="/numbers/text-to-binary"> Text to Binary</a></span><br>

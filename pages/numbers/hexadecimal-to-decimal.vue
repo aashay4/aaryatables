@@ -72,19 +72,19 @@
       </div><hr>
           <ul class="w3-ul w3-hoverable w3-white">
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/numbers/binary-to-hexadecimal"> Binary to Hexadecimal</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/numbers/binary-to-hexadecimal"> Binary to Hex</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/numbers/binary-translator"> Binary Translator</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/numbers/binary-translator"> Binary converter</a></span><br>
             </li>
             <li class="w3-padding-16">
               <span class="w3-large"><a class="removelink" href="/numbers/decimal-to-binary"> Decimal to Binary</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/numbers/decimal-to-hexadecimal"> Decimal to Hexadecimal</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/numbers/decimal-to-hexadecimal"> Decimal to Hex</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/numbers/hexadecimal-to-binary"> Hexadecimal to Binary</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/numbers/hexadecimal-to-binary"> Hex to Binary</a></span><br>
             </li>
             <li class="w3-padding-16">
               <span class="w3-large"><a class="removelink" href="/numbers/binary-to-decimal"> Binary to Decimal</a></span><br>

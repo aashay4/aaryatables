@@ -37,7 +37,7 @@
           <span class="w3-large"><a class="removelink" href="/numbers/decimal-to-binary"> Decimal to Binary</a></span><br>
         </li>
         <li class="w3-padding-16">
-          <span class="w3-large"><a class="removelink" href="/numbers/hexadecimal-to-decimal"> Hexadecimal to Decimal</a></span><br>
+          <span class="w3-large"><a class="removelink" href="/numbers/hexadecimal-to-decimal"> Hex to Decimal</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/numbers/decimal-to-hexadecimal"> Decimal to Hexadecimal</a></span><br>

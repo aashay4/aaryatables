@@ -122,7 +122,7 @@
               <span class="w3-large"><a class="removelink" href="/numbers/hexadecimal-to-binary"> Hexadecimal to Binary</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/numbers/hexadecimal-to-decimal"> Hexadecimal to Decimal</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/numbers/hexadecimal-to-decimal"> Hex to Decimal</a></span><br>
             </li>
             <li class="w3-padding-16">
               <span class="w3-large"><a class="removelink" href="/numbers/binary-to-text"> Binary to Text</a></span><br>
