@@ -46,7 +46,7 @@
     </div>
     <div class="w3-padding">
     <h1 class="w3-center">How to convert hex to decimal?</h1>
-    <p>A decimal number is a base-10 number that includes 0 to 9. A hexadecimal number is a base-16 number that includes 0 to 9 along with A to F. Since hexadecimal is a base-16 number, to convert from hexadecimal number to decimal multiply each number with the power of 16. Consider the following example for the hex to decimal:</p>
+    <p>A decimal number is a base-10 number that includes 0 to 9. A hexadecimal number is a base-16 number that includes 0 to 9 along with A to F. Since hexadecimal is a base-16 number, to convert from hexadecimal number to decimal multiply each number with the power of 16. Consider the following example for the hex to numbers:</p>
     <p>16<sub><span style="font-size: 0.8em">(16)</span></sub> = 1&times;16<sup>1</sup>+6&times;16<sup>0</sup></p>
     <p>=> 16+6</p>
     <p>=> 22</p>
@@ -81,7 +81,7 @@
               <span class="w3-large"><a class="removelink" href="/numbers/decimal-to-binary"> Decimal to Binary</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/numbers/decimal-to-hexadecimal"> Decimal to Hex</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/numbers/decimal-to-hexadecimal"> Numbers to Hex</a></span><br>
             </li>
             <li class="w3-padding-16">
               <span class="w3-large"><a class="removelink" href="/numbers/hexadecimal-to-binary"> Hex to Binary</a></span><br>
