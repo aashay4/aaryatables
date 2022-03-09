@@ -12,7 +12,7 @@
 
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Hexadecimal to Decimal<hr>
-      <h1 class="w3-text-teal"><b>Convert Hexadecimal to Decimal</b></h1>
+      <h1 class="w3-text-teal"><b>Convert Hexadecimal to Decimal (Hex converter)</b></h1>
       <Adsense
       class="adsbygoogle infeed"
       style="display:block"
@@ -46,7 +46,7 @@
     </div>
     <div class="w3-padding">
     <h1 class="w3-center">How to convert hex to decimal?</h1>
-    <p>A decimal number is a base-10 number that includes 0 to 9. A hexadecimal number is a base-16 number that includes 0 to 9 along with A to F. Since hexadecimal is a base-16 number, to convert from hexadecimal number to decimal multiply each number with the power of 16. Consider the following example for the hex to numbers:</p>
+    <p>A decimal number is a base-10 number that includes 0 to 9. A hexadecimal number is a base-16 number that includes 0 to 9 along with A to F. Since hexadecimal is a base-16 number, to perform hexadecimal conversion multiply each number with the power of 16. Consider the following example for the hex to numbers:</p>
     <p>16<sub><span style="font-size: 0.8em">(16)</span></sub> = 1&times;16<sup>1</sup>+6&times;16<sup>0</sup></p>
     <p>=> 16+6</p>
     <p>=> 22</p>
@@ -121,7 +121,7 @@ export default {
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-    { hid: 'description', name: 'description', content: 'An easy to use hexadecimal to decimal (number) translator.' }
+    { hid: 'description', name: 'description', content: 'Free online hexadecimal to decimal (number) translator and learn how to perform hexadecimal conversion.' }
   ],
   link: [
   {rel: 'canonical', href: 'https://www.aaryatables.com/numbers/hexadecimal-to-decimal'}
