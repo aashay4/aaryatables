@@ -121,7 +121,7 @@ export default {
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-    { hid: 'description', name: 'description', content: 'Free online hexadecimal to decimal (number) translator and learn how to perform hexadecimal conversion.' }
+    { hid: 'description', name: 'description', content: 'Free online hexadecimal to decimal (number) translator and learn how to perform the hexadecimal conversion.' }
   ],
   link: [
   {rel: 'canonical', href: 'https://www.aaryatables.com/numbers/hexadecimal-to-decimal'}
