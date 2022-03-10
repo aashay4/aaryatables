@@ -12,7 +12,7 @@
 
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Hexadecimal to Decimal<hr>
-      <h1 class="w3-text-teal"><b>Translate Hexadecimal to Decimal (Hexadecimal conversion)</b></h1>
+      <h1 class="w3-text-teal"><b>Translate Hex to Decimal (Hexadecimal conversion)</b></h1>
       <Adsense
       class="adsbygoogle infeed"
       style="display:block"
@@ -33,7 +33,7 @@
 <button @click="reset()" class="btn btn-secondary"><span>↺</span> Reset</button>
 </div>
 <div class="form-group">
-  <h1>Hex to Decimal Conversion</h1>
+  <h2>Hex to Decimal Conversion</h2>
 <div class="input-group mb-3">
 <input type="text" id="y" v-model="answer" readonly class="form-control form-control-lg">
 <div class="input-group-append">
@@ -45,7 +45,7 @@
 </form><br>
     </div>
     <div class="w3-padding">
-    <h1 class="w3-center">How to convert hex to decimal?</h1>
+    <h2 class="w3-center">How to convert hex to decimal?</h2>
     <p>A decimal number is a base-10 number that includes 0 to 9. A hexadecimal number is a base-16 number that includes 0 to 9 along with A to F. Since hexadecimal is a base-16 number, to perform hexadecimal conversion multiply each number with the power of 16. Consider the following example for the hex to numbers:</p>
     <p>16<sub><span style="font-size: 0.8em">(16)</span></sub> = 1&times;16<sup>1</sup>+6&times;16<sup>0</sup></p>
     <p>=> 16+6</p>
@@ -68,7 +68,7 @@
     <div class="w3-container w3-white">
       <div class="w3-margin w3-white">
           <div class="w3-container w3-padding">
-        <h1 class=""><b>Other Numbers tools</b></h1>
+        <h2 class=""><b>Other Numbers tools</b></h2>
       </div><hr>
           <ul class="w3-ul w3-hoverable w3-white">
             <li class="w3-padding-16">
