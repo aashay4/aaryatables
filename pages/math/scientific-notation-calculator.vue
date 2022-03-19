@@ -21,7 +21,7 @@
         </Adsense>
 <div class="">
   <div id="designform" autocomplete="off">
-    <table class="">
+    <table>
     <tbody>
     <tr>
       <label class="col-sm-4 col-form-label">First number:</label>
@@ -188,8 +188,6 @@ export default {
       this.e2 = '';
     },
     convertdiv(){
-      this.fractclicked1 = true;
-      setTimeout(() => this.fractclicked1 = false, 500);
       var n1 = this.str2num(this.n1);
 var e1 = this.str2num(this.e1);
 var n2 = this.str2num(this.n2);
