@@ -19,7 +19,7 @@
       data-ad-format="auto"
       data-full-width-responsive="true">
     </Adsense>
-      <form class="calcform">
+      <form class="designtd2">
 <div>
 Enter Value: <input type="text" name="a" class="form-control" v-model="number1" placeholder="Enter value: a number."> Enter Percentage: <input type="text" v-model="percentage1" name="b" class="form-control" placeholder="Percentage(%)"> ?
 </div>
@@ -32,7 +32,7 @@ Enter Value: <input type="text" name="a" class="form-control" v-model="number1" 
 </div>
 </form>
 <h4>Percentage Finder</h4>
-<form class="calcform">
+<form class="designtd2">
 <div>
 <input type="text" v-model="number2" class="form-control"> the percent of the value
 <input type="text" v-model="number3" class="form-control"> ?
@@ -46,7 +46,7 @@ Enter Value: <input type="text" name="a" class="form-control" v-model="number1" 
 </div>
 </form>
 <h4>Percentage change</h4>
-<form id="formcalculator" class="calcform">
+<form id="formcalculator" class="designtd2">
 <div>
 Find the percentage:<br>from
 <input type="text" v-model="number4" class="form-control">
@@ -62,8 +62,8 @@ to
 </div>
 </form>
 <h4>Percent to fraction & decimal</h4>
-<form id="calsstyle" class="calcform">
-<table id="trstyle">
+<form id="calsstyle" class="designtd2">
+<table id="designtd6">
 <tr>
 <td>Percent:</td>
 <td>&nbsp;</td>
@@ -85,7 +85,7 @@ to
 <td><input type="text" v-model="downfraction" class="form-control"></td>
 </tr>
 <tr>
-<td colspan="7"><button type="reset" id="resetbtn2" title="Reset" class="btn btn-secondary"><span> Reset</span></button></td>
+<td colspan="7"><button title="Reset" class="btn btn-secondary"><span> Reset</span></button></td>
 </tr>
 </table>
 </form>
@@ -347,26 +347,24 @@ h2 { font-size:1.4rem; }
 h3 { font-size:1.2rem; }
 h4 { font-size:1.2rem; }
 .btn span { font-size:large; font-weight:bold; }
-.calcform { background:#a7c9b8; padding:15px; border-radius:7px; margin-bottom:20px; }
-.calcform div { display:inline-block; }
-.calcform div:nth-child(2) { margin-top:10px; }
-.calcform div:nth-child(1) input[type=text] { width:100px; display:inline-block; }
-.calcform div:nth-child(2) input[type=text] { width:100px; display:inline-block; margin-left:5px; }
-.calcform div:nth-child(3) { display:none; margin-top:10px; }
+.designtd2 { background:#a7c9b8; padding:15px; border-radius:7px; margin-bottom:20px; }
+.designtd2 div { display:inline-block; }
+.designtd2 div:nth-child(2) { margin-top:10px; }
+.designtd2 div:nth-child(1) input[type=text] { width:100px; display:inline-block; }
+.designtd2 div:nth-child(2) input[type=text] { width:100px; display:inline-block; margin-left:5px; }
+.designtd2 div:nth-child(3) { display:none; margin-top:10px; }
 #formcalculator input[type=text] { margin-top:10px; }
-#trstyle tr:nth-child(2) td:nth-child(4) { border-bottom:2px #666 solid }
+#designtd6 tr:nth-child(2) td:nth-child(4) { border-bottom:2px #666 solid }
 @media all and (max-width: 672px) {
-   .calcform { padding:10px; }
-   .calcform div:nth-child(2) { display:block; }
-   .calcform input[type=text] { margin:5px 0; }
-   .calcform div:nth-child(1) input[type=text] { width:90px; }
+   .designtd2 { padding:10px; }
+   .designtd2 div:nth-child(2) { display:block; }
+   .designtd2 input[type=text] { margin:5px 0; }
+   .designtd2 div:nth-child(1) input[type=text] { width:90px; }
    #calsstyle { padding:10px; }
    #calsstyle button[type=reset] { float:left; }
-   #resetbutton { display:none; }
 }
 @media all and (min-width: 673px) {
-   .calcform div:nth-child(2) { margin-left:20px; }
-   #resetbtn2 { display:none; }
+   .designtd2 div:nth-child(2) { margin-left:20px; }
 }
 
 </style>

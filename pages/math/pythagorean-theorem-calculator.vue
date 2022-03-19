@@ -33,7 +33,7 @@
 </div>
 </div>
 <div class="form-group row">
-<label id="space" class="col-sm-5 col-form-label">&nbsp;</label>
+<label class="col-sm-5 col-form-label">&nbsp;</label>
 <div class="col-sm-7">
 <button type="button" title="Calculate" class="btn btn-secondary" @click="fract()"><span>= ></span> Answer</button>
 <button type="reset" @click="reset()" class="btn btn-secondary"><span>&times;</span> Reset</button>
@@ -67,7 +67,7 @@
 </div>
 </div>
 <div class="form-group row">
-<label id="space" class="col-sm-5 col-form-label">&nbsp;</label>
+<label class="col-sm-5 col-form-label">&nbsp;</label>
 <div class="col-sm-7">
 <button type="button" title="Calculate" class="btn btn-secondary" @click="fract1()"><span>= ></span> Answer</button>
 <button type="reset" @click="reset()" class="btn btn-secondary"><span>&times;</span> Reset</button>
@@ -101,7 +101,7 @@
 </div>
 </div>
 <div class="form-group row">
-<label id="space" class="col-sm-5 col-form-label">&nbsp;</label>
+<label class="col-sm-5 col-form-label">&nbsp;</label>
 <div class="col-sm-7">
 <button type="button" title="Calculate" class="btn btn-secondary" @click="fract2()"><span>= ></span> Answer</button>
 <button type="reset" @click="reset2()" class="btn btn-secondary"><span>&times;</span> Reset</button>
@@ -346,12 +346,6 @@ this.ans2 = this.roundresult(a);
  #boxx td input[type=text] { width:80px; text-align: center; margin:4px auto; }
  #boxx .btn span { font-weight: bold; font-size:large; }
  #boxx .btn img { filter:invert(1); }
- #op { font-weight:bold; }
- #td11, #td14 { display:none; }
-#td12, #tabetd, #tabetd14 { padding-bottom:0px; }
-#td21, #td22, #tabetd1455, #td42 { border-top:#666 3px solid; padding-top:1px; }
- #oooppp { margin-right:0; padding:10px; border:1px #ccc solid; background:#e9ecef; }
- #craf { height:42px; }
  #wrapper td { padding-left:unset; padding-right:unset; }
 @media all and (max-width: 800px) {
     .adslot_1, .adslot_2, .adslot_3 { display:none; }

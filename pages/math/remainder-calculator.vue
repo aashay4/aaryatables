@@ -34,7 +34,7 @@
 <div class="form-group row">
 <label for="x2" class="col-sm-4 col-form-label">Divisor</label>
 <div class="col-sm-8">
-<input type="number" step="any" id="x2" v-model="divisor" class="form-control">
+<input type="number" step="any" v-model="divisor" class="form-control">
 </div>
 </div>
 <div class="form-group row">
@@ -51,7 +51,7 @@
 </div>
 </div>
 <div class="form-group row">
-<label for="y2" class="col-sm-4 col-form-label">Quotient (integer)</label>
+<label class="col-sm-4 col-form-label">Quotient (integer)</label>
 <div class="col-sm-8">
 <input type="text" :class="{ buttonclicked1 : fractclicked1 }" v-model="quotientint" class="form-control" readonly>
 </div>

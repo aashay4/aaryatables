@@ -23,9 +23,9 @@
   <form name="additiontable" autocomplete="off">
   <table style="margin:0 auto; border-style:none">
   <tr>
-  <td><input type="text" name="num1" size="2" class="math" @change="OnButton()" v-model="firsttext"></td>
+  <td><input type="text" name="num1" size="2" @change="OnButton()" v-model="firsttext"></td>
   <td><b>+</b></td>
-  <td><input type="text" name="num2" id="num2" size="2" @change="OnButton1()" v-model="secondtext"></td>
+  <td><input type="text" size="2" @change="OnButton1()" v-model="secondtext"></td>
   <td>=</td>
   <td><input type="text" name="result" size="2" v-model="answer" style="width:80px;"></td>
   <td><input type="reset" value="Clear" @click="reset()"></td>
@@ -50,189 +50,189 @@
   </tr>
   <tr>
   <td class="outsideoftable"><button value="1" class="w3-teal w3-hover-gray" @click="OnButton1(1)">1</button></td>
-  <td class="insideoftable">1</td>
-  <td class="insideoftable">2</td>
-  <td class="insideoftable">3</td>
-  <td class="insideoftable">4</td>
-  <td class="insideoftable">5</td>
-  <td class="insideoftable">6</td>
-  <td class="insideoftable">7</td>
-  <td class="insideoftable">8</td>
-  <td class="insideoftable">9</td>
-  <td class="insideoftable">10</td>
-  <td class="insideoftable">11</td>
-  <td class="insideoftable">12</td>
+  <td class="linewise">1</td>
+  <td class="linewise">2</td>
+  <td class="linewise">3</td>
+  <td class="linewise">4</td>
+  <td class="linewise">5</td>
+  <td class="linewise">6</td>
+  <td class="linewise">7</td>
+  <td class="linewise">8</td>
+  <td class="linewise">9</td>
+  <td class="linewise">10</td>
+  <td class="linewise">11</td>
+  <td class="linewise">12</td>
   </tr>
   <tr>
   <td class="outsideoftable"><button class="w3-teal w3-hover-gray" value="2" @click="OnButton1(2)">2</button></td>
-  <td class="insideoftable">2</td>
-  <td class="insideoftable">4</td>
-  <td class="insideoftable">6</td>
-  <td class="insideoftable">8</td>
-  <td class="insideoftable">10</td>
-  <td class="insideoftable">12</td>
-  <td class="insideoftable">14</td>
-  <td class="insideoftable">16</td>
-  <td class="insideoftable">18</td>
-  <td class="insideoftable">20</td>
-  <td class="insideoftable">22</td>
-  <td class="insideoftable">24</td>
+  <td class="linewise">2</td>
+  <td class="linewise">4</td>
+  <td class="linewise">6</td>
+  <td class="linewise">8</td>
+  <td class="linewise">10</td>
+  <td class="linewise">12</td>
+  <td class="linewise">14</td>
+  <td class="linewise">16</td>
+  <td class="linewise">18</td>
+  <td class="linewise">20</td>
+  <td class="linewise">22</td>
+  <td class="linewise">24</td>
   </tr>
   <tr>
   <td class="outsideoftable"><button class="w3-teal w3-hover-gray" value="3" @click="OnButton1(3)">3</button></td>
-  <td class="insideoftable">3</td>
-  <td class="insideoftable">6</td>
-  <td class="insideoftable">9</td>
-  <td class="insideoftable">12</td>
-  <td class="insideoftable">15</td>
-  <td class="insideoftable">18</td>
-  <td class="insideoftable">21</td>
-  <td class="insideoftable">24</td>
-  <td class="insideoftable">27</td>
-  <td class="insideoftable">30</td>
-  <td class="insideoftable">33</td>
-  <td class="insideoftable">36</td>
+  <td class="linewise">3</td>
+  <td class="linewise">6</td>
+  <td class="linewise">9</td>
+  <td class="linewise">12</td>
+  <td class="linewise">15</td>
+  <td class="linewise">18</td>
+  <td class="linewise">21</td>
+  <td class="linewise">24</td>
+  <td class="linewise">27</td>
+  <td class="linewise">30</td>
+  <td class="linewise">33</td>
+  <td class="linewise">36</td>
   </tr>
   <tr>
   <td class="outsideoftable"><button class="w3-teal w3-hover-gray" value="4" @click="OnButton1(4)">4</button></td>
-  <td class="insideoftable">4</td>
-  <td class="insideoftable">8</td>
-  <td class="insideoftable">12</td>
-  <td class="insideoftable">16</td>
-  <td class="insideoftable">20</td>
-  <td class="insideoftable">24</td>
-  <td class="insideoftable">28</td>
-  <td class="insideoftable">32</td>
-  <td class="insideoftable">36</td>
-  <td class="insideoftable">40</td>
-  <td class="insideoftable">44</td>
-  <td class="insideoftable">48</td>
+  <td class="linewise">4</td>
+  <td class="linewise">8</td>
+  <td class="linewise">12</td>
+  <td class="linewise">16</td>
+  <td class="linewise">20</td>
+  <td class="linewise">24</td>
+  <td class="linewise">28</td>
+  <td class="linewise">32</td>
+  <td class="linewise">36</td>
+  <td class="linewise">40</td>
+  <td class="linewise">44</td>
+  <td class="linewise">48</td>
   </tr>
   <tr>
   <td class="outsideoftable"><button class="w3-teal w3-hover-gray" value="5" @click="OnButton1(5)">5</button></td>
-  <td class="insideoftable">5</td>
-  <td class="insideoftable">10</td>
-  <td class="insideoftable">15</td>
-  <td class="insideoftable">20</td>
-  <td class="insideoftable">25</td>
-  <td class="insideoftable">30</td>
-  <td class="insideoftable">35</td>
-  <td class="insideoftable">40</td>
-  <td class="insideoftable">45</td>
-  <td class="insideoftable">50</td>
-  <td class="insideoftable">55</td>
-  <td class="insideoftable">60</td>
+  <td class="linewise">5</td>
+  <td class="linewise">10</td>
+  <td class="linewise">15</td>
+  <td class="linewise">20</td>
+  <td class="linewise">25</td>
+  <td class="linewise">30</td>
+  <td class="linewise">35</td>
+  <td class="linewise">40</td>
+  <td class="linewise">45</td>
+  <td class="linewise">50</td>
+  <td class="linewise">55</td>
+  <td class="linewise">60</td>
   </tr>
   <tr>
   <td class="outsideoftable"><button class="w3-teal w3-hover-gray" value="6" @click="OnButton1(6)">6</button></td>
-  <td class="insideoftable">6</td>
-  <td class="insideoftable">12</td>
-  <td class="insideoftable">18</td>
-  <td class="insideoftable">24</td>
-  <td class="insideoftable">30</td>
-  <td class="insideoftable">36</td>
-  <td class="insideoftable">42</td>
-  <td class="insideoftable">48</td>
-  <td class="insideoftable">54</td>
-  <td class="insideoftable">60</td>
-  <td class="insideoftable">66</td>
-  <td class="insideoftable">72</td>
+  <td class="linewise">6</td>
+  <td class="linewise">12</td>
+  <td class="linewise">18</td>
+  <td class="linewise">24</td>
+  <td class="linewise">30</td>
+  <td class="linewise">36</td>
+  <td class="linewise">42</td>
+  <td class="linewise">48</td>
+  <td class="linewise">54</td>
+  <td class="linewise">60</td>
+  <td class="linewise">66</td>
+  <td class="linewise">72</td>
   </tr>
   <tr>
   <td class="outsideoftable"><button class="w3-teal w3-hover-gray" value="7" @click="OnButton1(7)">7</button></td>
-  <td class="insideoftable">7</td>
-  <td class="insideoftable">14</td>
-  <td class="insideoftable">21</td>
-  <td class="insideoftable">28</td>
-  <td class="insideoftable">35</td>
-  <td class="insideoftable">42</td>
-  <td class="insideoftable">49</td>
-  <td class="insideoftable">56</td>
-  <td class="insideoftable">63</td>
-  <td class="insideoftable">70</td>
-  <td class="insideoftable">77</td>
-  <td class="insideoftable">84</td>
+  <td class="linewise">7</td>
+  <td class="linewise">14</td>
+  <td class="linewise">21</td>
+  <td class="linewise">28</td>
+  <td class="linewise">35</td>
+  <td class="linewise">42</td>
+  <td class="linewise">49</td>
+  <td class="linewise">56</td>
+  <td class="linewise">63</td>
+  <td class="linewise">70</td>
+  <td class="linewise">77</td>
+  <td class="linewise">84</td>
   </tr>
   <tr>
   <td class="outsideoftable"><button class="w3-teal w3-hover-gray" value="8" @click="OnButton1(8)">8</button></td>
-  <td class="insideoftable">8</td>
-  <td class="insideoftable">16</td>
-  <td class="insideoftable">24</td>
-  <td class="insideoftable">32</td>
-  <td class="insideoftable">40</td>
-  <td class="insideoftable">48</td>
-  <td class="insideoftable">56</td>
-  <td class="insideoftable">64</td>
-  <td class="insideoftable">72</td>
-  <td class="insideoftable">80</td>
-  <td class="insideoftable">88</td>
-  <td class="insideoftable">96</td>
+  <td class="linewise">8</td>
+  <td class="linewise">16</td>
+  <td class="linewise">24</td>
+  <td class="linewise">32</td>
+  <td class="linewise">40</td>
+  <td class="linewise">48</td>
+  <td class="linewise">56</td>
+  <td class="linewise">64</td>
+  <td class="linewise">72</td>
+  <td class="linewise">80</td>
+  <td class="linewise">88</td>
+  <td class="linewise">96</td>
   </tr>
   <tr>
   <td class="outsideoftable"><button class="w3-teal w3-hover-gray" value="9" @click="OnButton1(9)">9</button></td>
-  <td class="insideoftable">9</td>
-  <td class="insideoftable">18</td>
-  <td class="insideoftable">27</td>
-  <td class="insideoftable">36</td>
-  <td class="insideoftable">45</td>
-  <td class="insideoftable">54</td>
-  <td class="insideoftable">63</td>
-  <td class="insideoftable">72</td>
-  <td class="insideoftable">81</td>
-  <td class="insideoftable">90</td>
-  <td class="insideoftable">99</td>
-  <td class="insideoftable">108</td>
+  <td class="linewise">9</td>
+  <td class="linewise">18</td>
+  <td class="linewise">27</td>
+  <td class="linewise">36</td>
+  <td class="linewise">45</td>
+  <td class="linewise">54</td>
+  <td class="linewise">63</td>
+  <td class="linewise">72</td>
+  <td class="linewise">81</td>
+  <td class="linewise">90</td>
+  <td class="linewise">99</td>
+  <td class="linewise">108</td>
   </tr>
   <tr>
   <td class="outsideoftable"><button class="w3-teal w3-hover-gray" value="10" @click="OnButton1(10)">10</button></td>
-  <td class="insideoftable">10</td>
-  <td class="insideoftable">20</td>
-  <td class="insideoftable">30</td>
-  <td class="insideoftable">40</td>
-  <td class="insideoftable">50</td>
-  <td class="insideoftable">60</td>
-  <td class="insideoftable">70</td>
-  <td class="insideoftable">80</td>
-  <td class="insideoftable">90</td>
-  <td class="insideoftable">100</td>
-  <td class="insideoftable">110</td>
-  <td class="insideoftable">120</td>
+  <td class="linewise">10</td>
+  <td class="linewise">20</td>
+  <td class="linewise">30</td>
+  <td class="linewise">40</td>
+  <td class="linewise">50</td>
+  <td class="linewise">60</td>
+  <td class="linewise">70</td>
+  <td class="linewise">80</td>
+  <td class="linewise">90</td>
+  <td class="linewise">100</td>
+  <td class="linewise">110</td>
+  <td class="linewise">120</td>
   </tr>
   <tr>
   <td class="outsideoftable"><button class="w3-teal w3-hover-gray" value="11" @click="OnButton1(11)">11</button></td>
-  <td class="insideoftable">11</td>
-  <td class="insideoftable">22</td>
-  <td class="insideoftable">33</td>
-  <td class="insideoftable">44</td>
-  <td class="insideoftable">55</td>
-  <td class="insideoftable">66</td>
-  <td class="insideoftable">77</td>
-  <td class="insideoftable">88</td>
-  <td class="insideoftable">99</td>
-  <td class="insideoftable">110</td>
-  <td class="insideoftable">121</td>
-  <td class="insideoftable">132</td>
+  <td class="linewise">11</td>
+  <td class="linewise">22</td>
+  <td class="linewise">33</td>
+  <td class="linewise">44</td>
+  <td class="linewise">55</td>
+  <td class="linewise">66</td>
+  <td class="linewise">77</td>
+  <td class="linewise">88</td>
+  <td class="linewise">99</td>
+  <td class="linewise">110</td>
+  <td class="linewise">121</td>
+  <td class="linewise">132</td>
   </tr>
   <tr>
   <td class="outsideoftable"><button class="w3-teal w3-hover-gray" value="12" @click="OnButton1(12)">12</button></td>
-  <td class="insideoftable">12</td>
-  <td class="insideoftable">24</td>
-  <td class="insideoftable">36</td>
-  <td class="insideoftable">48</td>
-  <td class="insideoftable">60</td>
-  <td class="insideoftable">72</td>
-  <td class="insideoftable">84</td>
-  <td class="insideoftable">96</td>
-  <td class="insideoftable">108</td>
-  <td class="insideoftable">120</td>
-  <td class="insideoftable">132</td>
-  <td class="insideoftable">144</td>
+  <td class="linewise">12</td>
+  <td class="linewise">24</td>
+  <td class="linewise">36</td>
+  <td class="linewise">48</td>
+  <td class="linewise">60</td>
+  <td class="linewise">72</td>
+  <td class="linewise">84</td>
+  <td class="linewise">96</td>
+  <td class="linewise">108</td>
+  <td class="linewise">120</td>
+  <td class="linewise">132</td>
+  <td class="linewise">144</td>
   </tr>
 </table><br>
   <h2>Addition quiz</h2>
   <p>Use the addition table to solve this quiz or solve it on your own. Do not forget the check answers from the table or click on the check answers button.</p>
-  <form id="quizform">
-  <table id="quiz">
+  <form>
+  <table>
   <tbody>
   <tr>
   <td>{{quiznumber1}}</td>
@@ -692,7 +692,7 @@ h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.2rem; }
 h4 { font-size:1.2rem; }
-.insideoftable {
+.linewise {
 			background:#fff;
 			padding:3px;
 			border: 1px #ccc solid;

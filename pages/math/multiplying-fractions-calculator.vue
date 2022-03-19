@@ -8,8 +8,8 @@
 
 
         <div class="w3-container w3-padding">
-              <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; Fractions Calculator<hr>
-          <h1 class="w3-text-teal"><b>Fractions Calculator</b></h1>
+              <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; Multiply fractions<hr>
+          <h1 class="w3-text-teal"><b>Multiplying fractions calculator</b></h1>
           <Adsense
           class="adsbygoogle infeed"
           style="display:block"
@@ -32,27 +32,24 @@
   <table>
   <tr>
   <td rowspan="2" v-if="showleft === true"><input type="number" step="1" v-model="x1" class="form-control form-control-lg"></td>
-  <td id="tabless"><input type="number" step="1" v-model="n1" class="form-control" autofocus></td>
+  <td id="designtd"><input type="number" step="1" v-model="n1" class="form-control" autofocus></td>
   <td rowspan="2" class="pl-2 pr-2">
   <select v-model="selected" class="form-control form-control-lg">
-  <option selected>+</option>
-  <option>-</option>
-  <option>&times;</option>
-  <option>&divide;</option>
+  <option selected>×</option>
   </select>
   </td>
   <td rowspan="2" v-if="showright === true"><input type="number" step="1" v-model="x2" class="form-control form-control-lg"></td>
   <td><input type="number" step="1" v-model="n2" class="form-control"></td>
   </tr>
   <tr>
-  <td id="tabless1"><input type="number" step="1" v-model="d1" class="form-control"></td>
-  <td id="tabless12"><input type="number" step="1" v-model="d2" class="form-control"></td>
+  <td id="designtd1"><input type="number" step="1" v-model="d1" class="form-control"></td>
+  <td id="designtd2"><input type="number" step="1" v-model="d2" class="form-control"></td>
   </tr>
   </table>
   </div>
   <div class="form-group">
   <button type="button" title="Calculate" class="btn btn-secondary" @click="fract()"><span>= ></span> Calculate</button>
-  <button title="Reset" class="btn btn-secondary" @click="freset()"><span>&times;</span> Reset</button>
+  <button type="reset" title="Reset" class="btn btn-secondary" @click="freset()"><span>&times;</span> Reset</button>
   </div>
   <div class="form-group">
   <label>Result</label>
@@ -65,24 +62,23 @@
   </tr>
   <tr>
   <td><input type="text" v-model="d3" class="form-control" readonly></td>
-  <td id="tabless1245" v-if="d4if === true"><input type="text" v-model="d4" class="form-control" readonly></td>
+  <td v-if="d4if === true"><input type="text" v-model="d4" class="form-control" readonly></td>
   </tr>
   </table>
+  </div>
+  <div class="form-group">
+    <table>
+      <tr>
+    <td rowspan="2" class="pl-2 pr-2">=</td>
+    <td><input type="text" v-model="out3" style="width:330px; text-align:left" class="form-control" readonly></td>
+      </tr>
+    </table>
   </div>
   </form>
 
 
 </div><br>
 <div class="">
-  <h2>Fractions calculator Examples:</h2>
-  <p><b>Addition:</b></p>
-  <p>3/7 + 4/9 = (3&times;9) + (7&times;4) / (9&times;7) = 27+28/63 = 55/63</p>
-  <p><b>Subtraction</b></p>
-  <p>1/3 - 1/4 = (1&times;4) - (1&times;3) / (4&times;3) = (4-3) / 12 = 1/12</p>
-  <p><b>Multiplication</b></p>
-  <p>1/3 &times; 1/4 = (1&times;1) / (4&times;3) = 1/12</p>
-  <p><b>Division</b></p>
-  <p>1/3 &divide; 1/4 = (1&times;1) / (4&times;3) = 1/12</p>
 </div>
   </div>
 </div></div>
@@ -103,10 +99,10 @@
               <span class="w3-large"><a class="removelink" href="/math/fraction-simplifier"> Fractions Simplifier</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/math/division-fractions-calculator"> Division fractions calculator</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/math/fractions-calculator"> Fractions calculator</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/math/multiplying-fractions-calculator"> Multiplying fractions calculator</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/math/division-fractions-calculator"> Division fractions calculator</a></span><br>
             </li>
             <li class="w3-padding-16">
               <span class="w3-large"><a class="removelink" href="/math/subtracting-fractions-calculator"> Subtracting fractions calculator</a></span><br>
@@ -134,19 +130,20 @@ export default {
   head() {
     // sets document title
     return {
-      title: 'Fractions Calculator for both simple and mixed fractions',
+      title: 'Multiplying fractions calculator',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-      { hid: 'description', name: 'description', content: 'Fractions calculator online. Select from simple or mixed fraction calculator for easy solution.' }
+      { hid: 'description', name: 'description', content: 'Fractions multiplier.' }
   ],
     link: [
-    {rel: 'canonical', href: 'https://www.aaryatables.com/math/fractions-calculator'}
+    {rel: 'canonical', href: 'https://www.aaryatables.com/math/multiplying-fractions-calculator'}
     ]
     }
     },
   data(){
     return {
+      out3: '',
       equalshow: false,
       x3if: false,
       n4if: false,
@@ -169,7 +166,7 @@ export default {
       x2: '',
       x3: '',
       n31: '',
-      selected: '+'
+      selected: '×'
     }
   },
   methods: {
@@ -349,12 +346,20 @@ if( n3>d3 ) {
       this.x3 = sign+i;
       this.n4 = j;
       this.d4 = d3;
+//      $('#td32').show();
+//      $('#td33').show();
+  //    $('#td34').show();
+    //  $('#td42').show();
     this.x3if = true;
     this.n4if = true;
     this.d4if = true;
     this.equalshow = true;
    }
    else {
+//      $('#td32').hide();
+  //    $('#td33').hide();
+  //    $('#td34').hide();
+  //    $('#td42').hide();
   this.x3if = false;
   this.n4if = false;
   this.d4if = false;
@@ -416,7 +421,10 @@ if( n3>d3 ) {
   w3 = Math.floor(n3/d3);
   n3 -= w3*d3;
 }
-
+var out3 = this.roundresult(n3/d3);
+if( out1!='' ) out1+=' = ';
+if( out2!='' ) out2+=' = ';
+this.out3 = out3;
   },
   gcd(x, y){
   if ((typeof x !== 'number') || (typeof y !== 'number'))
@@ -463,8 +471,8 @@ if( n3>d3 ) {
  #designinput td input[type=text] { width:80px; text-align: center; margin:4px auto; }
  #designinput .btn span { font-weight: bold; font-size:large; }
  #designinput .btn img { filter:invert(1); }
-#tabless { padding-bottom:0px; }
-#tabless1, #tabless12, #tabless1245 { border-top:#666 3px solid; padding-top:1px; }
+#designtd, #tabetd { padding-bottom:0px; }
+#designtd1, #designtd2 { border-top:#666 3px solid; padding-top:1px; }
  #wrapper td { padding-left:unset; padding-right:unset; }
 @media all and (max-width: 800px) {
     .adslot_1, .adslot_2, .adslot_3 { display:none; }

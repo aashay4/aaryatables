@@ -20,9 +20,9 @@
       data-ad-format="auto"
       data-full-width-responsive="true">
     </Adsense>
-      <form id="calcform1" name="calcform" autocomplete="off">
+      <form id="designmodel" autocomplete="off">
         <div class="form-group">
-<table class="calc2">
+<table>
 <tbody>
 <tr>
 <td>Select phase:</td>
@@ -34,8 +34,8 @@
 </tr>
 <tr>
 <td>Enter kilovolt-amps:</td>
-<td class="math w3-padding"><input type="number" v-model="number1" min="0" step="any" class="intext"></td>
-<td class="mathsymbol w3-padding" style="text-align:left">Kva</td>
+<td class="w3-padding"><input type="number" v-model="number1" min="0" step="any" class="intext"></td>
+<td class="w3-padding" style="text-align:left">Kva</td>
 </tr>
 <tr id="row1" v-if="showthis === true">
 <td>Enter volts:</td>
@@ -47,20 +47,20 @@
 </tr>
 <tr>
 <td>Enter volts:</td>
-<td class="w3-padding math"><input type="number" v-model="number2" min="0" step="any" class="intext"></td>
-<td class="mathsymbol" style="text-align:left">V</td>
+<td class="w3-padding"><input type="number" v-model="number2" min="0" step="any" class="intext"></td>
+<td style="text-align:left">V</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
 <td class="w3-padding"><button @click="changedthings()" type="button" class="btn btn-secondary"><span>=></span> Answer</button>
-<button onclick="setfocus()" type="reset" class="btn btn-secondary"><span>↺</span> Reset</button>
+<button @click="reset()" type="reset" class="btn btn-secondary"><span>↺</span> Reset</button>
 </td>
 <td>&nbsp;</td>
 </tr>
 <tr>
 <td>Amps result:</td>
-<td class="math w3-padding"><input type="text" v-model="answer" class="outtext" readonly></td>
-<td class="mathsymbol" style="text-align:left">A</td>
+<td class="w3-padding"><input type="text" v-model="answer" class="outtext" readonly></td>
+<td style="text-align:left">A</td>
 </tr>
 </tbody>
 </table>
@@ -170,7 +170,10 @@ this.answer = x1*577.35/x2;
     reset(){
       this.number1 = null;
       this.number2 = null;
-      this.answer = ''
+      this.answer = "";
+      this.voltagechange = "Single phase";
+      this.showthis = false;
+      this.volt = "Line to line voltage";
     }
   }
 
@@ -196,7 +199,7 @@ this.answer = x1*577.35/x2;
       height: 290px;
     }
   }
-#calcform1,#calcform2,#calcform3 { background:#a7c9b8; padding:20px; }
+#designmodel { background:#a7c9b8; padding:20px; }
 h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }

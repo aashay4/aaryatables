@@ -25,7 +25,7 @@
 <td>Enter ratio:</td>
 </tr>
 <tr>
-<td class="math">
+<td class="">
 <input type="text" v-model="firstvalue" style="width:50px; text-align:center" autofocus>
 <span style="font-weight:bold;">:</span>
 <input type="text" v-model="secondvalue" name="b" style="width:50px; text-align:center">

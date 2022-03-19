@@ -23,9 +23,9 @@
       data-ad-format="auto"
       data-full-width-responsive="true">
     </Adsense>
-      <form id="calcform1" name="calcform" autocomplete="off">
+      <form id="linewise" autocomplete="off">
         <div class="form-group">
-<table class="calc2">
+<table>
 <tbody>
 <tr>
 <td>Select phase #:</td>
@@ -37,10 +37,10 @@
 </tr>
 <tr>
 <td>Enter amps:</td>
-<td class="math w3-padding"><input type="number" v-model="number1" min="0" step="any" class="intext"></td>
-<td class="mathsymbol w3-padding" style="text-align:left">A</td>
+<td class="w3-padding"><input type="number" v-model="number1" min="0" step="any" class="intext"></td>
+<td class="w3-padding" style="text-align:left">A</td>
 </tr>
-<tr id="row1" v-if="showthis === true">
+<tr v-if="showthis === true">
 <td>Select voltage type:</td>
 <td class="w3-padding"><select v-model="volt" @change="changedthings()">
 <option>Line to line voltage</option>
@@ -50,8 +50,8 @@
 </tr>
 <tr>
 <td>Enter volts:</td>
-<td class="w3-padding math"><input type="number" v-model="number2" min="0" step="any" class="intext"></td>
-<td class="mathsymbol" style="text-align:left">V</td>
+<td class="w3-padding"><input type="number" v-model="number2" min="0" step="any" class="intext"></td>
+<td style="text-align:left">V</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
@@ -62,8 +62,8 @@
 </tr>
 <tr>
 <td>Result in kilovolt-amps:</td>
-<td class="math w3-padding"><input type="text" v-model="answer" class="outtext" readonly></td>
-<td class="mathsymbol" style="text-align:left">kVA</td>
+<td class="w3-padding"><input type="text" v-model="answer" class="outtext" readonly></td>
+<td style="text-align:left">kVA</td>
 </tr>
 </tbody>
 </table>
@@ -80,12 +80,12 @@
     <h3>
       Calculation with line to line voltage:
     </h3><br>
-    <p class="math"><i>S</i><sub>(kVA)</sub> = <i>&#8730;</i><span style="text-decoration: overline">3</span>
+    <p><i>S</i><sub>(kVA)</sub> = <i>&#8730;</i><span style="text-decoration: overline">3</span>
     &times; <i> I</i><sub>(A)</sub><i> </i>&times;<i> V</i><sub>L-L(V)</sub><i> </i>/ 1000&nbsp;</p>
     <h3>
       Calculation with line to neutral voltage
     </h3>
-    <p><p class="math"><i>S</i><sub>(kVA)</sub> = 3 &times; <i> I</i><sub>(A)</sub><i> </i>&times;<i> V</i><sub>L-N(V)</sub><i> </i>/ 1000</p>
+    <p><p><i>S</i><sub>(kVA)</sub> = 3 &times; <i> I</i><sub>(A)</sub><i> </i>&times;<i> V</i><sub>L-N(V)</sub><i> </i>/ 1000</p>
 <p>&nbsp;</p>
 </p>
   </div>
@@ -222,7 +222,7 @@ export default {
       height: 290px;
     }
   }
-#calcform1,#calcform2,#calcform3 { background:#a7c9b8; padding:20px; }
+#linewise { background:#a7c9b8; padding:20px; }
 h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }

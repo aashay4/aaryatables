@@ -20,7 +20,7 @@
       data-ad-format="auto"
       data-full-width-responsive="true">
     </Adsense>
-      <form id="calcform" name="calcform" autocomplete="off">
+      <form id="designvoc1" name="designvoc1" autocomplete="off">
 <table class="calc">
 <tbody>
 <tr>
@@ -29,8 +29,8 @@
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td class="math" style="width:150px; vertical-align:bottom;"><input type="text" v-model="input" name="x1" class="intext" autofocus></td>
-<td class="mathsymbol" style="width:110px; padding-bottom:20px;"><input type="text" v-model="input1" name="x2" class="intext"></td>
+<td style="width:150px; vertical-align:bottom;"><input type="text" v-model="input" name="x1" class="intext" autofocus></td>
+<td style="width:110px; padding-bottom:20px;"><input type="text" v-model="input1" name="x2" class="intext"></td>
 <td>&nbsp;
 <select style="display:none">
 <option>&nbsp;</option>
@@ -44,14 +44,14 @@
 <tr>
 <td colspan="3">
 <button type="button" title="Calculate" class="btn btn-secondary" @click="calculate()"><span>= ></span> Calculate</button>
-<button type="reset" title="Reset" class="btn btn-secondary" @click="resetb()"><span>&times;</span> Reset</button>
+<button type="button" title="Reset" class="btn btn-secondary" @click="reset()"><span>&times;</span> Reset</button>
 </td>
 </tr>
 <tr>
 <td colspan="3">Result:</td>
 </tr>
 <tr>
-<td class="math" colspan="3"><input type="text" v-model="answer" class="outtext" readonly></td>
+<td colspan="3"><input type="text" v-model="answer" class="outtext" readonly></td>
 </tr>
 </tbody>
 </table>
@@ -234,11 +234,25 @@ roundnum(x,p) {
 },
 
     reset(){
-
-
-      this.input = '';
-      this.avg = '';
-      this.cnt = ''
+      this.input = "";
+      this.answer = "";
+      this.answer1 = "";
+      this.cnt = "";
+      this.avg = "";
+      this.len = "";
+      this.input1 = "";
+      this.sum = "";
+      this.txt = "";
+      this.min = "";
+      this.max = "";
+      this.gmean = "";
+      this.rms = "";
+      this.avgcalc = "";
+      this.med = "";
+      this.mod = "";
+      this.pstd = "";
+      this.sstd = "";
+      this.ran = "";
     }
   }
 }
@@ -268,24 +282,10 @@ h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }
 h4 { font-size:1.2rem; }
-#calcform1,#calcform2,#calcform3 { background:#a7c9b8; padding:20px; }
-#bdiv, #bdiv2, #bdiv3 { max-width:100px; }
-#b, #b2, #b3 { max-width:70px; }
-#bsel,#btnhh,#b3sel { max-width:20px; padding:0; }
-.calc, table.calc td { background:#a7c9b8; }
-.btn span { font-weight: bold; font-size:large; }
-#log, #log2, #log3 { font-size:xx-large; font-family:"Times New Roman", Times, serif; }
-#txt, #txt3 { font-family:math; }
-#drop, #drop2, #drop3 { background:#fff; color:#212529; }
-#calcform1 button i { vertical-align: bottom; }
-#coefdiv1a, #coefdiv1b span { vertical-align: bottom; }
-#graph { display:none; }
-/*.btn b, .btn b2 { font-size:large; }*/
-#opsel { font-weight:bold; margin-top:10px; }
-#coefdiv1a, #coefdiv1b, #opdiv, #logdiv2 { display:none; }
+#designvoc1 { background:#a7c9b8; padding:20px; }
+#designvoc1 button i { vertical-align: bottom; }
 @media all and (max-width: 800px) {
-   #ln { padding-right:35px; }
-   #calcform1, #calcform3 { padding:10px; }
+   #designvoc1 { padding:10px; }
 }
 
 </style>

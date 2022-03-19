@@ -21,7 +21,7 @@
         data-full-width-responsive="true">
         </Adsense>
         <form name="formnumber1" autocomplete="off">
-  <table class="calc2">
+  <table>
   <tbody>
   <tr>
   <td>Number:<i> </i>(<i>x</i><sub style="font-size: 0.8em">0</sub>):</td>
@@ -201,17 +201,8 @@ h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }
 h4 { font-size:1.2rem; }
 #formnumber1 { background:#a7c9b8; padding:20px; }
-#b, #b2, #b3 { max-width:70px; }
-.calc, table.calc td { background:#a7c9b8; }
-.btn span { font-weight: bold; font-size:large; }
-#asdf, #asdf3 { font-family:math; }
-#drop, #drop2, #drop3 { background:#fff; color:#212529; }
 #formnumber1 button i { vertical-align: bottom; }
-#lkjh { display:none; }
-/*.btn b, .btn b2 { font-size:large; }*/
-#opsel { font-weight:bold; margin-top:10px; }
 @media all and (max-width: 800px) {
-   #ln { padding-right:35px; }
    #formnumber1 { padding:10px; }
 }
 

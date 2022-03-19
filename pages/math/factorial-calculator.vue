@@ -21,8 +21,8 @@
       data-ad-format="auto"
       data-full-width-responsive="true">
     </Adsense>
-      <form name="calcform" autocomplete="off" class="rounded">
-      <table class="calc">
+      <form id="designpq" autocomplete="off" class="rounded">
+      <table>
       <tbody>
       <tr class="">
       <td><input type="number" step="any" v-model="number1" class="intext" autofocus><span>!</span> <input type="button" value="  " class="btn"></td>
@@ -192,45 +192,14 @@ export default {
       height: 290px;
     }
   }
-.calc td { font-family:Arial, Helvetica, sans-serif; }
-.calc span { font-size:xx-large; font-family:"Times New Roman", Times, serif; }
-.calc select { font-size:x-large; font-family:"Times New Roman", Times, serif; }
-.calc input { font-size:x-large; font-family:Arial, Helvetica, sans-serif; }
-.calc input[type=text] { width:100%; }
-.calc textarea { font-size:large; }
-@media all and (max-width: 576px) {
-	.calc { width:100%; padding:8px; }
-	.calc input[type=number] { width:180px; }
-	.calc textarea { width:100%; }
-}
-@media all and (min-width: 577px) {
-	.calc { padding:20px; }
-	.calc input[type=number], .calc input[type=text], .calc textarea { width:240px; }
-	.calc input[type=button], .calc input[type=reset] { font-size:large; }
-}
-
 h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }
 h4 { font-size:1.2rem; }
-#calcform1,#calcform2,#calcform3 { background:#a7c9b8; padding:20px; }
-#bdiv, #bdiv2, #bdiv3 { max-width:100px; }
-#b, #b2, #b3 { max-width:70px; }
-#bsel,#btnhh,#b3sel { max-width:20px; padding:0; }
-.calc, table.calc td { background:#a7c9b8; }
-.btn span { font-weight: bold; font-size:large; }
-#log, #log2, #log3 { font-size:xx-large; font-family:"Times New Roman", Times, serif; }
-#txt, #txt3 { font-family:math; }
-#drop, #drop2, #drop3 { background:#fff; color:#212529; }
-#calcform1 button i { vertical-align: bottom; }
-#coefdiv1a, #coefdiv1b span { vertical-align: bottom; }
-#graph { display:none; }
-/*.btn b, .btn b2 { font-size:large; }*/
-#opsel { font-weight:bold; margin-top:10px; }
-#coefdiv1a, #coefdiv1b, #opdiv, #logdiv2 { display:none; }
+#designpq { background:#a7c9b8; padding:20px; }
+#designpq button i { vertical-align: bottom; }
 @media all and (max-width: 800px) {
-   #ln { padding-right:35px; }
-   #calcform1, #calcform3 { padding:10px; }
+   #designpq { padding:10px; }
 }
 
 </style>

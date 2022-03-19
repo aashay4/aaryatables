@@ -23,19 +23,19 @@
   data-ad-format="auto"
   data-full-width-responsive="true">
   </Adsense>
-  <form name="calcform" autocomplete="off">
-  <table id="table3" style="margin:0 auto; border-style:none">
+  <form autocomplete="off">
+  <table style="margin:0 auto; border-style:none">
   <tr>
   <td><input type="text" name="num1" size="2" @change="OnButton()" v-model="firsttext"></td>
   <td><b>&times;</b></td>
-  <td><input type="text" name="num2" id="num2" size="2" @change="OnButton1()" v-model="secondtext"></td>
+  <td><input type="text" name="num2" size="2" @change="OnButton1()" v-model="secondtext"></td>
   <td>=</td>
   <td><input type="text" name="result" size="2" v-model="answer" style="width:80px;"></td>
   <td><input type="reset" value="Reset" class="w3-teal w3-hover-gray" @click="reset()"></td>
   </tr>
   </table>
 </form><br>
-  <table id="secondtable" class="secondtable" style="border: 1px #ccc solid; border-collapse: collapse">
+  <table class="secondtable" style="border: 1px #ccc solid; border-collapse: collapse">
   <tr>
   <td class="outsideoftable"><b>&times;</b></td>
   <td class="outsideoftable" value="1" v-model="upnumber"><button class="w3-teal w3-hover-gray" value="1" @click="OnButton(1)">1</button></td>
@@ -234,8 +234,8 @@
 </table><br>
   <h2>Multiplication Test</h2>
   <p>Use the multiplication table to solve this test. Do not forget to check the result once you complete the test:</p>
-  <form id="quizform">
-  <table id="quiz">
+  <form>
+  <table>
   <tbody>
   <tr>
   <td>{{quiznumber1}}</td>

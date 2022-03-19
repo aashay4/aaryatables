@@ -39,53 +39,53 @@
         </div>
         </div>
       </div>
-      <form name="calcform" autocomplete="off">
+      <form autocomplete="off">
         <div class="w3-padding">
-<table class="calc2">
+<table>
 <tr>
 <td><label for="ton">Tonne:</label></td>
-<td class="math"><input type="number" v-model="tonne" min="0" step="any" id="ton" name="ton" autofocus> :</td>
-<td class="mathsymbol"> t</td>
+<td><input type="number" v-model="tonne" min="0" step="any" autofocus> :</td>
+<td> t</td>
 </tr>
 <tr>
 <td><label for="kg">Kilograms:</label></td>
-<td class="math"><input v-model="kilogram" type="number" min="0" step="any" id="kg" name="kg"></td>
-<td class="mathsymbol"> kg</td>
+<td><input v-model="kilogram" type="number" min="0" step="any"></td>
+<td> kg</td>
 </tr>
 <tr>
 <td><label for="gr">Grams:</label></td>
-<td class="math"><input type="number" v-model="gram" min="0" step="any" id="gr" name="gr"></td>
-<td class="mathsymbol"> g</td>
+<td><input type="number" v-model="gram" min="0" step="any"></td>
+<td> g</td>
 </tr>
 <tr>
 <td><label for="mg">Milligrams:</label></td>
-<td class="math"><input type="number" v-model="milligram" min="0" step="any" id="mg" name="mg"></td>
-<td class="mathsymbol"> mg</td>
+<td><input type="number" v-model="milligram" min="0" step="any"></td>
+<td> mg</td>
 </tr>
 <tr>
 <td><label for="mcg">Micrograms:</label></td>
-<td class="math"><input type="number" v-model="microgram" min="0" step="any" id="mcg" name="mcg"></td>
-<td class="mathsymbol"> mcg</td>
+<td><input type="number" v-model="microgram" min="0" step="any"></td>
+<td> mcg</td>
 </tr>
 <tr>
-<td><label for="st">Stones:</label></td>
-<td class="math"><input type="number" v-model="stones" min="0" step="any" id="st" name="st"></td>
-<td class="mathsymbol"> st</td>
+<td><label>Stones:</label></td>
+<td><input type="number" v-model="stones" min="0" step="any"></td>
+<td> st</td>
 </tr>
 <tr>
-<td><label for="lb">Pounds:</label></td>
-<td class="math"><input type="number" v-model="pounds" min="0" step="any" id="lb" name="lb"></td>
-<td class="mathsymbol"> lb</td>
+<td><label>Pounds:</label></td>
+<td><input type="number" v-model="pounds" min="0" step="any"></td>
+<td> lb</td>
 </tr>
 <tr>
-<td><label for="oz">Ounces:</label></td>
-<td class="math"><input type="number" v-model="ounches" min="0" step="any" id="oz" name="oz"></td>
-<td class="mathsymbol"> oz</td>
+<td><label>Ounces:</label></td>
+<td><input type="number" v-model="ounches" min="0" step="any"></td>
+<td> oz</td>
 </tr>
 <tr>
-<td><label for="oz">Imperial ton:</label></td>
-<td class="math"><input type="number" min="0" v-model="imperialton" step="any" id="oz" name="oz"></td>
-<td class="mathsymbol"> Im</td>
+<td><label>Imperial ton:</label></td>
+<td><input type="number" min="0" v-model="imperialton" step="any"></td>
+<td> Im</td>
 </tr>
 <tr>
 <td>&nbsp;</td>

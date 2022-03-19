@@ -35,33 +35,33 @@
         </div>
         </div>
       </div>
-      <form name="calcform" autocomplete="off">
+      <form autocomplete="off">
         <div class="w3-padding">
-<table class="calc2">
+<table>
 <tr>
-<td><label for="ton">Fahrenheit:</label></td>
-<td class="math"><input type="number" v-model="Fahrenheit" min="0" step="any" id="ton" name="ton" autofocus></td>
-<td class="mathsymbol"> °F</td>
+<td><label>Fahrenheit:</label></td>
+<td><input type="number" v-model="Fahrenheit" min="0" step="any" autofocus></td>
+<td> °F</td>
 </tr>
 <tr>
-<td><label for="kg">Rankine:</label></td>
-<td class="math"><input v-model="Rankine" type="number" min="0" step="any" id="kg" name="kg"></td>
-<td class="mathsymbol"> °R</td>
+<td><label>Rankine:</label></td>
+<td><input v-model="Rankine" type="number" min="0" step="any"></td>
+<td> °R</td>
 </tr>
 <tr>
-<td><label for="gr">Celsius:</label></td>
-<td class="math"><input type="number" v-model="Celsius" min="0" step="any" id="gr" name="gr"></td>
-<td class="mathsymbol"> °C</td>
+<td><label>Celsius:</label></td>
+<td><input type="number" v-model="Celsius" min="0" step="any"></td>
+<td> °C</td>
 </tr>
 <tr>
-<td><label for="mg">Centigrade:</label></td>
-<td class="math"><input type="number" v-model="Centigrade" min="0" step="any" id="mg" name="mg"></td>
-<td class="mathsymbol"> °C</td>
+<td><label>Centigrade:</label></td>
+<td><input type="number" v-model="Centigrade" min="0" step="any"></td>
+<td> °C</td>
 </tr>
 <tr>
-<td><label for="mcg">Kelvin:</label></td>
-<td class="math"><input type="number" v-model="Kelvin" min="0" step="any" id="mcg" name="mcg"></td>
-<td class="mathsymbol"> K</td>
+<td><label>Kelvin:</label></td>
+<td><input type="number" v-model="Kelvin" min="0" step="any"></td>
+<td> K</td>
 </tr>
 <tr>
 <td>&nbsp;</td>

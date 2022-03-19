@@ -34,7 +34,7 @@
 </div>
 </div>
 <div class="form-group row">
-<label id="space" class="col-sm-5 col-form-label">&nbsp;</label>
+<label class="col-sm-5 col-form-label">&nbsp;</label>
 <div class="col-sm-7">
 <button type="button" title="Calculate" class="btn btn-secondary" @click="fract()"><span>= ></span> Answer</button>
 <button type="reset" @click="reset()" class="btn btn-secondary"><span>&times;</span> Reset</button>
@@ -244,11 +244,6 @@ this.explanation = aerr;
  #inputstyle td input[type=text] { width:80px; text-align: center; margin:4px auto; }
  #inputstyle .btn span { font-weight: bold; font-size:large; }
  #inputstyle .btn img { filter:invert(1); }
- #op { font-weight:bold; }
-#td12, #tabetd, #tabetd14 { padding-bottom:0px; }
-#td21, #td22, #tabetd1455, #td42 { border-top:#666 3px solid; padding-top:1px; }
- #oooppp { margin-right:0; padding:10px; border:1px #ccc solid; background:#e9ecef; }
- #craf { height:42px; }
  #wrapper td { padding-left:unset; padding-right:unset; }
 @media all and (max-width: 800px) {
     .adslot_1, .adslot_2, .adslot_3 { display:none; }

@@ -19,7 +19,7 @@
       data-ad-format="auto"
       data-full-width-responsive="true">
     </Adsense>
-      <form id="calcform" autocomplete="off">
+      <div id="designvoc" autocomplete="off">
 <div class="form-group row mb-0">
 <label for="x" class="col-sm-4 col-form-label">Dividend</label>
 <div class="col-sm-8">
@@ -33,38 +33,38 @@
 <div class="form-group row">
 <label for="x2" class="col-sm-4 col-form-label">Divisor</label>
 <div class="col-sm-8">
-<input type="number" step="any" id="x2" v-model="divisor" class="form-control">
+<input type="number" v-model="divisor" class="form-control">
 </div>
 </div>
 <div class="form-group row">
 <label class="col-sm-4 col-form-label">&nbsp;</label>
 <div class="col-sm-8">
 <button type="button" @click="convertdiv()" class="btn btn-primary"><span>=></span> Answer</button>
-<button type="reset" onclick="setfocus()" class="btn btn-secondary"><span>↺</span> Reset</button>
+<button @click="reset()" class="btn btn-secondary"><span>↺</span> Reset</button>
 </div>
 </div>
 <div class="form-group row">
 <label for="y" class="col-sm-4 col-form-label">Quotient (decimal)</label>
 <div class="col-sm-8">
-<input type="text" id="y" v-model="quotientdec" class="form-control" readonly>
+<input type="text" v-model="quotientdec" class="form-control" readonly>
 </div>
 </div>
 <div class="form-group row">
-<label for="y2" class="col-sm-4 col-form-label">Quotient (integer)</label>
+<label class="col-sm-4 col-form-label">Quotient (integer)</label>
 <div class="col-sm-8">
-<input type="text" id="y2" v-model="quotientint" class="form-control" readonly>
+<input type="text" v-model="quotientint" class="form-control" readonly>
 </div>
 </div>
 <div class="form-group row mb-0">
 <label for="y3" class="col-sm-4 col-form-label">Remainder</label>
 <div class="col-sm-8">
-<input type="text" id="y3" v-model="remainder" class="form-control" readonly>
+<input type="text" v-model="remainder" class="form-control" readonly>
 </div>
 </div>
 <div class="form-group row mb-0">
 <label for="y3" class="col-sm-4 col-form-label">&nbsp;</label>
 </div>
-</form>
+</div>
 
       </div>
   </div>
@@ -168,7 +168,14 @@ if( x2.eq(0) )
 this.quotientdec = y;
 this.quotientint = y2;
 this.remainder = y3;
-    }
+},
+reset(){
+  this.dividend = "";
+  this.divisor = "";
+  this.quotientdec = "";
+  this.quotientint = "";
+  this.remainder = "";
+}
   }
 
 }
@@ -198,26 +205,23 @@ h2 { font-size:1.4rem; }
 h3 { font-size:1.2rem; }
 h4 { font-size:1.2rem; }
 .btn span { font-size:large; font-weight:bold; }
-.calcform { background:#f0eedc; padding:15px; border-radius:7px; margin-bottom:20px; }
-.calcform div { display:inline-block; }
-.calcform div:nth-child(2) { margin-top:10px; }
-.calcform div:nth-child(1) input[type=text] { width:100px; display:inline-block; }
-.calcform div:nth-child(2) input[type=text] { width:100px; display:inline-block; margin-left:5px; }
-.calcform div:nth-child(3) { display:none; margin-top:10px; }
-#calcform4 input[type=text] { margin-top:10px; }
-#tbl5 tr:nth-child(2) td:nth-child(4) { border-bottom:2px #666 solid }
+.designvoc { background:#f0eedc; padding:15px; border-radius:7px; margin-bottom:20px; }
+.designvoc div { display:inline-block; }
+.designvoc div:nth-child(2) { margin-top:10px; }
+.designvoc div:nth-child(1) input[type=text] { width:100px; display:inline-block; }
+.designvoc div:nth-child(2) input[type=text] { width:100px; display:inline-block; margin-left:5px; }
+.designvoc div:nth-child(3) { display:none; margin-top:10px; }
 @media all and (max-width: 672px) {
-   .calcform { padding:10px; }
-   .calcform div:nth-child(2) { display:block; }
-   .calcform input[type=text] { margin:5px 0; }
-   .calcform div:nth-child(1) input[type=text] { width:90px; }
-   #calcform5 { padding:10px; }
-   #calcform5 button[type=reset] { float:left; }
+   .designvoc { padding:10px; }
+   .designvoc div:nth-child(2) { display:block; }
+   .designvoc input[type=text] { margin:5px 0; }
+   .designvoc div:nth-child(1) input[type=text] { width:90px; }
+   #designvoc5 { padding:10px; }
+   #designvoc5 button[type=reset] { float:left; }
    #resetbtn1 { display:none; }
 }
 @media all and (min-width: 673px) {
-   .calcform div:nth-child(2) { margin-left:20px; }
-   #resetbtn2 { display:none; }
+   .designvoc div:nth-child(2) { margin-left:20px; }
 }
 
 </style>

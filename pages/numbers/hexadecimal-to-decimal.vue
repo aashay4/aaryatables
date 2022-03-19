@@ -35,7 +35,7 @@
 <div class="form-group">
   <h2>Hex to Decimal Conversion</h2>
 <div class="input-group mb-3">
-<input type="text" id="y" v-model="answer" readonly class="form-control form-control-lg">
+<input type="text" v-model="answer" readonly class="form-control form-control-lg">
 <div class="input-group-append">
 <button type="button" class="btn btn-lg btn-outline-secondary">ANS</button>
 </div>
@@ -176,7 +176,6 @@ h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }
 h4 { font-size:1.2rem; }
 #designbase { background:#a7c9b8; padding:20px; }
-.btn span { font-weight: bold; font-size:large; }
 #designbase button i { vertical-align: bottom; }
 #diventry { display:none; }
 @media all and (max-width: 800px) {

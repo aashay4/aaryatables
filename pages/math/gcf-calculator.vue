@@ -11,7 +11,7 @@
 
 
     <div class="w3-container w3-padding">
-          <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; GCF Calculator<hr>
+          <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; Greatest common factor Calculator<hr>
       <h1 class="w3-text-teal"><b>GCF Calculator</b></h1>
       <p>To use this GCF calculator, just enter all the numbers in the box, separate all the numbers with a space click on the convert button.</p>
       <Adsense
@@ -117,11 +117,11 @@ export default {
   head() {
     // sets document title
     return {
-      title: 'GCF calculator',
+      title: 'Greatest Common Factor(GCF) calculator',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-      { hid: 'description', name: 'description', content: 'GCF calculator.' }
+      { hid: 'description', name: 'description', content: 'Greatest Common Factor calculator.' }
   ],
     link: [
     {rel: 'canonical', href: 'https://www.aaryatables.com/math/gcf-calculator'}
@@ -300,22 +300,9 @@ h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }
 h4 { font-size:1.2rem; }
 #designform { background:#a7c9b8; padding:20px; }
-#bdiv, #bdiv2, #bdiv3 { max-width:100px; }
-#b, #b2, #b3 { max-width:70px; }
-#bsel,#btnhh,#b3sel { max-width:20px; padding:0; }
-.calc, table.calc td { background:#a7c9b8; }
-.btn span { font-weight: bold; font-size:large; }
-#log, #log2, #log3 { font-size:xx-large; font-family:"Times New Roman", Times, serif; }
-#txt, #txt3 { font-family:math; }
-#drop, #drop2, #drop3 { background:#fff; color:#212529; }
 #designform button i { vertical-align: bottom; }
-#coefdiv1a, #coefdiv1b span { vertical-align: bottom; }
-#graph { display:none; }
-/*.btn b, .btn b2 { font-size:large; }*/
-#opsel { font-weight:bold; margin-top:10px; }
 @media all and (max-width: 800px) {
-   #ln { padding-right:35px; }
-   #designform, { padding:10px; }
+   #designform { padding:10px; }
 }
 
 </style>

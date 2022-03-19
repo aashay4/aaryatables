@@ -8,9 +8,9 @@
 
 
         <div class="w3-container w3-padding">
-              <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; Fraction to decimal<hr>
-          <h1 class="w3-text-teal"><b>Fraction to decimal</b></h1>
-          <p>Simple fraction to decimal calculator. For the simple fraction to decimal conversion, leave the left box blank, our tool will still work. For the mixed conversion, enter all three numbers.</p>
+              <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; Mixed Fraction to decimal<hr>
+          <h1 class="w3-text-teal"><b>Fraction to decimal conversion calculator</b></h1>
+          <p>Best fraction to decimal calculator. For a simple fraction to number conversion, leave the left box blank, our tool will still work. For the mixed conversion, enter all three numbers.</p>
           <Adsense
           class="adsbygoogle infeed"
           style="display:block"
@@ -33,15 +33,15 @@
     <table>
     <tr>
     <td rowspan="2"><input v-if="showleft === true" type="text" v-model="y" class="form-control"></td>
-    <td id="tabetd14"><input type="text" v-model="n" class="form-control"></td>
+    <td id="designpq456"><input type="text" v-model="n" class="form-control"></td>
     </tr>
     <tr>
-    <td  id="tabetd1455"><input type="text" v-model="d" class="form-control"></td>
+    <td  id="designpq45678"><input type="text" v-model="d" class="form-control"></td>
     </tr>
   </table><br>
     <div class="form-group">
     <button type="button" title="Calculate" class="btn btn-secondary" @click="fract()"><span>=></span> Answer</button>
-    <button type="reset" title="Reset" class="btn btn-secondary" @click="reset()"><span>↺</span> Reset</button>
+    <button title="Reset" class="btn btn-secondary" @click="reset()"><span>↺</span> Reset</button>
     </div><hr>
 <div class="form-group mt-3">
 <table>
@@ -49,7 +49,7 @@
   <td><label for="x">Answer in decimal number:</label></td>
   </tr>
   <tr>
-  <td class="math"><input type="text" style="width: 100%" v-model="x1" id="x" name="x" class="intext" readonly></td>
+  <td><input type="text" style="width: 100%" v-model="x1" class="intext" readonly></td>
 </tr><hr>
   <tr>
   <td>Calculation:</td>
@@ -335,9 +335,8 @@ this.showright = true;
  #inputdesign td input[type=text] { width:80px; text-align: center; margin:4px auto; }
  #inputdesign .btn span { font-weight: bold; font-size:large; }
  #inputdesign .btn img { filter:invert(1); }
- #tabetd, #tabetd14 { padding-bottom:0px; }
- #tabetd1455 { border-top:#666 3px solid; padding-top:1px; }
- #oooppp { margin-right:0; padding:10px; border:1px #ccc solid; background:#e9ecef; }
+ #designpq456 { padding-bottom:0px; }
+ #designpq45678 { border-top:#666 3px solid; padding-top:1px; }
  #wrapper td { padding-left:unset; padding-right:unset; }
 @media all and (max-width: 800px) {
     .adslot_1, .adslot_2, .adslot_3 { display:none; }

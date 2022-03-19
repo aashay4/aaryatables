@@ -8,7 +8,7 @@
 
 
         <div class="w3-container w3-padding">
-              <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; Decimal to Fraction<hr>
+              <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; Convert Decimal to Fraction<hr>
           <h1 class="w3-text-teal"><b>Decimal to fraction converter</b></h1>
           <Adsense
           class="adsbygoogle infeed"
@@ -18,16 +18,16 @@
           data-ad-format="auto"
           data-full-width-responsive="true">
         </Adsense>
-          <p>Simple decimal to fraction calculator.</p>
+          <p>Number to fraction converter.</p>
 <div class="">
-  <form id="calcform" name="calcform" autocomplete="off">
+  <form id="equitd2" name="equitd2" autocomplete="off">
 <div class="form-group mt-3">
 <table>
   <tr>
-  <td><label for="x">Enter decimal number:</label></td>
+  <td><label>Enter decimal number:</label></td>
   </tr>
   <tr>
-  <td class="math"><input type="text" style="width: 100%" v-model="x1" class="form-control" autofocus></td>
+  <td><input type="text" style="width: 100%" v-model="x1" class="form-control" autofocus></td>
   </tr>
 
 </table>
@@ -41,10 +41,10 @@
 <table>
 <tr>
 <td rowspan="2" v-if="showy === false"><input type="text" v-model="y" class="form-control" readonly></td>
-<td id="tabetd14"><input type="text" v-model="n" class="form-control" readonly></td>
+<td id="equitd13"><input type="text" v-model="n" class="form-control" readonly></td>
 </tr>
 <tr>
-<td id="tabetd1455"><input type="text" v-model="d" class="form-control" readonly></td>
+<td id="equitd1346"><input type="text" v-model="d" class="form-control" readonly></td>
 </tr>
 </table>
 <table>
@@ -62,11 +62,11 @@
 </div><br>
 <div class="">
   <h2>Decimal to fraction conversion:</h2>
-  <h3>Steps of decimal to fraction:</h3>
+  <h3>Steps of number to fraction:</h3>
   <p>First of all, note down the digits that are on the right side of the decimal point and the power of 10</p>
   <p>Once done, find the greatest common divisor of the same number</p>
   <p>Reduce the fraction by dividing with the greatest common divisor(gcd). You can consider the following example for detailed information.</p>
-  <h3>Example for the decimal to fraction conversion:</h3>
+  <h3>Example for the decimal to a fraction number:</h3>
   <p>Convert the 0.44 decimal number to fraction:</p>
   <h2>0.44</h2>
   <h1> => 0.44 = 44/100</h1>
@@ -135,11 +135,11 @@ export default {
   head() {
     // sets document title
     return {
-      title: 'Decimal to fraction converter',
+      title: 'Convert decimal to fraction - Number to a fraction conversiosn',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-      { hid: 'description', name: 'description', content: 'Free decimal to fraction converter.' }
+      { hid: 'description', name: 'description', content: 'Decimal to fraction converter.' }
   ],
     link: [
     {rel: 'canonical', href: 'https://www.aaryatables.com/math/decimal-to-fraction'}
@@ -365,22 +365,18 @@ export default {
  h2 { font-size:1.4rem; }
  h3 { font-size:1.4rem; }
  h4 { font-size:1.2rem; }
- #calcform { padding:20px; max-width:500px; background:#a7c9b8; }
- #calcform td input[type=number] { width:80px; text-align: center; margin:4px auto; }
- #calcform td input[type=text] { width:80px; text-align: center; margin:4px auto; }
- #calcform .btn span { font-weight: bold; font-size:large; }
- #calcform .btn img { filter:invert(1); }
- #op { font-weight:bold; }
- #td11, #td14 { display:none; }
-#td12, #tabetd, #tabetd14 { padding-bottom:0px; }
-#td21, #td22, #tabetd1455, #td42 { border-top:#666 3px solid; padding-top:1px; }
- #oooppp { margin-right:0; padding:10px; border:1px #ccc solid; background:#e9ecef; }
- #craf { height:42px; }
+ #equitd2 { padding:20px; max-width:500px; background:#a7c9b8; }
+ #equitd2 td input[type=number] { width:80px; text-align: center; margin:4px auto; }
+ #equitd2 td input[type=text] { width:80px; text-align: center; margin:4px auto; }
+ #equitd2 .btn span { font-weight: bold; font-size:large; }
+ #equitd2 .btn img { filter:invert(1); }
+ #equitd13 { padding-bottom:0px; }
+#equitd1346 { border-top:#666 3px solid; padding-top:1px; }
  #wrapper td { padding-left:unset; padding-right:unset; }
 @media all and (max-width: 800px) {
     .adslot_1, .adslot_2, .adslot_3 { display:none; }
-    #calcform { padding:10px; }
-    #calcform td input[type=number] { width:60px; }
-    #calcform td input[type=text] { width:60px; }
+    #equitd2 { padding:10px; }
+    #equitd2 td input[type=number] { width:60px; }
+    #equitd2 td input[type=text] { width:60px; }
  }
 </style>

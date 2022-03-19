@@ -9,8 +9,8 @@
   <!-- Blog entry -->
   <div class="w3-margin w3-white">
     <div class="w3-container w3-padding">
-          <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Text to Binary<hr>
-      <h1 class="w3-text-teal"><b>Ascii Text to Binary</b></h1>
+          <a href="/">Home</a> &rsaquo; <a href="/numbers">Numbers</a> &rsaquo; Convert Text to Binary<hr>
+      <h1 class="w3-text-teal"><b>Ascii to Binary</b></h1>
       <Adsense
       class="adsbygoogle infeed"
       style="display:block"
@@ -19,18 +19,12 @@
       data-ad-format="auto"
       data-full-width-responsive="true">
       </Adsense>
-      <p>Text to binary conversion tool. Enter the text in the box and click on the button to get the text to binary answer. For example, enter the letter English letter 'D' in the box and you will get the "01000100" binary number in the answer box.</p>
-      <form id="calcform1" name="calcform1" autocomplete="off" class="rounded">
+      <p>English to binary conversion tool. Enter the text in the box and click on the button to get the Ascii to binary answer. For example, enter the letter English letter 'D' in the box and you will get the "01000100" binary number in the answer box.</p>
+      <form id="designstyle" name="designstyle" autocomplete="off" class="rounded">
 <div class="form-row">
 <div class="col">
-<input type="text" id="x" name="x" v-model="number1" class="form-control" placeholder="Enter the Text here .... ">
+<input type="text" v-model="number1" class="form-control" placeholder="Enter the Text here .... ">
 </div>
-</div>
-<div id="logdiv2" class="form-row">
-<div id="coefdiv2a" class="col-2">
-<input type="text" id="c2" name="c2" placeholder="1" class="form-control">
-</div>
-<div id="coefdiv2b" class="col-auto mt-2">&times;</div>
 </div>
 <div class="form-group mt-4">
 <button @click="calculate()" type="button" class="btn btn-secondary"><span>=></span> Answer</button>
@@ -39,7 +33,7 @@
 <div class="form-group">
   <h1>Text to Binary Conversion</h1>
 <div class="input-group mb-3">
-<input type="text" id="y" v-model="answer" readonly class="form-control form-control-lg">
+<input type="text" v-model="answer" readonly class="form-control form-control-lg">
 <div class="input-group-append">
 <button type="button" class="btn btn-lg btn-outline-secondary">ANS</button>
 </div>
@@ -49,8 +43,8 @@
 </form>
     </div>
     <div class="w3-padding">
-    <h1 class="w3-center">How to convert text to binary?</h1>
-    <p>To convert text to binary, convert each letter in the text string separately. Consider the following steps for conversion:</p>
+    <h1 class="w3-center">How to convert ASCII text to binary?</h1>
+    <p>To convert ASCII to binary, convert each letter in the text string separately. Consider the following steps for conversion:</p>
     <ul>
       <li>
         Get the character
@@ -131,7 +125,7 @@ import { BigNumber } from 'bignumber.js'
 export default {
   head() {
   return {
-    title: 'Text to Binary',
+    title: 'Text ASCII to binary code converter',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
@@ -224,24 +218,10 @@ h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }
 h4 { font-size:1.2rem; }
-#calcform1,#calcform2,#calcform3 { background:#a7c9b8; padding:20px; }
-#bdiv, #bdiv2, #bdiv3 { max-width:100px; }
-#b, #b2, #b3 { max-width:70px; }
-#bsel,#b2sel,#b3sel { max-width:20px; padding:0; }
-.calc, table.calc td { background:#a7c9b8; }
-.btn span { font-weight: bold; font-size:large; }
-#log, #log2, #log3 { font-size:xx-large; font-family:"Times New Roman", Times, serif; }
-#txt, #txt3 { font-family:math; }
-#drop, #drop2, #drop3 { background:#fff; color:#212529; }
-#calcform1 button i { vertical-align: bottom; }
-#coefdiv1a, #coefdiv1b span { vertical-align: bottom; }
-#graph { display:none; }
-/*.btn b, .btn b2 { font-size:large; }*/
-#opsel { font-weight:bold; margin-top:10px; }
-#coefdiv1a, #coefdiv1b, #opdiv, #logdiv2 { display:none; }
+#designstyle { background:#a7c9b8; padding:20px; }
+#designstyle button i { vertical-align: bottom; }
 @media all and (max-width: 800px) {
-   #ln { padding-right:35px; }
-   #calcform1, #calcform3 { padding:10px; }
+   #designstyle { padding:10px; }
 }
 
 </style>

@@ -34,6 +34,18 @@
           <span class="w3-large"><a class="removelink" href="/math/fractions-calculator"> Fractions Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/fraction-simplifier"> Fraction simplifier</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/multiplying-fractions-calculator"> Multiplying fractions calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/subtracting-fractions-calculator"> Subtracting fractions calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/adding-fractions-calculator"> Add fractions</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/arccos-calculator"> Arccos Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
@@ -50,6 +62,12 @@
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/gcf-calculator"> GCF calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/division-fractions-calculator"> Division fractions calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/fraction-simplifier"> Fractions simplifier</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/remainder-calculator"> Remainder calculator</a></span><br>
@@ -76,13 +94,13 @@
           <span class="w3-large"><a class="removelink" href="/math/exponent-calculator"> Exponent Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
-          <span class="w3-large"><a class="removelink" href="/math/decimal-to-fraction"> Decimal to fraction</a></span><br>
+          <span class="w3-large"><a class="removelink" href="/math/decimal-to-fraction"> Convert Decimal to fraction</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/factorial-calculator"> Factorial Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
-          <span class="w3-large"><a class="removelink" href="/math/fraction-to-decimal"> Fraction to decimal</a></span><br>
+          <span class="w3-large"><a class="removelink" href="/math/fraction-to-decimal"> Fraction to decimal number</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/arcsin-calculator"> Arcsin Calculator</a></span><br>
@@ -161,7 +179,7 @@ export default {
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-      { hid: 'description', name: 'description', content: 'fractions calculator online' }
+      { hid: 'description', name: 'description', content: 'Online Mathematics tools for students.' }
   ],
     link: [
     {rel: 'canonical', href: 'https://www.aaryatables.com/math'}

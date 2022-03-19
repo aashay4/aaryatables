@@ -20,10 +20,10 @@ data-ad-slot="4199493091"
 data-ad-format="auto"
 data-full-width-responsive="true">
 </Adsense>
-    <form id="calcform" name="calcform" autocomplete="off">
+    <form id="desingiput" name="desingiput" autocomplete="off">
 <div class="form-group">
 <label for="phase">Select current type</label>
-<select id="phase" name="phase" v-model="currenttype" @change="currentchange()" class="form-control" autofocus>
+<select v-model="currenttype" @change="currentchange()" class="form-control" autofocus>
 <option>DC</option>
 <option>AC - Single phase</option>
 <option>AC - Three phase</option>
@@ -44,7 +44,7 @@ data-full-width-responsive="true">
 </div>
 <div class="form-group" v-if="threephase === true">
 <label for="volt">Select voltage type</label>
-<select id="volt" name="volt" v-model="voltagetype" class="form-control">
+<select v-model="voltagetype" class="form-control">
 <option>Line to line voltage</option>
 <option>Line to neutral voltage</option>
 </select>
@@ -68,7 +68,7 @@ data-full-width-responsive="true">
 </div>
 <div class="form-group">
 <button type="button" title="Calculate" class="btn btn-secondary" @click="currentchange()"><span>=></span> Answer</button>
-<button type="reset" title="Reset" class="btn btn-secondary" onclick="setfocus()"><span>↺</span> Reset</button>
+<button type="reset" title="Reset" class="btn btn-secondary" @click="reset()"><span>↺</span> Reset</button>
 </div>
 <div class="form-group">
 <label for="y">Power result in kilowatts</label>
@@ -82,7 +82,7 @@ data-full-width-responsive="true">
 <div class="form-group">
 <label for="y">Power result in watts</label>
 <div class="input-group">
-<input type="text" v-model="w" name="y2" class="form-control" readonly>
+<input type="text" v-model="w" class="form-control" readonly>
 <div class="input-group-append">
 <span class="input-group-text">W</span>
 </div>
@@ -339,9 +339,18 @@ else
 
   },
     reset(){
-      this.number1 = null;
-      this.number2 = null;
-      this.answer = ''
+      this.currenttype = "DC",
+      this.powerfactor = false,
+      this.threephase = false,
+      this.amperselect = "A",
+      this.voltagechange = "V",
+      this.kw = "",
+      this.w = "",
+      this.mw = "",
+      this.number1 = "",
+      this.number2 = "",
+      this.powerfactorinput = "",
+      this.voltagetype = "Line to line voltage"
     }
   }
 
@@ -372,23 +381,9 @@ h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }
 h4 { font-size:1.2rem; }
 
-#calcform,#calcform2,#calcform3 { background:#a7c9b8; padding:20px; }
-#bdiv, #bdiv2, #bdiv3 { max-width:100px; }
-#b, #b2, #b3 { max-width:70px; }
-#bsel,#b2sel,#b3sel { max-width:20px; padding:0; }
-.calc, table.calc td { background:#a7c9b8; }
+#desingiput { background:#a7c9b8; padding:20px; }
 .btn span { font-weight: bold; font-size:large; }
-#log, #log2, #log3 { font-size:xx-large; font-family:"Times New Roman", Times, serif; }
-#txt, #txt3 { font-family:math; }
-#drop, #drop2, #drop3 { background:#fff; color:#212529; }
-#calcform1 button i { vertical-align: bottom; }
-#coefdiv1a, #coefdiv1b span { vertical-align: bottom; }
-#graph { display:none; }
 /*.btn b, .btn b2 { font-size:large; }*/
-#opsel { font-weight:bold; margin-top:10px; }
-#coefdiv1a, #coefdiv1b, #opdiv, #logdiv2 { display:none; }
 @media all and (max-width: 800px) {
-   #ln { padding-right:35px; }
-   #calcform1, #calcform3 { padding:10px; }
 }
 </style>

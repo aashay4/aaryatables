@@ -23,7 +23,7 @@
         <form id="inputdesign" name="inputdesign">
   <div class="form-group">
   <div class="form-row">
-  <div id="ln" class="col-1">ln</div>
+  <div class="col-1">ln</div>
   <div class="col">
   <input type="number" min="0" step="any" v-model="x" name="x" class="form-control form-control-lg" autocomplete="off">
   </div>
@@ -31,7 +31,7 @@
   </div>
   <div class="form-group">
   <button type="button" @click="calculate()" class="btn btn-secondary"><span>= ></span> Calculate</button>
-  <button type="reset" @click="reset()" class="btn btn-secondary"><span>&times;</span> Reset</button>
+  <button @click="reset()" class="btn btn-secondary"><span>&times;</span> Reset</button>
   </div>
   <div class="form-group">
   <label for="y">Result</label>
@@ -133,9 +133,8 @@ export default {
   },
   methods: {
     reset(){
-      this.answer = '';
-      this.baseinput = '';
-      this.input = '';
+      this.x = '';
+      this.y = '';
     },
     calculate(){
       var x=this.x;
@@ -174,26 +173,10 @@ h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }
 h4 { font-size:1.2rem; }
-#formnumber1,#inputdesign2,#inputdesign3,#inputdesign { background:#a7c9b8; padding:20px; }
-#bdiv, #bdiv2, #bdiv3 { max-width:100px; }
-#ln { font-size:xx-large; font-family:"Times New Roman", Times, serif; }
+#inputdesign { background:#a7c9b8; padding:20px; }
 #inputdesign button i { vertical-align: bottom; }
-#b, #b2, #b3 { max-width:70px; }
-#bsel,#b2sel,#b3sel { max-width:20px; padding:0; }
-.calc, table.calc td { background:#a7c9b8; }
-.btn span { font-weight: bold; font-size:large; }
-#log, #log2, #log3 { font-size:xx-large; font-family:"Times New Roman", Times, serif; }
-#asdf, #asdf3 { font-family:math; }
-#drop, #drop2, #drop3 { background:#fff; color:#212529; }
-#formnumber1 button i { vertical-align: bottom; }
-#characterfidi, #charryberry span { vertical-align: bottom; }
-#lkjh { display:none; }
-/*.btn b, .btn b2 { font-size:large; }*/
-#opsel { font-weight:bold; margin-top:10px; }
-#characterfidi, #charryberry, #opdiv, #logdiv2 { display:none; }
 @media all and (max-width: 800px) {
-   #ln { padding-right:35px; }
-   #formnumber1, #inputdesign3 { padding:10px; }
+   
 }
 
 </style>

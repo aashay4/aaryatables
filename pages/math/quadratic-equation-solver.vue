@@ -22,15 +22,14 @@
 <div class="">
 
 <form id="designform">
-  <table>
+  <table class="mobstyle">
     <tbody>
       <tr>
       <td><input type="number" step="any" v-model="x" class="intext"></td>
-      <td style="font-size: 2.1em;" class="math"><i>x</i><span style="font-size: 0.8em"><sup>2 </sup>+</span></td>
+      <td style="font-size: 2.1em;"><i>x</i><span style="font-size: 0.8em"><sup>2 </sup>+</span></td>
       <td><input type="number" step="any" v-model="x2" class="intext"></td>
-      <td style="font-size: 2.1em" class="math"><i>x </i><span style="font-size: 0.8em">+</span></td>
+      <td style="font-size: 2.1em"><i>x </i><span style="font-size: 0.8em">+</span></td>
       <td><input type="number" step="any" v-model="x3" class="intext"></td>
-      <td style="font-size: 2.1em" class="math">= 0</td>
       </tr>
       <tr>
       <td>&nbsp;</td>
@@ -47,17 +46,17 @@
       </tr>
       <tr>
       <td>Quadratic formula:</td>
-      <td class="math"><i>x</i><sub><span style="font-size: 0.8em">1,2</span></sub>=</td>
+      <td><i>x</i><sub><span style="font-size: 0.8em">1,2</span></sub>=</td>
       <td colspan="5"><input type="text" :class="{ buttonclicked1 : fractclicked1 }" v-model="y3" class="outtext" readonly></td>
       </tr>
       <tr>
       <td>First root:</td>
-      <td class="math"><i>x</i><sub><span style="font-size: 0.8em">1&nbsp;&nbsp; </span></sub>=</td>
+      <td><i>x</i><sub><span style="font-size: 0.8em">1&nbsp;&nbsp; </span></sub>=</td>
       <td colspan="5"><input type="text" :class="{ buttonclicked1 : fractclicked1 }" v-model="y1" class="outtext" readonly></td>
       </tr>
       <tr>
       <td>Second root:</td>
-      <td class="math"><i>x</i><sub><span style="font-size: 0.8em">2</span></sub> =</td>
+      <td><i>x</i><sub><span style="font-size: 0.8em">2</span></sub> =</td>
       <td colspan="5"><input type="text" :class="{ buttonclicked1 : fractclicked1 }" v-model="y2" class="outtext" readonly></td>
       </tr>
     </tbody>
@@ -67,7 +66,8 @@
 </form>
 </div><br>
 <div class="">
-
+  <h2>About quadratic equation calculator:</h2>
+  <p>You can solve quadratic equations with the help of this tool. A quadratic equation can also help you to solve such problems. The tool shows answers in four different modes. The modes are Discriminant, Quadratic formula, First root, and Second root.</p>
 </div>
   </div>
 </div></div>
@@ -113,7 +113,7 @@ export default {
   head() {
     // sets document title
     return {
-      title: 'quadratic equation solver tool',
+      title: 'quadratic equation solver/calculator',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
@@ -266,6 +266,13 @@ export default {
  #designform button i { vertical-align: bottom; }
  /*.btn b, .btn b2 { font-size:large; }*/
  @media all and (max-width: 800px) {
-    #designform, #calcform3 { padding:10px; }
+    #designform { padding:10px; }
  }
+ @media all and (max-width: 576px) {
+	.mobstyle tr:nth-child(2) input { width:50px; }
+}
+@media all and (min-width: 577px) {
+	.mobstyle tr:nth-child(2) input { width:70px; }
+}
+
 </style>

@@ -20,31 +20,31 @@
       data-ad-format="auto"
       data-full-width-responsive="true">
     </Adsense>
-      <form id="calcform1" name="calcform" autocomplete="off">
+      <form id="designmodel" autocomplete="off">
         <div class="form-group">
-<table class="calc2">
+<table>
 <tbody>
 <tr>
 <td>Enter kilovolt-amps:</td>
-<td class="math w3-padding"><input type="number" v-model="number1" min="0" step="any" class="intext"></td>
-<td class="mathsymbol w3-padding" style="text-align:left">Kva</td>
+<td class="w3-padding"><input type="number" v-model="number1" min="0" step="any" class="intext"></td>
+<td class="w3-padding" style="text-align:left">Kva</td>
 </tr>
 <tr>
 <td>Enter Power factor:</td>
-<td class="w3-padding math"><input type="number" v-model="number2" min="0" step="any" class="intext"></td>
-<td class="mathsymbol" style="text-align:left"></td>
+<td class="w3-padding"><input type="number" v-model="number2" min="0" step="any" class="intext"></td>
+<td class="" style="text-align:left"></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
 <td class="w3-padding"><button @click="changedthings()" type="button" class="btn btn-secondary"><span>=></span> Answer</button>
-<button onclick="setfocus()" type="reset" class="btn btn-secondary"><span>↺</span> Reset</button>
+<button @click="reset()" class="btn btn-secondary"><span>↺</span> Reset</button>
 </td>
 <td>&nbsp;</td>
 </tr>
 <tr>
 <td>Amps result:</td>
-<td class="math w3-padding"><input type="text" v-model="answer" class="outtext" readonly></td>
-<td class="mathsymbol" style="text-align:left">A</td>
+<td class="w3-padding"><input type="text" v-model="answer" class="outtext" readonly></td>
+<td class="" style="text-align:left">A</td>
 </tr>
 </tbody>
 </table>
@@ -137,8 +137,16 @@ export default {
     else{
       alert("Please enter power-factor in zero or one")
     }
-
-}}
+},
+reset(){
+  this.number1 = null;
+  this.number2 = null;
+  this.answer = "";
+  this.powerfactor = "";
+  this.showthis = false;
+  this.volt = "Line to line voltage";
+}
+}
 }
 </script>
 
@@ -161,7 +169,7 @@ export default {
       height: 290px;
     }
   }
-#calcform1,#calcform2,#calcform3 { background:#a7c9b8; padding:20px; }
+#designmodel { background:#a7c9b8; padding:20px; }
 h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }

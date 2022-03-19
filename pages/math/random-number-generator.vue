@@ -38,7 +38,7 @@
 <div class="col-sm-9">
 
 <button @click="fract()" class="btn btn-primary">=> Generate</button>
-<button id="reset" title="Reset" class="btn btn-secondary" @click="reset()"><span>&times;</span> Reset</button>
+<button title="Reset" class="btn btn-secondary" @click="reset()"><span>&times;</span> Reset</button>
 </div>
 </div>
 <div class="form-group">

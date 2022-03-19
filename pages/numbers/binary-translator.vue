@@ -252,10 +252,6 @@ h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }
 h4 { font-size:1.2rem; }
 #theraldesign { background:#a7c9b8; padding:20px; }
-table.calc td { background:#a7c9b8; }
-.btn span { font-weight: bold; font-size:large; }
-#txtarea, #txt3 { font-family:math; }
-#drop, #drop2, #drop3 { background:#fff; color:#212529; }
 #theraldesign button i { vertical-align: bottom; }
 /*.btn b, .btn b2 { font-size:large; }*/
 #ultimatedes { display:none; }

@@ -31,13 +31,13 @@
       <p>Enter fractions: </p>
     </div>
     <div v-if="showleft === true" class="form-group input-group">
-<span id="radical">&#8730;</span>
-<span id="num">
+<span>&#8730;</span>
+<span>
 <input type="text" v-model="x" class="form-control" autofocus>
 </span>
 <div class="form-group">
 <button type="button" @click="simpleroot()" class="btn btn-secondary"><span>=</span> Calculate</button>
-<button type="reset" class="btn btn-secondary"><span>&times;</span> Reset</button>
+<button @click="reset()" class="btn btn-secondary"><span>&times;</span> Reset</button>
 </div>
 <div class="form-group input-group">
 <input :class="{ buttonclicked1 : fractclicked1 }" type="text" v-model="y" class="form-control" readonly>
@@ -168,11 +168,14 @@ this.showright = false;
       this.showright = true;
     },
     reset(){
-      this.dividend = '';
-      this.divisor = '';
-      this.quotientdec = '';
-      this.quotientint = '';
-      this.remainder = '';
+      this.showleft = true;
+      this.showright = false;
+      this.fractclicked1 = false;
+      this.x = "";
+      this.y = "";
+      this.y2 = "";
+      this.n = "";
+      this.x2 = "";
     },
     simpleroot(){
       this.fractclicked1 = true;

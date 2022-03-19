@@ -87,7 +87,7 @@ export default {
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-      { hid: 'description', name: 'description', content: 'Electronics tools and converters.' }
+      { hid: 'description', name: 'description', content: 'Energy tools and converters.' }
   ],
     link: [
     {rel: 'canonical', href: 'https://www.aaryatables.com/energy'}

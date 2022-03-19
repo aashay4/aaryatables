@@ -20,13 +20,13 @@
           data-full-width-responsive="true">
         </Adsense>
 <div class="">
-  <form id="designform" autocomplete="off">
+  <div id="designform" autocomplete="off">
     <table class="">
     <tbody>
     <tr>
       <label class="col-sm-4 col-form-label">First number:</label>
     <td rowspan="2">
-      <input style="" type="number" v-model="n1" class="intext" autofocus></td><span class="math">&times;10&nbsp;</span>
+      <input style="" type="number" v-model="n1" class="intext" autofocus></td><span class="">&times;10&nbsp;</span>
 
     <td><input type="number" step="any" v-model="e1" style="width:70px; text-align:left" class="intext"></td>
     <td rowspan="2"></td>
@@ -49,7 +49,7 @@
     <tr>
       <label class="col-sm-4 col-form-label">Second number:</label>
     <td rowspan="2">
-      <input style="" type="number" step="any" name="x3" v-model="n2" class="intext" autofocus></td><span class="math">&times;10&nbsp;</span>
+      <input style="" type="number" step="any" name="x3" v-model="n2" class="intext" autofocus></td><span class="">&times;10&nbsp;</span>
 
     <td><input type="number" step="any" name="x4" v-model="e2" style="width:70px; text-align:left" class="intext"></td>
     <td rowspan="2"></td>
@@ -73,7 +73,7 @@
 </div>
 </div>
 <div class="form-group row">
-<label for="y2" class="col-sm-4 col-form-label">E notation</label>
+<label class="col-sm-4 col-form-label">E notation</label>
 <div class="col-sm-8">
 <input type="text" v-model="enotation" :class="{ buttonclicked1 : fractclicked1 }" class="form-control" readonly>
 </div>
@@ -87,7 +87,7 @@
 <div class="form-group row mb-0">
 <label for="y3" class="col-sm-4 col-form-label">&nbsp;</label>
 </div>
-</form>
+</div>
 </div><br>
 <div class="">
 
@@ -300,7 +300,6 @@ str2num(s)
 </script>
 
 <style lang="css" scoped>
-.calc, table.calc td { background:#a7c9b8; }
 #designform { background:#a7c9b8; padding:20px; }
 .buttonclicked1{
   background-color: Violet;
@@ -324,16 +323,17 @@ str2num(s)
     }
   }
 .adslot_1 { display:none; }
- h1 { font-size:1.6rem; }
- h2 { font-size:1.4rem; }
- h3 { font-size:1.4rem; }
- h4 { font-size:1.2rem; }
- #op { font-weight:bold; }
- #td11, #td14 { display:none; }
-#td12, #tabetd, #tabetd14 { padding-bottom:0px; }
-#td21, #td22, #tabetd1455, #td42 { border-top:#666 3px solid; padding-top:1px; }
- #wrapper td { padding-left:unset; padding-right:unset; }
-@media all and (max-width: 800px) {
-    .adslot_1, .adslot_2, .adslot_3 { display:none; }
- }
+h1,h2 { font-size:1.6rem; }
+h3 { font-size:1.4rem; }
+ #designform { padding:20px; background:#ADD8E6; max-width:600px; }
+ #designform .btn span { font-weight: bold; font-size:large; }
+ #designform .input-group input[type=number]:first-child { margin-top:20px; }
+ #designform .input-group input[type=text]:first-child { margin-top:20px; }
+ #designform .input-group span { margin-top:25px; }
+ #designform select { font-weight: bold; font-size:large; }
+ #designform select option { font-weight: bold; font-size:large; }
+ #designform .btn img { filter: invert(1); }
+@media all and (max-width: 576px) {
+ #designform .form-group { margin-bottom: 0; }
+}
 </style>
