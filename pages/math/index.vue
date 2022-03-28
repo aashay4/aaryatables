@@ -22,9 +22,6 @@
       </Adsense>
       <ul class="w3-ul w3-hoverable w3-white">
         <li class="w3-padding-16">
-          <span class="w3-large"><a class="removelink" href="/math/quadratic-equation-solver"> Quadratic equation solver</a></span><br>
-        </li>
-        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/logarithm-calculator"> Logarithm Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
@@ -131,6 +128,9 @@
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/subtraction-calculator"> Subtraction Calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/quadratic-equation-solver"> Quadratic equation solver</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/division-calculator"> Division Calculator</a></span><br>

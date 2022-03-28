@@ -75,6 +75,24 @@
 
       <ul class="w3-ul w3-hoverable w3-white">
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/temperature-converter/rankine-to-fahrenheit"> Rankine to Fahrenheit</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/temperature-converter/rankine-to-celsius"> Rankine to Celsius</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/temperature-converter/rankine-to-kelvin"> Rankine to Kelvin</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/temperature-converter/kelvin-to-fahrenheit"> Kelvin to Fahrenheit</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/temperature-converter/kelvin-to-celsius"> Kelvin to Celsius</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/temperature-converter/kelvin-to-rankine"> Kelvin to Rankine conversion</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/temperature-converter/fahrenheit-to-celsius"> Fahrenheit to Celsius</a></span><br>
         </li>
         <li class="w3-padding-16">

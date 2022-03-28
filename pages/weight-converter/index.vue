@@ -99,6 +99,36 @@
 
       <ul class="w3-ul w3-hoverable w3-white">
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/weight-converter/tons-to-kilograms"> Tons to Kilograms</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/weight-converter/tons-to-pounds"> Tons to Pounds</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/weight-converter/pounds-to-grams"> Pounds to Grams</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/weight-converter/pounds-to-kilograms"> Pounds to KG</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/weight-converter/pounds-to-ounces"> Pounds to Ounces</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/weight-converter/pounds-to-stones"> Pounds to Stones</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/weight-converter/pounds-to-tons"> Pounds to Tons</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/weight-converter/ounces-to-grams"> Ounces to Grams</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/weight-converter/ounces-to-kilograms"> Ounces to Kilograms</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/weight-converter/ounces-to-pounds"> Ounces to Pounds</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/weight-converter/grams-to-kilograms"> Grams to Kilograms</a></span><br>
         </li>
         <li class="w3-padding-16">
@@ -124,6 +154,12 @@
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/weight-converter/milligrams-to-grams"> Milligrams to Grams</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/weight-converter/milligrams-to-kilograms"> Milligrams to Kilograms</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/weight-converter/milligrams-to-micrograms"> Milligrams to Micrograms</a></span><br>
         </li>
       </ul>
   </div>

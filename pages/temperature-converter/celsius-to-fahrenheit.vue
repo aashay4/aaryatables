@@ -58,19 +58,10 @@
       </div><hr>
           <ul class="w3-ul w3-hoverable w3-white">
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/temperature-converter/celsius-to-kelvin"> celsius to kelvin</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/temperature-converter/celsius-to-kelvin"> Celsius to Kelvin Conversion</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/temperature-converter/celsius-to-rankine"> celsius to rankine</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/temperature-converter/fahrenheit-to-celsius"> fahrenheit to celsius</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/temperature-converter/fahrenheit-to-kelvin"> fahrenheit to kelvin</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/temperature-converter/fahrenheit-to-rankine"> fahrenheit to rankine</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/temperature-converter/celsius-to-rankine"> Celsius to Rankine Conversion</a></span><br>
             </li>
           </ul>
       </div>

@@ -130,20 +130,10 @@ export default {
   },
   methods: {
     currentchange(){
-      if(this.number2 === '1')
-      {
+
   var x1= this.number1;
   var x2 = this.number2;
-  this.answer = (x1/1000);
-}
-else if(this.number2 === '0'){
-  var x1= this.number1;
-  var x2 = this.number2;
-  this.answer = x1*0;
-}
-else{
-  alert("please enter 0 or 1 power factor")
-}
+  this.answer = x1*x2/1000;
   },
     reset(){
       this.number1 = null;

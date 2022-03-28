@@ -8,8 +8,6 @@
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
   <div class="w3-margin w3-white">
-
-
     <div class="w3-container w3-padding">
           <a href="/">Home</a> &rsaquo; <a href="/weight-converter">Weight</a> &rsaquo; Grams to Kilograms<hr>
       <h1 class="w3-text-teal"><b>Grams to Kilograms (g to kg)</b></h1>
@@ -67,21 +65,6 @@
             </li>
             <li class="w3-padding-16">
               <span class="w3-large"><a class="removelink" href="/weight-converter/grams-to-pounds"> Grams to Pounds</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-grams"> kilograms to grams</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-milligrams"> kilograms to milligrams</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-pounds"> kilograms to pounds</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-tons"> kilograms to tons</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/milligrams-to-grams"> milligrams to grams</a></span><br>
             </li>
           </ul>
       </div>

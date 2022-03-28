@@ -22,6 +22,33 @@
       </Adsense>
       <ul class="w3-ul w3-hoverable w3-white">
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/kcal-to-cal"> kcal to calories converter</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/kcal-to-joules"> kcal to joules</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/kcal-to-kj"> kcal to kJ</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/ev-to-joules"> ev to joules</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/ev-to-kev"> eV to keV conversion</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/ev-to-gev"> eV to GeV</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/kev-to-ev"> keV to eV conversion</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/mev-to-ev"> MeV to eV conversion</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/gev-to-ev"> GeV to eV conversion</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/energy/kj-to-joules"> kj to joules</a></span><br>
         </li>
         <li class="w3-padding-16">
@@ -34,13 +61,46 @@
           <span class="w3-large"><a class="removelink" href="/energy/kj-to-kcal"> kJ to kcal</a></span><br>
         </li>
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/kwh-to-btu"> kWh to BTU</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/kwh-to-joules"> kWh to Joules</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/calories-to-joules"> Calories to Joules</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/calories-to-kilojoules"> Calories to kiloJoules</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/calories-to-kcal"> Calories to kcal</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/energy/joules-to-kj"> joules to Kilojoules</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/energy/joules-to-calories"> joules to Calories</a></span><br>
         </li>
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/joules-to-btu-conversion"> Joules to BTU conversion</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/energy/joules-to-kcal"> joules to kilocalories</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/Joules-to-kWh"> Joules to kWh conversion</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/Joules-to-ev"> Joules to ev</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/btu-to-kj"> BTU to kj</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/btu-to-joules"> BTU to Joules</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/btu-to-kwh"> BTU to kwh</a></span><br>
         </li>
           </ul>
   </div>

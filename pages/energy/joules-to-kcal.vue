@@ -58,22 +58,19 @@
       </div><hr>
           <ul class="w3-ul w3-hoverable w3-white">
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/energy/joules-to-calories"> joules to calories</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/energy/joules-to-kj"> joules to Kilojoules</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/energy/joules-to-kj"> joules to kj</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/energy/joules-to-calories"> joules to Calories</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/energy/kj-to-btu"> kj to btu</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/energy/joules-to-btu-conversion"> Joules to BTU conversion</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/energy/kj-to-calories"> kj to calories</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/energy/Joules-to-kWh"> Joules to kWh conversion</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/energy/kj-to-joules"> kj to joules</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/energy/kj-to-kcal"> kj to kcal</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/energy/Joules-to-ev"> Joules to ev</a></span><br>
             </li>
           </ul>
       </div>

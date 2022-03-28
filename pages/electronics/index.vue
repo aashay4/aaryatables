@@ -25,6 +25,12 @@
           <span class="w3-large"><a class="removelink" href="/electronics/amps-to-kw"> Amps to kW</a></span><br>
         </li>
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/electricity-bill-calculator"> Calculate electricity bill</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/energy-consumption-calculator"> Calculate energy consumption</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/electronics/amps-to-watts"> Amps to Watts(W)</a></span><br>
         </li>
         <li class="w3-padding-16">
@@ -82,7 +88,46 @@
           <span class="w3-large"><a class="removelink" href="/electronics/kva-to-va"> kVA to VA</a></span><br>
         </li>
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/watts-to-amps"> Watts to Amps</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/watts-to-joules"> Watts to joules calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+        <span class="w3-large"><a class="removelink" href="/electronics/ev-to-volts"> Electron-volts to volts calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/watts-to-kwh"> Watts to kWh</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/watts-to-volts"> Watts to volts</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/watts-to-va"> Watts to VA</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/watts-to-kva"> Watts to kVA</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/volts-to-amps"> Volts to amps</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/volts-to-kilowatts"> Volts to kilowatts</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/volts-to-watts"> Volts to watts calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/volts-to-joules"> Volts to joules</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/volts-to-ev"> Volts to eV</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/electronics/joules-to-watts-calculator"> Joules to watts</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/joules-to-volts"> Joules to volts</a></span><br>
         </li>
       </ul>
   </div>

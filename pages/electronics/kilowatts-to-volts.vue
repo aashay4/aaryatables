@@ -147,30 +147,7 @@ export default {
         this.threephase = false;
         var x1 = this.number1;
         var x2 = this.number2;
-        if(this.powerfactorinput === '1'){
-        this.ansam = (x1/x2)*1000;
-    }
-      else if(this.powerfactorinput === '0'){
-        this.ansam = Infinity;
-      }
-      else{
-        alert("enter power in 0 or 1")
-      }
-      }
-      else if(this.currenttype === "AC - Three phase"){
-        this.powerfactor = true;
-        this.threephase = false;
-        var x1 = this.number1;
-        var x2 = this.number2;
-        if(this.powerfactorinput === '1'){
-        this.ansam = (x1/x2)*577.35026919;
-      }
-      else if(this.powerfactorinput === '0'){
-        this.ansam = Infinity;
-      }
-      else{
-        alert("enter power in 0 or 1")
-      }
+        this.ansam *= (x1/x2)*1000;
       }
       else if(this.currenttype === "DC"){
         var x1=this.number1;
@@ -178,8 +155,8 @@ export default {
             this.ansam = (x1/x2)*1000;
 }
       else if(this.currenttype === "AC - Three phase"){
-        this.threephase = true;
         this.powerfactor = true;
+        this.threephase = false;
         var x1 = this.number1;
         var x2 = this.number2;
         if( this.wattchange === "kW" ) x1/=1000000;

@@ -66,21 +66,6 @@
             <li class="w3-padding-16">
               <span class="w3-large"><a class="removelink" href="/weight-converter/grams-to-kilograms"> Grams to Kilograms</a></span><br>
             </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-grams"> kilograms to grams</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-milligrams"> kilograms to milligrams</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-pounds"> kilograms to pounds</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-tons"> kilograms to tons</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/milligrams-to-grams"> milligrams to grams</a></span><br>
-            </li>
           </ul>
       </div>
     </div>

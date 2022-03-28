@@ -58,28 +58,13 @@
       </div><hr>
           <ul class="w3-ul w3-hoverable w3-white">
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/grams-to-milligrams"> Grams to Milligrams</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-milligrams"> Kilograms to Milligrams</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/grams-to-ounces"> Grams to Ounces</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-pounds"> Kilograms to Pounds</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/grams-to-pounds"> Grams to Pounds</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-grams"> kilograms to grams</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-milligrams"> kilograms to milligrams</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-pounds"> kilograms to pounds</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/grams-to-kilograms"> grams to kilograms</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/milligrams-to-grams"> milligrams to grams</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-grams"> Kilograms to grams</a></span><br>
             </li>
           </ul>
       </div>

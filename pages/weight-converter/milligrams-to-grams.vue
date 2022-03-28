@@ -58,28 +58,10 @@
       </div><hr>
           <ul class="w3-ul w3-hoverable w3-white">
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/grams-to-milligrams"> Grams to Milligrams</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/weight-converter/milligrams-to-kilograms"> Milligrams to Kilograms</a></span><br>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/grams-to-ounces"> Grams to Ounces</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/grams-to-pounds"> Grams to Pounds</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-grams"> kilograms to grams</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-milligrams"> kilograms to milligrams</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-pounds"> kilograms to pounds</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/kilograms-to-tons"> kilograms to tons</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/grams-to-kilograms"> grams to kilograms</a></span><br>
+              <span class="w3-large"><a class="removelink" href="/weight-converter/milligrams-to-micrograms"> Milligrams to Micrograms</a></span><br>
             </li>
           </ul>
       </div>

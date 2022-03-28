@@ -41,7 +41,7 @@
   </div>
   </div>
   <div class="form-group" v-if="powerfactor === true">
-  <label for="pf">Enter power factor</label>
+  <label>Enter power factor</label>
   <input type="number" v-model="powerfactorinput" class="form-control">
   </div>
   <div class="form-group">
@@ -138,7 +138,6 @@ export default {
 
 var x1= this.number1;
 var x2 = this.number2;
-alert(x1)
 this.ansam = x1 * x2;
 
   },
