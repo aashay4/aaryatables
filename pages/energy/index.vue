@@ -22,6 +22,12 @@
       </Adsense>
       <ul class="w3-ul w3-hoverable w3-white">
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/candela-to-lumens"> Candela to lumens calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/energy/candela-to-lux"> Candela to lux</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/energy/kcal-to-cal"> kcal to calories converter</a></span><br>
         </li>
         <li class="w3-padding-16">
