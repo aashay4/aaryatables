@@ -156,7 +156,7 @@ export default {
   head() {
     // sets document title
     return {
-      title: 'Binary translator to text (English)',
+      title: 'Binary translator - Free Binary to English Converter',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
