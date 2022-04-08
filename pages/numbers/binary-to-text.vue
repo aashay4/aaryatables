@@ -46,7 +46,7 @@
 <h2 class="w3-center"><b>Binary to text</b></h2>
 <p>This is an easy-to-use binary to English tool to convert binary code to text in just an easy step. All you need to do is enter a binary number in the form of zeros and ones and you will get an answer in the form ASCII text value.</p>
 <h2>Importance of binary to words translation</h2>
-<p>A binary to English converter becomes important because all the electronic systems understand just the binary numbers while it becomes next to impossible for humans to send an instruction in the binary number. As binary numbers include just zeros and ones, the instruction becomes big and complicated. For that reason, it becomes really important for the software engineers to convert binary to English and then send the instruction to the machine. If you are also working on such a product then you can consider using our tool for such conversion.</p>
+<p>A binary to Ascii converter becomes important because all the electronic systems understand just the binary numbers while it becomes next to impossible for humans to send an instruction in the binary number. As binary numbers include just zeros and ones, the instruction becomes big and complicated. For that reason, it becomes really important for the software engineers to convert binary to Ascii and then send the instruction to the machine. If you are also working on such a product then you can consider using our tool for such conversion.</p>
   </div>
 </div>
   <hr>
@@ -121,7 +121,7 @@ export default {
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-      { hid: 'description', name: 'description', content: 'Convert binary to English.' }
+      { hid: 'description', name: 'description', content: 'Convert binary to Ascii code.' }
   ],
     link: [
     {rel: 'canonical', href: 'https://www.aaryatables.com/numbers/binary-to-text'}
