@@ -22,7 +22,7 @@
       </div>
       <div class="w3-padding">
         <div class="input-group">
-        <input type="number" v-model="number1" min="0" step="any" class="form-control" placeholder="Enter a value for weight converter" @change="convert()" required>
+        <input type="number" v-model="number1" min="0" step="any" class="form-control" placeholder="Enter a value for weight converter" @input="convert()" required>
         <div class="input-group-append">
         <select v-model="convertweight" @change="convert()" class="form-control">
         <option>Fahrenheit:	</option>

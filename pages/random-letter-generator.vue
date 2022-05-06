@@ -171,7 +171,7 @@ reset1(){
     //var num = Math.floor(Math.random() * (max - min + 1)) + min;
     //this.area = num;
     var result           = '';
-var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var charactersLength = characters.length;
 for ( var i = 0; i < length; i++ ) {
   result += characters.charAt(Math.floor(Math.random() * charactersLength)) + ' ';

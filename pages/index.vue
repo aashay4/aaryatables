@@ -60,6 +60,9 @@
         <li>
           <span class="w3-large"><a class="removelink" href="/random-letter-generator"> Random letter generator</a></span><br>
         </li>
+        <li>
+          <span class="w3-large"><a class="removelink" href="/word-counter"> Word counter</a></span><br>
+        </li>
       </ul>
 </div>
   <!-- Blog entry -->
