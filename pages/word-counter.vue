@@ -10,7 +10,7 @@
         <div class="w3-container w3-padding">
               <a href="/">Home</a> &rsaquo; Word counter<hr>
           <h1 class="w3-text-teal"><b>Count words</b></h1>
-          <p>Words, characters and sentences counter oninput.</p>
+          <p>Words, characters, and sentences counter on input.</p>
           <Adsense
           class="adsbygoogle infeed"
           style="display:block"

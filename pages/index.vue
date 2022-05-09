@@ -63,6 +63,9 @@
         <li>
           <span class="w3-large"><a class="removelink" href="/word-counter"> Word counter</a></span><br>
         </li>
+        <li>
+          <span class="w3-large"><a class="removelink" href="/case-converter"> Case Converter</a></span><br>
+        </li>
       </ul>
 </div>
   <!-- Blog entry -->
