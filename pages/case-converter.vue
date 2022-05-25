@@ -145,7 +145,6 @@ export default {
     this.area = splitStr.join(' ');
   }
   else{
-    alert("this")
     this.area = this.sentenceCase(this.area);
   }
       }

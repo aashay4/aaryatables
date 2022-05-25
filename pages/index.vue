@@ -66,7 +66,19 @@
         <li>
           <span class="w3-large"><a class="removelink" href="/case-converter"> Case Converter</a></span><br>
         </li>
-      </ul>
+        <li>
+          <span class="w3-large"><a class="removelink" href="/bmi-calculator"> BMI Calculator</a></span><br>
+        </li>
+        <li>
+          <span class="w3-large"><a class="removelink" href="/grade-calculator"> Grade Calculator</a></span><br>
+        </li>
+        <li>
+          <span class="w3-large"><a class="removelink" href="/date-calculator"> Date calculator</a></span><br>
+        </li>
+        <li>
+          <span class="w3-large"><a class="removelink" href="/age-calculator"> Age calculator</a></span><br>
+        </li>
+        </ul>
 </div>
   <!-- Blog entry -->
 

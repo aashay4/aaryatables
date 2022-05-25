@@ -20,7 +20,7 @@
         data-ad-format="auto"
         data-full-width-responsive="true">
         </Adsense>
-        <form name="formnumber1" autocomplete="off">
+        <form id="formnumber1" autocomplete="off">
   <table>
   <tbody>
   <tr>
