@@ -20,7 +20,6 @@
           data-full-width-responsive="true">
         </Adsense><br>
 <div class="">
-  <form id="designform" autocomplete="off">
     <form id="calcform" autocomplete="off">
 
 <div v-model="datediv1" class="form-group">
@@ -136,7 +135,6 @@
 </div>
 </div>
 </div>
-</form>
 
 </form><br>
 
@@ -307,7 +305,6 @@
   <input type="text" v-model="seconds" placeholder="Answer in seconds" readonly class="form-control">
   </div>
   </form>
-
 </div><br>
   </div>
 </div></div>
