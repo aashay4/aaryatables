@@ -20,7 +20,7 @@
           data-full-width-responsive="true">
         </Adsense><br>
 <div class="">
-    <form id="calcform" autocomplete="off">
+  <form id="designform" autocomplete="off">
 
 <div v-model="datediv1" class="form-group">
 <label>Date</label>
@@ -28,18 +28,18 @@
 <div class="col-4 order-1">
 <select v-model="m1" class="form-control">
 <option>month</option>
-<option>January</option>
-<option>February</option>
-<option>March</option>
-<option>April</option>
-<option>May</option>
-<option>June</option>
-<option>July</option>
-<option>August</option>
-<option>September</option>
-<option>October</option>
-<option>November</option>
-<option>December</option>
+<option value=1>January</option>
+<option value=2>February</option>
+<option value=3>March</option>
+<option value=4>April</option>
+<option value=5>May</option>
+<option value=6>June</option>
+<option value=7>July</option>
+<option value=8>August</option>
+<option value=9>September</option>
+<option value=10>October</option>
+<option value=11>November</option>
+<option value=12>December</option>
 </select>
 </div>
 
@@ -135,6 +135,7 @@
 </div>
 </div>
 </div>
+</form>
 
 </form><br>
 
@@ -614,18 +615,4 @@ this.m2 = "Sunday";
    max-width:500px;
 }
 .btn span { font-weight:bold; font-size:large; }
-
-@media all and (max-width: 800px) {
-    .adslot_1, .adslot_2, .adslot_3 { display:none; }
-    #calcform, #calcform2 { padding:20px; max-width:600px; background:#eee8d5; border-radius:7px; }
-    #picker1btn img, #picker3btn img, #picker4btn img { opacity:0.7; }
-    #picker1txt, #picker3txt, #picker4txt { display:none; }
-    #wrapper TD { padding-left:unset; padding-right:unset; }
-    .qs-datepicker-container { top:40px !important; left:-225px !important; }
-    .btn span { font-weight:bold; font-size:large; }
-    @media all and (max-width: 800px) {
-       #calcform, #calcform2 { padding:10px; }
-    }
-
- }
 </style>
