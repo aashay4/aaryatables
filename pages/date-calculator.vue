@@ -29,18 +29,18 @@
 <div class="col-4 order-1">
 <select v-model="m1" class="form-control">
 <option>month</option>
-<option value="1">January</option>
-<option value="2">February</option>
-<option value="3">March</option>
-<option value="4">April</option>
-<option value="5">May</option>
-<option value="6">June</option>
-<option value="7">July</option>
-<option value="8">August</option>
-<option value="9">September</option>
-<option value="10">October</option>
-<option value="11">November</option>
-<option value="12">December</option>
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
 </select>
 </div>
 
@@ -122,34 +122,11 @@
 <div class="form-group">
 <label>Date result</label>
 <div class="form-row">
+  <div class="col-3 order-2">
+  <input type="text" min="0" v-model="m2" placeholder="Month" class="form-control">
+  </div>
 <div class="col-3 order-1">
-<select v-model="wd2" readonly class="form-control">
-<option>day of week</option>
-<option value="2">Sun</option>
-<option value="3">Mon</option>
-<option value="4">Tue</option>
-<option value="5">Wed</option>
-<option value="6">Thu</option>
-<option value="7">Fri</option>
-<option value="1">Sat</option>
-</select>
-</div>
-<div class="col-3 order-2">
-<select v-model="m2" readonly class="form-control">
-<option>month</option>
-<option value="1">January</option>
-<option value="2">February</option>
-<option value="3">March</option>
-<option value="4">April</option>
-<option value="5">May</option>
-<option value="6">June</option>
-<option value="7">July</option>
-<option value="8">August</option>
-<option value="9">September</option>
-<option value="10">October</option>
-<option value="11">November</option>
-<option value="12">December</option>
-</select>
+  <input type="text" min="0" v-model="wd2" placeholder="day" class="form-control">
 </div>
 <div id="daysdiv2" class="col-3 order-3">
 <input type="number" v-model="d2" placeholder="day" readonly class="form-control">
@@ -535,9 +512,67 @@ this.y1 = y;
        t.subtract(y2, 'years').subtract(m2, 'months').subtract(w2, 'weeks').subtract(d2, 'days');
      }
     this.y2 = t.year();
-    this.m2 = t.month();
+    var m2 = t.day();
     this.d2 = t.date();
-    this.wd2 = t.day();
+    var wd2 = t.month() + 1;
+    if(wd2 === 1)
+{
+   this.wd2 = "January"
+}
+if(wd2 === 2){
+this.wd2 = "February";
+ }
+if(wd2 === 3){
+this.wd2 = "March";
+}
+if(wd2 === 4){
+this.wd2 = "April";
+}
+if(wd2 === 5){
+this.wd2 = "May";
+}
+if(wd2 === 6){
+this.wd2 = "June";
+}
+if(wd2 === 7){
+this.wd2 = "July";
+}
+if(wd2 === 8){
+this.wd2 = "August";
+}
+if(wd2 === 9){
+this.wd2 = "September";
+}
+if(wd2 === 10){
+this.wd2 = "October";
+}
+if(wd2 === 11){
+this.wd2 = "November";
+}
+if(wd2 === 12){
+this.wd2 = "December";
+}
+if(m2 === 1){
+this.m2 = "Monday";
+}
+if(m2 === 2){
+this.m2 = "Tuesday";
+}
+if(m2 === 3){
+this.m2 = "Wednesday";
+}
+if(m2 === 4){
+this.m2 = "Thursday";
+}
+if(m2 === 5){
+this.m2 = "Friday";
+}
+if(m2 === 6){
+this.m2 = "Saturday";
+}
+if(m2 === 7){
+this.m2 = "Sunday";
+}
     }
 }
 }
