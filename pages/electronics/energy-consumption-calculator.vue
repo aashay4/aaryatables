@@ -91,8 +91,6 @@ data-full-width-responsive="true">
 </div>
 </div>
 </form><br>
-<h2>About AMPS to KW tool:</h2>
-<p>To use this AMPs to KW tool, select the current type phase from DC, AC-single phase and AC-three phase. Once selected, enter the current unit in Ampere and voltage in volts. Once inserted, click on the "Answer" button. After clicking on the button, check the answers in Kilowatts, Watts and Milliwatts.</p>
       </div>
         </div>
   <hr>

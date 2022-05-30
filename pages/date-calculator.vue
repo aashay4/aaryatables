@@ -28,18 +28,18 @@
 <div class="col-4 order-1">
 <select v-model="m1" class="form-control">
 <option>month</option>
-<option value=1>January</option>
-<option value=2>February</option>
-<option value=3>March</option>
-<option value=4>April</option>
-<option value=5>May</option>
-<option value=6>June</option>
-<option value=7>July</option>
-<option value=8>August</option>
-<option value=9>September</option>
-<option value=10>October</option>
-<option value=11>November</option>
-<option value=12>December</option>
+<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option>
 </select>
 </div>
 
@@ -121,11 +121,34 @@
 <div class="form-group">
 <label>Date result</label>
 <div class="form-row">
-  <div class="col-3 order-2">
-  <input type="text" min="0" v-model="m2" placeholder="Month" class="form-control">
-  </div>
 <div class="col-3 order-1">
-  <input type="text" min="0" v-model="wd2" placeholder="day" class="form-control">
+<select v-model="wd2" readonly class="form-control">
+<option>day of week</option>
+<option value="2">Sun</option>
+<option value="3">Mon</option>
+<option value="4">Tue</option>
+<option value="5">Wed</option>
+<option value="6">Thu</option>
+<option value="7">Fri</option>
+<option value="1">Sat</option>
+</select>
+</div>
+<div class="col-3 order-2">
+<select v-model="m2" readonly class="form-control">
+<option>month</option>
+<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option>
+</select>
 </div>
 <div id="daysdiv2" class="col-3 order-3">
 <input type="number" v-model="d2" placeholder="day" readonly class="form-control">
@@ -135,7 +158,6 @@
 </div>
 </div>
 </div>
-</form>
 
 </form><br>
 
@@ -272,7 +294,7 @@
   </div>
   </div>
   <div class="form-group">
-  <button type="button" @click="finddays()" class="btn btn-success"><span>=</span> Calculate</button>
+  <button type="button" @click="finddays()" class="btn btn-success"><span>= ></span> Calculate</button>
   <button type="reset" @click="reset()" class="btn btn-secondary"><span>&times;</span> Reset</button>
   </div>
   <div id="timediv2" class="form-group">
@@ -306,6 +328,7 @@
   <input type="text" v-model="seconds" placeholder="Answer in seconds" readonly class="form-control">
   </div>
   </form>
+
 </div><br>
   </div>
 </div></div>
@@ -510,67 +533,9 @@ this.y1 = y;
        t.subtract(y2, 'years').subtract(m2, 'months').subtract(w2, 'weeks').subtract(d2, 'days');
      }
     this.y2 = t.year();
-    var m2 = t.day();
+    this.m2 = t.month();
     this.d2 = t.date();
-    var wd2 = t.month() + 1;
-    if(wd2 === 1)
-{
-   this.wd2 = "January"
-}
-if(wd2 === 2){
-this.wd2 = "February";
- }
-if(wd2 === 3){
-this.wd2 = "March";
-}
-if(wd2 === 4){
-this.wd2 = "April";
-}
-if(wd2 === 5){
-this.wd2 = "May";
-}
-if(wd2 === 6){
-this.wd2 = "June";
-}
-if(wd2 === 7){
-this.wd2 = "July";
-}
-if(wd2 === 8){
-this.wd2 = "August";
-}
-if(wd2 === 9){
-this.wd2 = "September";
-}
-if(wd2 === 10){
-this.wd2 = "October";
-}
-if(wd2 === 11){
-this.wd2 = "November";
-}
-if(wd2 === 12){
-this.wd2 = "December";
-}
-if(m2 === 1){
-this.m2 = "Monday";
-}
-if(m2 === 2){
-this.m2 = "Tuesday";
-}
-if(m2 === 3){
-this.m2 = "Wednesday";
-}
-if(m2 === 4){
-this.m2 = "Thursday";
-}
-if(m2 === 5){
-this.m2 = "Friday";
-}
-if(m2 === 6){
-this.m2 = "Saturday";
-}
-if(m2 === 7){
-this.m2 = "Sunday";
-}
+    this.wd2 = t.day();
     }
 }
 }
@@ -615,4 +580,18 @@ this.m2 = "Sunday";
    max-width:500px;
 }
 .btn span { font-weight:bold; font-size:large; }
+
+@media all and (max-width: 800px) {
+    .adslot_1, .adslot_2, .adslot_3 { display:none; }
+    #calcform, #calcform2 { padding:20px; max-width:600px; background:#eee8d5; border-radius:7px; }
+    #picker1btn img, #picker3btn img, #picker4btn img { opacity:0.7; }
+    #picker1txt, #picker3txt, #picker4txt { display:none; }
+    #wrapper TD { padding-left:unset; padding-right:unset; }
+    .qs-datepicker-container { top:40px !important; left:-225px !important; }
+    .btn span { font-weight:bold; font-size:large; }
+    @media all and (max-width: 800px) {
+       #calcform, #calcform2 { padding:10px; }
+    }
+
+ }
 </style>
