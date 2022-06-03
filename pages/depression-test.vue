@@ -91,15 +91,36 @@
           </div>
           </div><br>
           <div v-if="result === true" class="w3-container fl-porto" ref="porto">
-            <h2 style="color: teal;">Test Results based on your choices:</h2> <br>
+            <h1 style="color: teal;">Test Results based on your choices:</h1>
   <div v-if="less2 === true">
-    <h2 style="color: green;">It is highly unlikey you are suffering from depression.</h2>
+    <h3 style="color: green;">It is highly unlikely you are suffering from depression.</h3>
+    <h3>You can avoid depression by doing a few following ways!</h3>
+    <ul><li>Exercise regularly even on the Sundays as well</li>
+    <li>Spend less amount of time on social media apps</li>
+    <li>Spend more time on strong relationships. Spend time with the people whom you trust the most</li>
+    <li>Reduce stress by doing Yoga for a few minutes</li>
+    <li>Get enough sleep every day. Get around 7 to 9 hours of sleep every night</li>
+    <li>Distance yourself from the toxic people.</li></ul>
   </div>
   <div v-if="less4 === true">
-    <h2>It is likely that you are suffering from a mild depression. Although you have nothing to worry about and this is something that you can easily snap out of by proper support and guidance.</h2>
+    <p>It is likely that you are suffering from a mild depression. Although you have nothing to worry about and this is something that you can easily snap out of by proper support and guidance.</p>
+    <h3>You can avoid depression by doing a few following ways!</h3>
+    <ul><li>Exercise regularly even on the Sundays as well</li>
+    <li>Spend less amount of time on social media apps</li>
+    <li>Spend more time on strong relationships. Spend time with the people whom you trust the most</li>
+    <li>Reduce stress by doing Yoga for a few minutes</li>
+    <li>Get enough sleep every day. Get around 7 to 9 hours of sleep every night</li>
+    <li>Distance yourself from the toxic people.</li></ul>
   </div>
   <div v-if="less7 === true">
-    <h2>It is highly likely that you are extreamely depressed and you need a consultation.</h2>
+    <p>It is highly likely that you are extreamely depressed and you need a consultation.</p>
+    <h3>You can avoid depression by doing a few following ways!</h3>
+    <ul><li>Exercise regularly even on the Sundays as well</li>
+    <li>Spend less amount of time on social media apps</li>
+    <li>Spend more time on strong relationships. Spend time with the people whom you trust the most</li>
+    <li>Reduce stress by doing Yoga for a few minutes</li>
+    <li>Get enough sleep every day. Get around 7 to 9 hours of sleep every night</li>
+    <li>Distance yourself from the toxic people.</li></ul>
   </div>
 </div>
     </div>
@@ -258,12 +279,18 @@ if(this.focus === "no"){
 }
 if(yes <= 2){
 this.less2 = true;
+  this.less4 = false;
+  this.less7 = false;
 }
 if(yes > 2 && yes <= 4){
   this.less4 = true;
+  this.less2 = false;
+  this.less7 = false;
 }
 if(yes > 4){
   this.less7 = true;
+  this.less2 = false;
+    this.less4 = false;
 }
       },
   async secondbutton()

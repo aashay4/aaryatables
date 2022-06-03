@@ -55,6 +55,12 @@
   </div>
       <ul class="w3-ul w3-hoverable w3-white">
         <li>
+          <span class="w3-large"><a class="removelink" href="/body-fat-calculator"> Body fat calculator</a></span><br>
+        </li>
+        <li>
+          <span class="w3-large"><a class="removelink" href="/calories-burned-calculator"> Calories burn calculator</a></span><br>
+        </li>
+        <li>
           <span class="w3-large"><a class="removelink" href="/depression-test"> Depression test</a></span><br>
         </li>
         <li>
