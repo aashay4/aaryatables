@@ -22,6 +22,15 @@
       </Adsense>
       <ul class="w3-ul w3-hoverable w3-white">
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/voltage-divider-calculator"> Voltage divider calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/watts-volts-amps-ohms-calculator"> Watts / Volts / Amps / Ohms calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/electronics/ohms-law-calculator"> ohm's law calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/electronics/amps-to-kw"> Amps to kW</a></span><br>
         </li>
         <li class="w3-padding-16">

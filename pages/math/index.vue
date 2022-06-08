@@ -25,6 +25,9 @@
           <span class="w3-large"><a class="removelink" href="/math/logarithm-calculator"> Logarithm Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/compound-interest-calculator"> Compound Interest Calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/ln-calculator"> Ln Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">

@@ -138,7 +138,7 @@ export default {
 if(this.number2 === '0'){
   this.ansam = "infinity";
 }
-else if(this.number2 === '1'){
+else if(this.number2 < '1' && this.number2 > '0'){
   var x1= this.number1;
   var x2 = this.number2;
   this.ansam = (x1/x2);

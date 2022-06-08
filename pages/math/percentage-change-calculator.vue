@@ -22,13 +22,13 @@
 <div class="">
   <form id="inputstyle" name="inputstyle" autocomplete="off">
 <div class="form-group row">
-<label class="col-sm-5 col-form-label">Enter main value:</label>
+<label class="col-sm-5 col-form-label">First value V1:</label>
 <div class="col-sm-7">
 <input type="number" step="any" v-model="firstvalue" name="e" class="form-control" autofocus>
 </div>
 </div>
 <div class="form-group row">
-<label class="col-sm-5 col-form-label">New Value:</label>
+<label class="col-sm-5 col-form-label">Final value V2:</label>
 <div class="col-sm-7">
 <input type="number" step="any" v-model="change" class="form-control">
 </div>
