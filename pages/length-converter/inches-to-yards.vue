@@ -9,8 +9,8 @@
   <!-- Blog entry -->
   <div class="w3-margin w3-white">
     <div class="w3-container w3-padding">
-          <a href="/">Home</a> &rsaquo; <a href="/weight-converter">Weight</a> &rsaquo; Grams to Kilograms<hr>
-      <h1 class="w3-text-teal"><b>Grams to Kilograms (g to kg)</b></h1>
+          <a href="/">Home</a> &rsaquo; <a href="/length-converter">Length</a> &rsaquo; Inches to yards<hr>
+      <h1 class="w3-text-teal"><b>Inches to yards</b></h1>
       <Adsense
       class="adsbygoogle infeed"
       style="display:block"
@@ -21,13 +21,12 @@
       </Adsense>
       <form id="designstyle" name="designstyle" autocomplete="off" class="rounded">
 <div class="form-row">
-<div class="col-auto">Enter Grams:</div>
+<div class="col-auto">Enter Inches:</div>
 <div class="col">
-<input type="number" v-model="number1" class="form-control">
+<input @input="calculate()" type="number" v-model="number1" class="form-control">
 </div>
 </div>
 <div class="form-group mt-4">
-<button @click="calculate()" type="button" class="btn btn-secondary"><span>=></span> Answer</button>
 <button @click="reset()" type="reset" class="btn btn-secondary"><span>↺</span> Reset</button>
 </div>
 <div class="form-group">
@@ -54,19 +53,10 @@
     <div class="w3-container w3-white">
       <div class="w3-margin w3-white">
           <div class="w3-container w3-padding">
-        <h1 class=""><b>Other Weight tools</b></h1>
+        <h1 class=""><b>Other tools tools</b></h1>
       </div><hr>
           <ul class="w3-ul w3-hoverable w3-white">
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/grams-to-milligrams"> Grams to Milligrams</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/grams-to-ounces"> Grams to Ounces</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/weight-converter/grams-to-pounds"> Grams to Pounds</a></span><br>
-            </li>
-          </ul>
+            </ul>
       </div>
     </div>
   </div>
@@ -92,14 +82,14 @@
 export default {
   head() {
   return {
-    title: 'Grams to Kilograms',
+    title: 'Convert Inches to yards',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-    { hid: 'description', name: 'description', content: ''}
+    { hid: 'description', name: 'description', content: 'Inches to yards.'}
   ],
   link: [
-  {rel: 'canonical', href: 'https://www.aaryatables.com/weight-converter/grams-to-kilograms'}
+  {rel: 'canonical', href: 'https://www.aaryatables.com/weight-converter/inches-to-yards'}
   ]
   }
   },
@@ -112,7 +102,46 @@ export default {
   },
   methods: {
     calculate(){
-        this.answer = parseFloat(this.number1)/1000 + 'KG';
+            var x = this.str2num(this.number1);
+            var y = this.roundresult(x/36);
+            this.answer = y;
+    },
+    str2num(s)
+    {
+       s=s.toString().trim().replace(/(\d)(\s+)(?=\d)/gm,"$1+").replace(/,(?=[^,]*$)/, '.').replace(/[^-()e\d/*+.]/g, '');
+       if( s=='' ) return 0;
+       return Function('"use strict";return ('+s+')')();
+    },
+    roundresult(x) {
+      var y = parseFloat(x);
+      y = this.roundnum(y,10);
+      return y;
+    },
+    roundnum(x,p) {
+      var i;
+      var j;
+      var n=parseFloat(x);
+      var m=n.toFixed(p);
+      var y=String(m);
+      i=y.length;
+      j=y.indexOf('.');
+      if( i>j && j!=-1 )
+      {
+        while(i>0)
+        {
+          if(y.charAt(--i)=='0')
+            y = this.removeAt(y,i);
+          else
+            break;
+        }
+        if(y.charAt(i)=='.')
+          y = this.removeAt(y,i);
+      }
+      return y;
+    },
+    removeAt(s,i) {
+      s = s.substring(0,i)+s.substring(i+1,s.length);
+      return s;
     },
     reset(){
       this.number1 = null;

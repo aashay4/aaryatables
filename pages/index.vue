@@ -43,6 +43,9 @@
           <span class="w3-large"><a class="removelink" href="/temperature-converter"> Temperature</a></span><br>
         </li>
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter"> Length converter</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/weight-converter"> Weight</a></span><br>
         </li>
 
