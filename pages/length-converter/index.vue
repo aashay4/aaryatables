@@ -42,37 +42,37 @@
 <table>
 <tr>
 <td><label>Millimeter:</label></td>
-<td><input type="number" v-model="Millimeter" step="any"></td>
+<td><input type="number" class="form-control" v-model="Millimeter" step="any"></td>
 <td> mm</td>
 </tr>
 <tr>
 <td><label>Centimeter:</label></td>
-<td><input v-model="Centimeter" type="number" min="0" step="any"></td>
+<td><input v-model="Centimeter" class="form-control" type="number" min="0" step="any"></td>
 <td> cm</td>
 </tr>
 <tr>
 <td><label>Meter:</label></td>
-<td><input type="number" v-model="Meter" min="0" step="any"></td>
+<td><input type="number" v-model="Meter" class="form-control" min="0" step="any"></td>
 <td> m</td>
 </tr>
 <tr>
 <td><label>Inch:</label></td>
-<td><input type="number" v-model="Inch" min="0" step="any"></td>
+<td><input type="number" v-model="Inch" class="form-control" min="0" step="any"></td>
 <td> in</td>
 </tr>
 <tr>
 <td><label>Foot:</label></td>
-<td><input type="number" v-model="Foot" min="0" step="any"></td>
+<td><input type="number" v-model="Foot" class="form-control" min="0" step="any"></td>
 <td> ft</td>
 </tr>
 <tr>
 <td><label>Yard:</label></td>
-<td><input type="number" v-model="Yard" min="0" step="any"></td>
+<td><input type="number" v-model="Yard" class="form-control" min="0" step="any"></td>
 <td> yd</td>
 </tr>
 <tr>
 <td><label>Mile:</label></td>
-<td><input type="number" v-model="Mile" min="0" step="any"></td>
+<td><input type="number" v-model="Mile" class="form-control" min="0" step="any"></td>
 <td> mi</td>
 </tr>
 <tr>
@@ -84,6 +84,99 @@
 </form>
 
       <ul class="w3-ul w3-hoverable w3-white">
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/yards-to-miles"> Yards to Miles</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/yards-to-meters"> Yards to Meters</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/yards-to-km"> Yards to Kilometer</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/yards-to-inches"> Yards to Inches</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/yards-to-feet"> Yards to feet</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/yards-to-cm"> Yards to cm</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/mm-to-meters"> mm to meters</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/mm-to-km"> mm to km</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/mm-to-inches"> mm to Inches</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/mm-to-feet"> mm to feet</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/mm-to-cm"> mm to cm</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/miles-to-yards"> Miles to Yards</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/miles-to-meters"> Miles to Meters</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/miles-to-km"> Miles to KM</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/miles-to-inches"> Miles to Inches</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/miles-to-feet"> Miles to Feet</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/miles-to-cm"> Miles to cm</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-yards"> Meters to Yards</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-mm"> Meters to Millimeter</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-miles"> Meters to miles</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-km"> Meters to Kilometer</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-inches"> Meters to Inches</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-cm"> Meters to cm</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-feet"> Meters to feet</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/km-to-mm"> km to mm</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/km-to-yards"> km to yards</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/km-to-meters"> km to meters</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/km-to-cm"> km to cm</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/km-to-miles"> km to miles</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/km-to-feet"> km to feet</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/km-to-inches"> km to Inches</a></span><br>
+        </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/length-converter/inches-to-cm"> Inches to cm</a></span><br>
         </li>
