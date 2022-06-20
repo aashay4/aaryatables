@@ -130,7 +130,7 @@ export default {
   },
   methods: {
     currentchange(){
-      if(this.number2 === '1')
+      if(this.number2 > '0')
       {
   var x1= this.number1;
   var x2 = this.number2;

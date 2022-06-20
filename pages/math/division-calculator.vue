@@ -19,7 +19,7 @@
       data-ad-format="auto"
       data-full-width-responsive="true">
     </Adsense>
-      <div id="designvoc" autocomplete="off">
+      <div id="designstyle" autocomplete="off">
 <div class="form-group row mb-0">
 <label for="x" class="col-sm-4 col-form-label">Dividend</label>
 <div class="col-sm-8">
@@ -204,6 +204,11 @@ h1 { font-size:1.6rem; }
 h2 { font-size:1.4rem; }
 h3 { font-size:1.2rem; }
 h4 { font-size:1.2rem; }
+#designstyle { background:#a7c9b8; padding:20px; }
+#designstyle button i { vertical-align: bottom; }
+@media all and (max-width: 800px) {
+   #designstyle { padding:10px; }
+}
 .btn span { font-size:large; font-weight:bold; }
 .designvoc { background:#f0eedc; padding:15px; border-radius:7px; margin-bottom:20px; }
 .designvoc div { display:inline-block; }

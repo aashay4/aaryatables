@@ -42,37 +42,37 @@
 <table>
 <tr>
 <td><label>Millimeter:</label></td>
-<td><input type="number" class="form-control" v-model="Millimeter" step="any"></td>
+<td><input type="number" v-model="Millimeter" step="any"></td>
 <td> mm</td>
 </tr>
 <tr>
 <td><label>Centimeter:</label></td>
-<td><input v-model="Centimeter" class="form-control" type="number" min="0" step="any"></td>
+<td><input v-model="Centimeter" type="number" min="0" step="any"></td>
 <td> cm</td>
 </tr>
 <tr>
 <td><label>Meter:</label></td>
-<td><input type="number" v-model="Meter" class="form-control" min="0" step="any"></td>
+<td><input type="number" v-model="Meter" min="0" step="any"></td>
 <td> m</td>
 </tr>
 <tr>
 <td><label>Inch:</label></td>
-<td><input type="number" v-model="Inch" class="form-control" min="0" step="any"></td>
+<td><input type="number" v-model="Inch" min="0" step="any"></td>
 <td> in</td>
 </tr>
 <tr>
 <td><label>Foot:</label></td>
-<td><input type="number" v-model="Foot" class="form-control" min="0" step="any"></td>
+<td><input type="number" v-model="Foot" min="0" step="any"></td>
 <td> ft</td>
 </tr>
 <tr>
 <td><label>Yard:</label></td>
-<td><input type="number" v-model="Yard" class="form-control" min="0" step="any"></td>
+<td><input type="number" v-model="Yard" min="0" step="any"></td>
 <td> yd</td>
 </tr>
 <tr>
 <td><label>Mile:</label></td>
-<td><input type="number" v-model="Mile" class="form-control" min="0" step="any"></td>
+<td><input type="number" v-model="Mile" min="0" step="any"></td>
 <td> mi</td>
 </tr>
 <tr>
@@ -134,6 +134,12 @@
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/length-converter/miles-to-cm"> Miles to cm</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-feet-inches"> Meters to feet+inches</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/mm-to-feet-inches"> MM to feet+inches</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-yards"> Meters to Yards</a></span><br>
@@ -220,7 +226,19 @@
           <span class="w3-large"><a class="removelink" href="/length-converter/feet-to-millimeters"> Feet to mm</a></span><br>
         </li>
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/feet-inches-to-cm"> Feet+inches to cm</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/feet-inches-to-meters"> Feet+inches to meters</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/feet-inches-to-mm"> Feet+inches to Millimeters</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/length-converter/cm-to-feet"> Cm to feet</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/length-converter/centimeters-to-feet-inches"> Centimeters to Feet+Inches</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/length-converter/centimeters-to-inches"> CM to inches</a></span><br>

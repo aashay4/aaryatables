@@ -56,6 +56,24 @@
         <h1 class=""><b>Other tools tools</b></h1>
       </div><hr>
           <ul class="w3-ul w3-hoverable w3-white">
+            <li class="w3-padding-16">
+              <span class="w3-large"><a class="removelink" href="/length-converter/cm-to-feet"> CM to Feet</a></span><br>
+            </li>
+            <li class="w3-padding-16">
+              <span class="w3-large"><a class="removelink" href="/length-converter/cm-to-km"> CM to Km</a></span><br>
+            </li>
+            <li class="w3-padding-16">
+              <span class="w3-large"><a class="removelink" href="/length-converter/centimeters-to-inches"> CM to inches</a></span><br>
+            </li>
+            <li class="w3-padding-16">
+              <span class="w3-large"><a class="removelink" href="/length-converter/cm-to-miles"> CM to Miles</a></span><br>
+            </li>
+            <li class="w3-padding-16">
+              <span class="w3-large"><a class="removelink" href="/length-converter/cm-to-mm"> CM to Mm</a></span><br>
+            </li>
+            <li class="w3-padding-16">
+              <span class="w3-large"><a class="removelink" href="/length-converter/cm-to-yards"> CM to Yards</a></span><br>
+            </li>
             </ul>
       </div>
     </div>

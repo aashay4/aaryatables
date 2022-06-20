@@ -37,6 +37,9 @@
           <span class="w3-large"><a class="removelink" href="/numbers"> Number Converter</a></span><br>
         </li>
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/voltage-conversion"> Voltage conversion</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/energy"> Energy</a></span><br>
         </li>
         <li class="w3-padding-16">
@@ -83,6 +86,9 @@
         </li>
         <li>
           <span class="w3-large"><a class="removelink" href="/grade-calculator"> Grade Calculator</a></span><br>
+        </li>
+        <li>
+          <span class="w3-large"><a class="removelink" href="/birthday-calculator"> Birthday Calculator</a></span><br>
         </li>
         <li>
           <span class="w3-large"><a class="removelink" href="/date-calculator"> Date calculator</a></span><br>

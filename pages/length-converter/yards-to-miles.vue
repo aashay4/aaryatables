@@ -56,6 +56,21 @@
         <h1 class=""><b>Other tools tools</b></h1>
       </div><hr>
           <ul class="w3-ul w3-hoverable w3-white">
+            <li class="w3-padding-16">
+              <span class="w3-large"><a class="removelink" href="/length-converter/yards-to-feet"> Yards to Feet</a></span><br>
+            </li>
+            <li class="w3-padding-16">
+              <span class="w3-large"><a class="removelink" href="/length-converter/yards-to-inches"> Yards to Inches</a></span><br>
+            </li>
+            <li class="w3-padding-16">
+              <span class="w3-large"><a class="removelink" href="/length-converter/yards-to-km"> Yards to Kilometers</a></span><br>
+            </li>
+            <li class="w3-padding-16">
+              <span class="w3-large"><a class="removelink" href="/length-converter/yards-to-meters"> Yards to Meters</a></span><br>
+            </li>
+            <li class="w3-padding-16">
+              <span class="w3-large"><a class="removelink" href="/length-converter/yards-to-cm"> Yards to cm</a></span><br>
+            </li>
             </ul>
       </div>
     </div>

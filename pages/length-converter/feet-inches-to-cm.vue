@@ -9,8 +9,8 @@
   <!-- Blog entry -->
   <div class="w3-margin w3-white">
     <div class="w3-container w3-padding">
-          <a href="/">Home</a> &rsaquo; <a href="/length-converter">Length</a> &rsaquo; Meter to Miles<hr>
-      <h1 class="w3-text-teal"><b>Meters to miles</b></h1>
+          <a href="/">Home</a> &rsaquo; <a href="/length-converter">Length</a> &rsaquo; Feet+Inches to cm<hr>
+      <h1 class="w3-text-teal"><b>Feet+Inches to Centimeters</b></h1>
       <Adsense
       class="adsbygoogle infeed"
       style="display:block"
@@ -19,25 +19,67 @@
       data-ad-format="auto"
       data-full-width-responsive="true">
       </Adsense>
-      <form id="designstyle" name="designstyle" autocomplete="off" class="rounded">
+      <form id="designstyle" autocomplete="off">
+
 <div class="form-row">
-<div class="col-auto">Enter Meters:</div>
-<div class="col">
-<input @input="calculate()" type="number" v-model="number1" class="form-control">
+<div class="form-group col">
+<label for="ft">Feet</label>
+<div class="input-group">
+<input type="text" v-model="ft" name="ft" class="form-control" autofocus>
+<div class="input-group-append">
+<span class="input-group-text">ft</span>
 </div>
 </div>
-<div class="form-group mt-4">
-<button @click="reset()" type="reset" class="btn btn-secondary"><span>↺</span> Reset</button>
+</div>
+<div class="form-group col">
+<label for="inch">Inches</label>
+<div class="input-group">
+<input type="text" v-model="inch" name="inch" class="form-control">
+<div class="input-group-append">
+<span class="input-group-text">in</span>
+</div>
+</div>
+</div>
 </div>
 <div class="form-group">
-<div class="input-group mb-3">
-<input type="text" v-model="answer" readonly class="form-control form-control-lg">
+<button type="button" @click="calculate()" class="btn btn-success"><span>= ></span> Convert</button>
+<button type="button" @click="reset()" class="btn btn-secondary"><span>&times;</span> Reset</button>
+</div>
+<div class="form-group">
+<label for="cm1">Centimeters</label>
+<div class="input-group">
+<input type="number" v-model="cm1" class="form-control" readonly>
 <div class="input-group-append">
-<button type="button" class="btn btn-lg btn-outline-secondary">ANS</button>
+<span class="input-group-text">cm</span>
 </div>
 </div>
+</div>
+<div class="form-row">
+<div class="form-group col">
+<label for="m2">Meters</label>
+<div class="input-group">
+<input type="number" v-model="m2" class="form-control" readonly>
+<div class="input-group-append">
+<span class="input-group-text">m</span>
+</div>
+</div>
+</div>
+<div class="form-group col">
+<label for="cm2">Centimeters</label>
+<div class="input-group">
+<input type="number" v-model="cm2" class="form-control" readonly>
+<div class="input-group-append">
+<span class="input-group-text">cm</span>
+</div>
+</div>
+</div>
+</div>
+<div class="form-group">
+<label for="TA">Calculation</label>
+<textarea v-model="ta" rows="2" class="form-control" readonly></textarea>
 </div>
 </form>
+
 
     </div>
   </div>
@@ -56,24 +98,6 @@
         <h1 class=""><b>Other tools tools</b></h1>
       </div><hr>
           <ul class="w3-ul w3-hoverable w3-white">
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-feet"> Meters to Feet</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-inches"> Meters to inches</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-km"> Meters to kilometers</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-cm"> Meters to cm</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-mm"> Meters to Mm</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-yards"> Meters to Yards</a></span><br>
-            </li>
             </ul>
       </div>
     </div>
@@ -100,29 +124,46 @@
 export default {
   head() {
   return {
-    title: 'Convert Meters to Miles',
+    title: 'Convert feet and inches to cm.',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-    { hid: 'description', name: 'description', content: 'Meters to miles.'}
+    { hid: 'description', name: 'description', content: 'Feet+Inches to CM.'}
   ],
   link: [
-  {rel: 'canonical', href: 'https://www.aaryatables.com/weight-converter/meters-to-miles'}
+  {rel: 'canonical', href: 'https://www.aaryatables.com/weight-converter/feet-inches-to-cm'}
   ]
   }
   },
   data(){
     return {
-      number1: null,
-      number2: null,
-      answer: ''
+      ft: null,
+      inch: null,
+      answer: '',
+      cm1: '',
+      m2: '',
+      cm2: '',
+      ta: ''
     }
   },
   methods: {
     calculate(){
-            var x = this.str2num(this.number1);
-            var y = this.roundresult(x/1609.344);
-            this.answer = y;
+      var ft = this.str2num(this.ft);
+var inch = this.str2num(this.inch);
+//if( ft=="" ) ft="0";
+//if( inch=="" ) inch="0";
+//ft = parseFloat(ft);
+//inch = parseFloat(inch);
+var inch2 = 12*ft+inch;
+var cm = this.roundresult(2.54*inch2);
+var m2 = Math.floor(cm/100);
+var cm2 = this.roundresult(cm-m2*100);
+var txt=ft+"ft \u00D7 30.48 + "+inch+"in \u00D7 2.54\n";
+txt+="= "+cm+'cm';
+this.cm1 = cm;
+this.m2 = m2;
+this.cm2 = cm2;
+this.ta = txt;
     },
     str2num(s)
     {
@@ -162,9 +203,13 @@ export default {
       return s;
     },
     reset(){
-      this.number1 = null;
-      this.number2 = null;
-      this.answer = ''
+      this.ft = null;
+      this.inch = null;
+      this.answer = "";
+      this.cm1 = "";
+      this.m2 = "";
+      this.cm2 = "";
+      this.ta = "";
     }
   }
 

@@ -9,8 +9,8 @@
   <!-- Blog entry -->
   <div class="w3-margin w3-white">
     <div class="w3-container w3-padding">
-          <a href="/">Home</a> &rsaquo; <a href="/length-converter">Length</a> &rsaquo; Meter to Miles<hr>
-      <h1 class="w3-text-teal"><b>Meters to miles</b></h1>
+          <a href="/">Home</a> &rsaquo; <a href="/voltage-conversion">Voltage</a> &rsaquo; Volts to kilovolts<hr>
+      <h1 class="w3-text-teal"><b>Volts to kilovolts</b></h1>
       <Adsense
       class="adsbygoogle infeed"
       style="display:block"
@@ -21,7 +21,7 @@
       </Adsense>
       <form id="designstyle" name="designstyle" autocomplete="off" class="rounded">
 <div class="form-row">
-<div class="col-auto">Enter Meters:</div>
+<div class="col-auto">Enter Volts:</div>
 <div class="col">
 <input @input="calculate()" type="number" v-model="number1" class="form-control">
 </div>
@@ -55,26 +55,20 @@
           <div class="w3-container w3-padding">
         <h1 class=""><b>Other tools tools</b></h1>
       </div><hr>
-          <ul class="w3-ul w3-hoverable w3-white">
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-feet"> Meters to Feet</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-inches"> Meters to inches</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-km"> Meters to kilometers</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-cm"> Meters to cm</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-mm"> Meters to Mm</a></span><br>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="removelink" href="/length-converter/meters-to-yards"> Meters to Yards</a></span><br>
-            </li>
-            </ul>
+            <ul class="w3-ul w3-hoverable w3-white">
+              <li class="w3-padding-16">
+                <span class="w3-large"><a class="removelink" href="/voltage-conversion/volts-to-gigavolts"> Volts to gigavolts</a></span><br>
+              </li>
+              <li class="w3-padding-16">
+                <span class="w3-large"><a class="removelink" href="/voltage-conversion/volts-to-megavolts"> Volts to megavolts</a></span><br>
+              </li>
+              <li class="w3-padding-16">
+                <span class="w3-large"><a class="removelink" href="/voltage-conversion/volts-to-microvolts"> Volts to microvolts</a></span><br>
+              </li>
+              <li class="w3-padding-16">
+                <span class="w3-large"><a class="removelink" href="/voltage-conversion/volts-to-millivolts"> Volts to millivolts</a></span><br>
+              </li>
+              </ul>
       </div>
     </div>
   </div>
@@ -100,14 +94,14 @@
 export default {
   head() {
   return {
-    title: 'Convert Meters to Miles',
+    title: 'Convert Volts to kilovolts',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-    { hid: 'description', name: 'description', content: 'Meters to miles.'}
+    { hid: 'description', name: 'description', content: 'Volts to kilovolts conversion tool.'}
   ],
   link: [
-  {rel: 'canonical', href: 'https://www.aaryatables.com/weight-converter/meters-to-miles'}
+  {rel: 'canonical', href: 'https://www.aaryatables.com/weight-converter/volts-to-kilovolts'}
   ]
   }
   },
@@ -121,7 +115,7 @@ export default {
   methods: {
     calculate(){
             var x = this.str2num(this.number1);
-            var y = this.roundresult(x/1609.344);
+            var y = x/1000;
             this.answer = y;
     },
     str2num(s)
