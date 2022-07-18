@@ -51,11 +51,11 @@
 <button type="reset" title="Reset" class="btn btn-secondary" @click="reset()"><span>↺</span> Reset</button>
 </div>
 <div class="form-group">
-<label >Kilowatts:</label>
+<label >Watts:</label>
 <div class="input-group">
 <input type="text" v-model="kw" class="form-control" readonly>
 <div class="input-group-append">
-<span class="input-group-text">kw</span>
+<span class="input-group-text">w</span>
 </div>
 </div>
 </div>

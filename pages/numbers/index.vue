@@ -28,6 +28,12 @@
           <span class="w3-large"><a class="removelink" href="/numbers/text-to-binary"> Text to Binary</a></span><br>
         </li>
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/numbers/base-calculator"> Base calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/numbers/base-converter"> Base converter</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/numbers/binary-to-text"> Binary to text</a></span><br>
         </li>
         <li class="w3-padding-16">

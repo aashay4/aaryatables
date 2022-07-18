@@ -46,6 +46,9 @@
           <span class="w3-large"><a class="removelink" href="/temperature-converter"> Temperature</a></span><br>
         </li>
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/height-converter"> Height converter</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/length-converter"> Length converter</a></span><br>
         </li>
         <li class="w3-padding-16">
@@ -66,17 +69,44 @@
         <li>
           <span class="w3-large"><a class="removelink" href="/calories-burned-calculator"> Calories burn calculator</a></span><br>
         </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/mortgage-calculator"> Mortgage calculator</a></span><br>
+        </li>
         <li>
           <span class="w3-large"><a class="removelink" href="/depression-test"> Depression test</a></span><br>
         </li>
         <li>
+          <span class="w3-large"><a class="removelink" href="/effective-interest-rate-calculator"> Effective interest rate calculator</a></span><br>
+        </li>
+        <li>
+          <span class="w3-large"><a class="removelink" href="/interest-calculator"> Simple interest calculator</a></span><br>
+        </li>
+        <li>
+          <span class="w3-large"><a class="removelink" href="/vat-calculator"> VAT calculator</a></span><br>
+        </li>
+        <li>
+          <span class="w3-large"><a class="removelink" href="/gst-calculator"> Gst calculator</a></span><br>
+        </li>
+        <li>
           <span class="w3-large"><a class="removelink" href="/unit-conversion"> Unit Conversion</a></span><br>
+        </li>
+        <li>
+          <span class="w3-large"><a class="removelink" href="/final-grade-calculator"> Final grade calculator</a></span><br>
+        </li>
+        <li>
+          <span class="w3-large"><a class="removelink" href="/gpa-to-letter-grade"> GPA to letter grade</a></span><br>
+        </li>
+        <li>
+          <span class="w3-large"><a class="removelink" href="/gpa-calculator"> GPA calculator</a></span><br>
         </li>
         <li>
           <span class="w3-large"><a class="removelink" href="/random-letter-generator"> Random letter generator</a></span><br>
         </li>
         <li>
           <span class="w3-large"><a class="removelink" href="/word-counter"> Word counter</a></span><br>
+        </li>
+        <li>
+          <span class="w3-large"><a class="removelink" href="/time-calculator"> Time calculator</a></span><br>
         </li>
         <li>
           <span class="w3-large"><a class="removelink" href="/case-converter"> Case Converter</a></span><br>

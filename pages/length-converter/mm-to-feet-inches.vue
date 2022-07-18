@@ -304,7 +304,7 @@ export default {
       return s;
     },
     reset(){
-      this.ft = null;
+      this.ft = "";
       this.inch = null;
       this.answer = "";
       this.cm1 = "";

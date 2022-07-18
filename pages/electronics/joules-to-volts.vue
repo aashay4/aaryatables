@@ -26,22 +26,22 @@
   <td>Enter joules:</td>
   <td><input type="number" min="0" step="any" class="intext" v-model="joules" autofocus></td>
   <td>  J</td>
-  </tr>
+</tr><br>
   <tr>
   <td>Enter charge:</td>
   <td><input type="number" min="0" step="any" class="intext" v-model="seconds"></td>
   <td>  C</td>
-  </tr>
+</tr><br>
   <tr>
   <td>&nbsp;</td>
   <td>
   <button type="button" title="Calculate" class="btn btn-secondary" @click="convert()"><span>=></span> Answer</button></td>
   <td>&nbsp;</td>
-  </tr>
+</tr><br>
   <tr>
-  <td>watts:</td>
+  <td>Volts:</td>
   <td><input type="text" v-model="answer" readonly></td>
-  <td> W</td>
+  <td> V</td>
   </tr>
   </tbody>
   </table>
@@ -149,7 +149,7 @@ h2 { font-size:1.4rem; }
 h3 { font-size:1.4rem; }
 h4 { font-size:1.2rem; }
 @media all and (max-width: 800px) {
-   #desingform { padding:10px; }
+   #desingform { padding:10px; background:#a7c9b8;}
 }
 
 </style>

@@ -9,7 +9,7 @@
   <!-- Blog entry -->
   <div class="w3-margin w3-white">
     <div class="w3-container w3-padding">
-          <a href="/">Home</a> &rsaquo; <a href="/electronics">Electronics</a> &rsaquo; kva to kilo-watts<hr>
+          <a href="/">Home</a> &rsaquo; <a href="/electronics">Electronics</a> &rsaquo; kva to w<hr>
       <h1 class="w3-text-teal"><b>kva to kw</b></h1><br>
       <p>kilovolt-amp(kVA) to kw converter.</p>
       <Adsense
@@ -27,7 +27,7 @@
 <tr>
 <td>Enter kilovolt-amps:</td>
 <td class="w3-padding"><input type="number" v-model="number1" min="0" step="any" class="intext"></td>
-<td class="w3-padding" style="text-align:left">Kva</td>
+<td style="text-align:left">Kva</td>
 </tr>
 <tr>
 <td>Enter Power factor:</td>
@@ -42,9 +42,9 @@
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td>Amps result:</td>
+<td>kW result:</td>
 <td class="w3-padding"><input type="text" v-model="answer" class="outtext" readonly></td>
-<td class="" style="text-align:left">A</td>
+<td class="" style="text-align:left">kW</td>
 </tr>
 </tbody>
 </table>
@@ -129,7 +129,7 @@ export default {
   },
   methods: {
     changedthings(){
-      if(this.number2 === "1")
+      if(this.number2 > "0" && this.number2 <= "1")
     {    this.answer = this.number1*this.number2;}
     else if(this.number2 === "0"){
       this.answer = 0;

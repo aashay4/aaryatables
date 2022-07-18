@@ -9,9 +9,9 @@
   <!-- Blog entry -->
   <div class="w3-margin w3-white">
     <div class="w3-container w3-padding">
-          <a href="/">Home</a> &rsaquo; <a href="/electronics">Electronics</a> &rsaquo; kva to watts<hr>
-      <h1 class="w3-text-teal"><b>kva to watts</b></h1><br>
-      <p>kilovolt-amp(kVA) to watts converter.</p>
+          <a href="/">Home</a> &rsaquo; <a href="/electronics">Electronics</a> &rsaquo; kva to va<hr>
+      <h1 class="w3-text-teal"><b>kva to va</b></h1><br>
+      <p>kilovolt-amp(kVA) to va converter.</p>
       <Adsense
       class="adsbygoogle infeed"
       style="display:block"
@@ -37,9 +37,9 @@
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td>Amps result:</td>
+<td>Volt-Amps result:</td>
 <td class="w3-padding"><input type="text" v-model="answer" class="outtext" readonly></td>
-<td class="" style="text-align:left">A</td>
+<td class="" style="text-align:left">VA</td>
 </tr>
 </tbody>
 </table>
@@ -101,14 +101,14 @@ export default {
   head() {
     // sets document title
     return {
-      title: 'kva to watts',
+      title: 'kva to Volt-amps',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-      { hid: 'description', name: 'description', content: 'kilovolt-amps to watts (kVA to watts) Calculator.' }
+      { hid: 'description', name: 'description', content: 'kVa to va calculator.' }
   ],
     link: [
-    {rel: 'canonical', href: 'https://www.aaryatables.com/electronics/kva-to-watts'}
+    {rel: 'canonical', href: 'https://www.aaryatables.com/electronics/kva-to-va'}
     ]
     }
     },

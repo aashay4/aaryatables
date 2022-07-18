@@ -5,11 +5,9 @@
     <div class="w3-col l8 s12">
       <!-- Blog entry -->
       <div class="w3-margin w3-white">
-
-
         <div class="w3-container w3-padding">
-              <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; Convert Decimal to Fraction<hr>
-          <h1 class="w3-text-teal"><b>Decimal to fraction converter</b></h1>
+              <a href="/">Home</a> &rsaquo; <a href="/math">Mathematics</a> &rsaquo; Percent to ppm Calculator<hr>
+          <h1 class="w3-text-teal"><b>Convert Percentage to ppm</b></h1>
           <Adsense
           class="adsbygoogle infeed"
           style="display:block"
@@ -18,63 +16,31 @@
           data-ad-format="auto"
           data-full-width-responsive="true">
         </Adsense>
-          <p>Number to fraction converter.</p>
+          <p>An easy to use percentage to ppm converter.</p>
 <div class="">
-  <form id="equitd2" name="equitd2" autocomplete="off">
-<div class="form-group mt-3">
-<table>
-  <tr>
-  <td><label>Enter decimal number:</label></td>
-  </tr>
-  <tr>
-  <td><input type="text" style="width: 100%" v-model="x1" class="form-control" autofocus></td>
-  </tr>
-
-</table>
+  <form id="desingiput" name="desingiput" autocomplete="off">
+<div class="form-group">
+<label >Enter Percentage number here:</label>
+<div class="input-group">
+<input type="number" v-model="x" min="0" step="any" class="form-control" required>
+</div>
 </div>
 <div class="form-group">
-<button type="button" title="Calculate" class="btn btn-secondary" @click="fract()"><span>=></span> Answer</button>
+<button type="button" title="Calculate" class="btn btn-secondary" @click="calculate()"><span>=></span> Answer</button>
 <button type="reset" title="Reset" class="btn btn-secondary" @click="reset()"><span>↺</span> Reset</button>
 </div>
 <div class="form-group">
-  <p>Fractions answer: </p><hr>
-<table>
-<tr>
-<td rowspan="2" v-if="showy === false"><input type="text" v-model="y" class="form-control" readonly></td>
-<td id="equitd13"><input type="text" v-model="n" class="form-control" readonly></td>
-</tr>
-<tr>
-<td id="equitd1346"><input type="text" v-model="d" class="form-control" readonly></td>
-</tr>
-</table>
-<table>
-<tr>
-<td>Calculation:</td>
-</tr>
-<tr>
-<td><textarea rows="7" v-model="area" class="outtext" readonly></textarea>
-<input type="submit" style="display: none" /></td>
-</tr>
-</table>
+<label for="y">Result in PPM:</label>
+<div class="input-group">
+<input type="text" v-model="y" class="form-control" readonly>
 </div>
-</form>
+</div>
+</form><br>
+
 
 </div><br>
 <div class="">
-  <h2>Decimal to fraction conversion:</h2>
-  <h3>Steps of number to fraction:</h3>
-  <p>First of all, note down the digits that are on the right side of the decimal point and the power of 10</p>
-  <p>Once done, find the greatest common divisor of the same number</p>
-  <p>Reduce the fraction by dividing with the greatest common divisor(gcd). You can consider the following example for detailed information.</p>
-  <h3>Example for the decimal to a fraction number:</h3>
-  <p>Convert the 0.44 decimal number to fraction:</p>
-  <h2>0.44</h2>
-  <h1> => 0.44 = 44/100</h1>
-    <p>Find out the GCD of the above numbers. Here, in the above number, we have 4.</p>
-    <p>Now, divide both numbers with 4.</p>
-    <h2> => 0.44 = (44/4)/(100/4)</h2>
-    <p>After the division, the answer would be,</p>
-    <h2> => 11/25</h2>
+
 </div>
   </div>
 </div></div>
@@ -135,14 +101,14 @@ export default {
   head() {
     // sets document title
     return {
-      title: 'Convert decimal to fraction - Number to a fraction conversion',
+      title: 'Percent to ppm',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-      { hid: 'description', name: 'description', content: 'Decimal to fraction converter.' }
+      { hid: 'description', name: 'description', content: 'Percent to ppm conversion tool.' }
   ],
     link: [
-    {rel: 'canonical', href: 'https://www.aaryatables.com/math/decimal-to-fraction'}
+    {rel: 'canonical', href: 'https://www.aaryatables.com/math/percent-to-ppm'}
     ]
     }
     },
@@ -150,7 +116,7 @@ export default {
     return {
       area: '',
       showy: false,
-      x1: '',
+      x: '',
       thrrepiece: '',
       minusvalue: false,
       d1: '',
@@ -231,93 +197,10 @@ export default {
 	var len = f.length-i-1;
 	return len;
 },
-  fract(){
-    var xelem = this.x1;
-    var gcd2 = function(a, b, f) {
-   if( f )
-   {
-         if ( b<=1 )
-            return a;
-      }
-      else
-   {
-         if ( !b )
-            return a;
-      }
-      return gcd2(b, a % b, f);
-};
-
-    var sign = '';
-  var sign2 = '+';
-  var x = this.str2num(xelem);
-  var x2 = this.roundresult(x);
-  var absx=Math.abs(x2);
-  var y=Math.floor(absx);
-  var frac=this.roundresult(absx-y);
-  if( x2<0 ) sign = sign2 = '-';
-  var d = this.digits_after_period(absx);
-  var den = Math.round(Math.pow(10,d));
-  var num = Math.round(frac*den);
-  var len=num.toString().length;
-  var f=false;
-  if( len>8 ) f=true;
-  var g = gcd2(num,den,f);
-  var num2 = Math.round(num/g);
-  var den2 = Math.round(den/g);
-  //var txt=x+"\n";
-  var txt=x2+" ";
-  if( absx>=1 ) {
-  //   document.getElementById('td11').style.display="table-cell";
-     //txt+="= "+sign+y+sign2+frac+"\n";
-     txt+="= "+sign+y+sign2+frac+" ";
-     txt+="= "+sign+y+sign2;
-  }
-  else {
-  //   document.getElementById('td11').style.display="none";
-     txt+="= "+sign;
-  }
-  txt+=num+"/"+den+"\n";
-  if( g>1 ) {
-     txt+="gcd("+num+","+den+") = "+g+"\n";
-     txt+=x2+" ";
-
-     txt+="= "+sign;
-     if( absx>=1 )
-        txt+=y+sign2;
-     txt+="("+num+"/"+g+")/("+den+"/"+g+") ";
-
-     txt+="= "+sign;
-     if( absx>=1 )
-        txt+=y+sign2;
-     txt+=num2+"/"+den2+" ";
-  }
-
-  if( y>0 )
-     txt+="= "+sign+(num2+den2*y)+"/"+den2;
-  this.y=sign+y;
-  if(this.y === '0'){
-    this.showy === true;
-  }
-  if(this.y != '0'){
-    this.showy === false;
-  }
-  if( absx>=1 )
-     this.n=num2;
-  else
-     this.n=sign+num2;
-  this.d=den2;
-  if( frac==0 ) {
-    // document.getElementById('td12').style.display="none";
-     //document.getElementById('td21').style.display="none";
-     txt="";
-  }
-  else {
-  //   document.getElementById('td12').style.display="table-cell";
-  //   document.getElementById('td21').style.display="table-cell";
-  }
-  this.area=txt;
-
-  },
+  calculate(){
+    var x = this.x;
+    this.y = x*10000;
+    },
   str2num(s)
   {
      s=s.toString().trim().replace(/(\d)(\s+)(?=\d)/gm,"$1+").replace(/,(?=[^,]*$)/, '.').replace(/[^-()e\d/*+.]/g, '');
@@ -365,18 +248,11 @@ export default {
  h2 { font-size:1.4rem; }
  h3 { font-size:1.4rem; }
  h4 { font-size:1.2rem; }
- #equitd2 { padding:20px; max-width:500px; background:#a7c9b8; }
- #equitd2 td input[type=number] { width:80px; text-align: center; margin:4px auto; }
- #equitd2 td input[type=text] { width:80px; text-align: center; margin:4px auto; }
- #equitd2 .btn span { font-weight: bold; font-size:large; }
- #equitd2 .btn img { filter:invert(1); }
- #equitd13 { padding-bottom:0px; }
-#equitd1346 { border-top:#666 3px solid; padding-top:1px; }
+ #desingiput { background:#a7c9b8; padding:20px; }
  #wrapper td { padding-left:unset; padding-right:unset; }
 @media all and (max-width: 800px) {
     .adslot_1, .adslot_2, .adslot_3 { display:none; }
-    #equitd2 { padding:10px; }
-    #equitd2 td input[type=number] { width:60px; }
-    #equitd2 td input[type=text] { width:60px; }
+    .ntable td { width:120px; }
+.calc2 button { margin:20px auto; padding:7px; }
  }
 </style>

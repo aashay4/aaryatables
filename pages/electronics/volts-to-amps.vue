@@ -50,11 +50,11 @@
 <button type="reset" title="Reset" class="btn btn-secondary" @click="reset()"><span>↺</span> Reset</button>
 </div>
 <div class="form-group">
-<label >Joules:</label>
+<label >Amps:</label>
 <div class="input-group">
 <input type="text" v-model="kw" class="form-control" readonly>
 <div class="input-group-append">
-<span class="input-group-text">J</span>
+<span class="input-group-text">A</span>
 </div>
 </div>
 </div>
@@ -159,10 +159,10 @@ export default {
     },
     currentchange(){
       if(this.showwatts === true){
-                this.kw = this.number2*this.number1;
+                this.kw = this.number2/this.number1;
       }
       else{
-        this.kw = this.number3*this.number1;
+        this.kw = this.number1/this.number3;
       }
 
   },

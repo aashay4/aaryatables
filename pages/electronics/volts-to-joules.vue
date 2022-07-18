@@ -27,6 +27,7 @@
 </div>
 </div>
 <div class="form-group">
+  <label for="x1">Enter coulombs:</label>
 <label for="x2"></label>
 <div class="input-group">
 <input type="number" min="0" step="any" v-model="number2" name="x2" class="form-control" required>

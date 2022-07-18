@@ -31,6 +31,33 @@
           <span class="w3-large"><a class="removelink" href="/math/ln-calculator"> Ln Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/cosine-calculator"> Cosine Calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/inverse-cosine-calculator">Inverse Cosine Calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/variance-calculator"> Variance calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/tangent-calculator"> Tangent calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/sine-calculator"> Sine calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/standard-deviation-calculator"> Standard deviation calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/convolution-calculator"> Convolution calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/trigonometric-functions-calculator"> Trigonometric functions calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/right-triangle-calculator"> Right triangle calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/fractions-calculator"> Fractions Calculator</a></span><br>
         </li>
         <li class="w3-padding-16">
@@ -38,6 +65,27 @@
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/multiplying-fractions-calculator"> Multiplying fractions calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/percent-to-fraction"> Percent to fraction</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/percent-to-ppm"> Percent to ppm</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/ppm-to-percent"> PPM to percentage</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/ppm-to-ppb"> PPM to ppb</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/ppm-to-ppt"> PPM to ppt</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/ppb-to-ppm"> PPB to ppm</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/ppm-converter"> PPM converter</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/subtracting-fractions-calculator"> Subtracting fractions calculator</a></span><br>
@@ -92,6 +140,18 @@
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/exponent-calculator"> Exponent Calculator</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/decimal-to-percent"> Decimal to percentage</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/roman-numerals-date-converter"> Roman numerals date converter</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/percent-to-decimal"> Percent to decimal</a></span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large"><a class="removelink" href="/math/fraction-to-percent"> Fraction to percentage</a></span><br>
         </li>
         <li class="w3-padding-16">
           <span class="w3-large"><a class="removelink" href="/math/decimal-to-fraction"> Convert Decimal to fraction</a></span><br>
